@@ -1,8 +1,6 @@
 package tommymangia.progettazione_di_una_classe_conto_corrente;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import javax.swing.RowFilter;
 
 public class ContoCorrente {
     private String nome;
@@ -71,7 +69,7 @@ public class ContoCorrente {
 
     public void setMovimenti(String[] movimenti) {
         if (movimenti.length == this.movimenti.length) {
-            this.movimenti = movimenti.clone();
+            this.movimenti = movimenti;
         }
     }
 
