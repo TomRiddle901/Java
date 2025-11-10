@@ -1,6 +1,7 @@
 package tommymangia.progettazione_di_una_classe_conto_corrente;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import javax.swing.RowFilter;
 
 public class ContoCorrente {
@@ -21,6 +22,7 @@ public class ContoCorrente {
         this.cognome = cognome;
         this.saldo = saldo;
         this.movimenti = new String[10];
+        this.dateMovimenti = new LocalDate[10];
         this.indiceMovimento = 0;
     }
 
@@ -30,7 +32,7 @@ public class ContoCorrente {
         this.saldo = conto.saldo;
         this.indiceMovimento = conto.indiceMovimento;
         this.movimenti = new String[conto.movimenti.length];
-        System.arraycopy(conto.movimenti, 0, this.movimenti, 0, conto.movimenti.length);
+        this.dateMovimenti = new LocalDate[conto.dateMovimenti.length];
     }
 
     // Getter
@@ -79,6 +81,7 @@ public class ContoCorrente {
         }
     }
 
+    // Operazioni
     public void versa(double importo) {
         if (importo > 0) {
             saldo += importo;
@@ -97,6 +100,7 @@ public class ContoCorrente {
 
     private void aggiungiMovimento(String movimento) {
         movimenti[indiceMovimento] = movimento;
+        dateMovimenti[indiceMovimento] = LocalDate.now();
         indiceMovimento = (indiceMovimento + 1) % movimenti.length;
     }
 
@@ -105,9 +109,14 @@ public class ContoCorrente {
         boolean haMovimenti = false;
         for (int i = 0; i < movimenti.length; i++) {
             String movimento = movimenti[(indiceMovimento + i) % movimenti.length];
+            LocalDate data = dateMovimenti[(indiceMovimento + i) % movimenti.length];
             if (movimento != null) {
-                System.out.println(movimento);
-                haMovimenti = true;
+                if (data != null){
+                    System.out.println(data + " - " + movimento);
+                    haMovimenti = true;
+                } else{
+                    System.out.println(data + " - " + "Nessun movimento");
+                }
             }
         }
         if (!haMovimenti) {
@@ -127,7 +136,7 @@ public class ContoCorrente {
         
         for (int c = 0; c < 10; c++){
             if (dateMovimenti[c] != null && dateMovimenti[c].getYear() == oggi.getYear() && dateMovimenti[c].getMonth() == oggi.getMonth()){
-                
+                System.out.println();
             }
         }
         return "a";
