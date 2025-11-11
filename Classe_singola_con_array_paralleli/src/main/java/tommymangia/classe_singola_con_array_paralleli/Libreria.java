@@ -43,9 +43,9 @@ public class Libreria {
         this.indirizzo=library.indirizzo;
         this.numeroTelefono=library.numeroTelefono;
         this.email=library.email;
-        this.isbn=library.isbn;
-        this.titolo=library.titolo;
-        this.autori=library.autori;
-        this.copieDisponibili=library.copieDisponibili;
+        this.isbn=library.isbn.clone();
+        this.titolo=library.titolo.clone();
+        this.autori=library.autori.clone();
+        this.copieDisponibili=library.copieDisponibili.clone();
     }
 }
