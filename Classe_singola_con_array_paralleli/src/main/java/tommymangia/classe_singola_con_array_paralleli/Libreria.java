@@ -48,4 +48,36 @@ public class Libreria {
         this.autori=library.autori.clone();
         this.copieDisponibili=library.copieDisponibili.clone();
     }
+
+    // Getter
+    public String getIndirizzo() {
+        return indirizzo;
+    }
+
+    public String getNumeroTelefono() {
+        return numeroTelefono;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    // Setter
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIndirizzo(String indirizzo) {
+        this.indirizzo = indirizzo;
+    }
+
+    public void setNumeroTelefono(String numeroTelefono) {
+        this.numeroTelefono = numeroTelefono;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    
 }
