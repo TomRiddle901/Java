@@ -24,8 +24,8 @@ public class MainProgram {
         
         System.out.println(libreria.stampaLibreria());
         
-        libreria.ricercaLibro("86ASAS8D5A");
-        libreria.ricercaLibro("897AFS6GAD");
+        System.out.println(libreria.ricercaLibro("86ASAS8D5A"));
+        System.out.println(libreria.ricercaLibro("897AFS6GAD"));
         
         aggiornato = libreria.aggiornaCopie("A878987AAA", 300);
         

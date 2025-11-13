@@ -122,7 +122,7 @@ public class Libreria {
     // Funzione per aggiornare le copie rimanenti di ogni libro
     public boolean aggiornaCopie(String isbn, int copie){
         for (int i = 0; i < this.isbn.length; i++){
-            if (this.isbn[i] != null && this.isbn.equals(isbn)){
+            if (this.isbn[i] != null && this.isbn[i].equals(isbn)){
                 copieDisponibili[i] = copie;
                 return true;
             }
