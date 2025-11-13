@@ -79,5 +79,38 @@ public class Libreria {
         this.email = email;
     }
     
+    /* ==================
+       Gestione dei libri
+       ==================
+    */
     
+    // Funzione che aggiunge un libro alla libreria
+    public void aggiungiLibro(String isbn, String titolo, String autori, int copieDisponibili){
+        
+    }
+    
+    // Funzione che stampa l'intera libreria
+    public String stampaLibreria(){
+        return "Libreria";
+    }
+    
+    // Funzione per la ricerca del libro all'interno della libreria
+    public String ricercaLibro(String isbn){
+        return "titoloLibro_isbnLibro";
+    }
+    
+    // Funzione per aggiornare le copie rimanenti di ogni libro
+    public boolean aggiornaCopie(String[] isbn, int copie){
+        return true;
+    }
+    
+    /* ================================
+       Contatori per scorrere i vettori
+       ================================
+    */ 
+    
+    // Scorri la libreria per vedere quale posto è libero
+    private int rigaLibera(){
+        return 0;
+    }
 }
