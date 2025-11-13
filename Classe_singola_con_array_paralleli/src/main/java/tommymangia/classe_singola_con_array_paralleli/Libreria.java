@@ -86,22 +86,48 @@ public class Libreria {
     
     // Funzione che aggiunge un libro alla libreria
     public void aggiungiLibro(String isbn, String titolo, String autori, int copieDisponibili){
-        
+        int riga = rigaLibera();
+        if (riga != -1){
+            this.isbn[riga] = isbn;
+            this.titolo[riga] = titolo;
+            this.autori[riga] = autori;
+            this.copieDisponibili[riga] = copieDisponibili;
+        } else{
+            System.out.println("Libreria piena!");
+        }
     }
     
     // Funzione che stampa l'intera libreria
     public String stampaLibreria(){
-        return "Libreria";
+        String stampa = "Libreria: " + nome + "\nIndirizzo Libreria: " + indirizzo + "\nEmail: " + email + "\n";
+        
+        for (int i = 0; i < isbn.length; i++){
+            if (isbn[i] != null){
+                stampa += "ISBN: " + isbn[i] + ", Titolo: " + titolo[i] + ", Autori: " + autori[i] + ", Copie Disponibili: " + copieDisponibili[i] + "\n";
+            }
+        }
+        return stampa;
     }
     
     // Funzione per la ricerca del libro all'interno della libreria
     public String ricercaLibro(String isbn){
-        return "titoloLibro_isbnLibro";
+        for (int i = 0; i < this.isbn.length; i++){
+            if (this.isbn[i] != null && this.isbn[i].equals(isbn)){
+                return "Titolo: " + titolo[i] + ", Autori: " + autori[i] + ", Copie Disponibili: " + copieDisponibili[i];
+            }
+        }
+        return "Libro non trovato!";
     }
     
     // Funzione per aggiornare le copie rimanenti di ogni libro
     public boolean aggiornaCopie(String[] isbn, int copie){
-        return true;
+        for (int i = 0; i < isbn.length; i++){
+            if (this.isbn[i] != null && this.isbn.equals(isbn)){
+                copieDisponibili = copie;
+                return true;
+            }
+        }
+        return false;
     }
     
     /* ================================
@@ -111,6 +137,11 @@ public class Libreria {
     
     // Scorri la libreria per vedere quale posto è libero
     private int rigaLibera(){
-        return 0;
+        for (int i = 0; i < isbn.length; i++){
+            if (isbn[i] == null){
+                return i;
+            }
+        }
+        return -1;
     }
 }
