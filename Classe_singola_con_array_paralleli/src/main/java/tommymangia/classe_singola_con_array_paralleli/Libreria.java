@@ -1,13 +1,13 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+*/
 package tommymangia.classe_singola_con_array_paralleli;
 
 /**
  *
  * @author tommaso
- */
+*/
 public class Libreria {
     // Metodi
     String nome;
@@ -120,10 +120,10 @@ public class Libreria {
     }
     
     // Funzione per aggiornare le copie rimanenti di ogni libro
-    public boolean aggiornaCopie(String[] isbn, int copie){
-        for (int i = 0; i < isbn.length; i++){
+    public boolean aggiornaCopie(String isbn, int copie){
+        for (int i = 0; i < this.isbn.length; i++){
             if (this.isbn[i] != null && this.isbn.equals(isbn)){
-                copieDisponibili = copie;
+                copieDisponibili[i] = copie;
                 return true;
             }
         }
