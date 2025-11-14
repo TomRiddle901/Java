@@ -18,14 +18,12 @@ public class Pallavolo {
     public Pallavolo(){
         this.nomeSquadra = "SquadraDefault";
         this.partitaIva = "IVA";
-        this.partiteGiocate = 0;
     }
     
     public Pallavolo(String nome, String iva){
         this.nomeSquadra = nome;
         this.partitaIva = iva;
         risultati = new int[22];
-        this.partiteGiocate = 0;
         
         for (int i = 0; i < 22; i++){
             risultati[i] = -1;
@@ -36,7 +34,6 @@ public class Pallavolo {
         this.nomeSquadra = p.nomeSquadra;
         this.partitaIva = p.partitaIva;
         this.risultati = p.risultati.clone();
-        this.partiteGiocate = p.partiteGiocate;
     }
     
     // Metodi
@@ -85,7 +82,6 @@ public class Pallavolo {
                     risultati[i] = 0;
                 }
                 System.out.println("Punteggi aggiornati!");
-                partiteGiocate++;
             } else {
                 System.out.println("Limite punteggi raggiunto!");
             }
