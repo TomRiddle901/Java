@@ -75,7 +75,7 @@ public class Pallavolo {
         int partiteGiocate = 0;
         
         for (int i = 0; i < 22; i++){
-            if (risultati[i] != i-1){
+            if (risultati[i] != -1){
                 partiteGiocate++;
             }
         }

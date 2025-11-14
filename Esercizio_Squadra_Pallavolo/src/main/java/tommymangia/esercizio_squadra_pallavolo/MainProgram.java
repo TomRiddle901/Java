@@ -23,12 +23,29 @@ public class MainProgram {
         squadra.inserisciRisultato(3, 6);
         System.out.println(squadra.toString());
         
-        squadra.inserisciRisultato(5, 0);
-        squadra.inserisciRisultato(11, 0);
-        squadra.inserisciRisultato(0, 5);
+        squadra.inserisciRisultato(3, 0); 
+        squadra.inserisciRisultato(3, 1); 
+        squadra.inserisciRisultato(0, 3); 
+        squadra.inserisciRisultato(1, 3); 
+        squadra.inserisciRisultato(3, 2);
+        squadra.inserisciRisultato(2, 3); 
+        squadra.inserisciRisultato(3, 0);
+        squadra.inserisciRisultato(3, 1);
+        squadra.inserisciRisultato(0, 3);
         squadra.inserisciRisultato(1, 3);
-        squadra.inserisciRisultato(5, 10);
-        
+        squadra.inserisciRisultato(3, 2);
+        squadra.inserisciRisultato(2, 3);
+        squadra.inserisciRisultato(3, 0);
+        squadra.inserisciRisultato(3, 1);
+        squadra.inserisciRisultato(0, 3);
+        squadra.inserisciRisultato(1, 3);
+        squadra.inserisciRisultato(3, 2);  
+        squadra.inserisciRisultato(2, 3);
+        squadra.inserisciRisultato(3, 0);
+        squadra.inserisciRisultato(3, 1);
+        squadra.inserisciRisultato(3, 2);
+        squadra.inserisciRisultato(2, 3);
+
         System.out.println(squadra.toString());
         System.out.println("Partite giocate: " + squadra.getPartiteGiocate());
         System.out.println("Punteggio totale: " + squadra.getPunteggioTotale());
