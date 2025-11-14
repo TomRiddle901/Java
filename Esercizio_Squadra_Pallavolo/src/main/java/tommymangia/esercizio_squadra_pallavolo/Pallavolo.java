@@ -13,9 +13,6 @@ public class Pallavolo {
     private String nomeSquadra;
     private String partitaIva;
     private int[] risultati;
-    private int partiteGiocate;
-    private int partiteVinte;
-    private int partitePerse;
     
     // Costruttori
     public Pallavolo(){
@@ -62,7 +59,7 @@ public class Pallavolo {
     }
     
     public int getPartiteGiocate(){
-        return partiteGiocate;
+        return 0;
     }
     
     // Setter
@@ -75,21 +72,17 @@ public class Pallavolo {
         this.partitaIva = partitaIva;
     }
     
-    public void inserisciRisultato(int setVinti, int setPersi, boolean tie){
+    public void inserisciRisultato(int setVinti, int setPersi){
         for (int i = 0; i < this.risultati.length; i++){
             if (risultati[i] != -1){
-                if (setVinti > setPersi && tie){
+                if (setVinti > setPersi && setVinti + setPersi == 5){
                     risultati[i] = 2;
-                    partiteVinte++;
-                } else if (setVinti < setPersi && tie){
+                } else if (setVinti < setPersi && setVinti + setPersi == 5){
                     risultati[i] = 1;
-                    partitePerse++;
                 } else if (setVinti > setPersi) {
                     risultati[i] = 3;
-                    partiteVinte++;
                 } else if (setVinti < setPersi){
                     risultati[i] = 0;
-                    partitePerse++;
                 }
                 System.out.println("Punteggi aggiornati!");
                 partiteGiocate++;
@@ -101,11 +94,22 @@ public class Pallavolo {
     
     public String toString(){
         String stampa;
+        int partiteVinte = 0;
+        int partitePerse = 0;
+        
         stampa = "Nome Squadra: " + nomeSquadra + "\nPartita Iva: " + partitaIva + "\nRisultati:\n";
         
-        for (int i = 0; i < partiteGiocate; i++){
-            stampa += risultati[i] + "\n";
+        for (int i = 0; i < 22; i++){
+            if (risultati[i] != -1){
+                stampa += risultati[i] + "\n";  
+                if (risultati[i] == 0 || risultati[i] == 1){
+                    partitePerse ++;
+                } else{
+                    partiteVinte++;
+                }
+            }
+
         }
-        return stampa + "Partite Vinte: " + partiteVinte + " Partite Perse: " + partitePerse;
+        return stampa + "Partite Vinte: " + partiteVinte + "\nPartite Perse: " + partitePerse;
     }
 }
