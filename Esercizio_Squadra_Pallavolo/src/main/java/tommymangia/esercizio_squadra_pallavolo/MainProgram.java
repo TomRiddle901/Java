@@ -23,12 +23,14 @@ public class MainProgram {
         squadra.inserisciRisultato(3, 6);
         System.out.println(squadra.toString());
         
-        squadra.inserisciRisultato(5, 5);
-        squadra.inserisciRisultato(11, 0);
         squadra.inserisciRisultato(5, 0);
+        squadra.inserisciRisultato(11, 0);
+        squadra.inserisciRisultato(0, 5);
         squadra.inserisciRisultato(1, 3);
         squadra.inserisciRisultato(5, 10);
         
         System.out.println(squadra.toString());
+        System.out.println("Partite giocate: " + squadra.getPartiteGiocate());
+        System.out.println("Punteggio totale: " + squadra.getPunteggioTotale());
     }
 }

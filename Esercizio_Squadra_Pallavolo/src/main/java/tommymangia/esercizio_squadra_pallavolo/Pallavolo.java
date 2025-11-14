@@ -93,17 +93,18 @@ public class Pallavolo {
     }
     
     public void inserisciRisultato(int setVinti, int setPersi){
-        for (int i = 0; i < this.risultati.length; i++){
-            if (risultati[i] != -1){
-                if (setVinti > setPersi && setVinti + setPersi == 5){
-                    risultati[i] = 2;
-                } else if (setVinti < setPersi && setVinti + setPersi == 5){
-                    risultati[i] = 1;
-                } else if (setVinti > setPersi) {
-                    risultati[i] = 3;
-                } else if (setVinti < setPersi){
-                    risultati[i] = 0;
-                }
+        if (scorriPosizioni() != -1){
+            if (setVinti > setPersi && setVinti + setPersi == 5){
+                risultati[scorriPosizioni()] = 2;
+                System.out.println("Punteggi aggiornati!");
+            } else if (setVinti < setPersi && setVinti + setPersi == 5){
+                risultati[scorriPosizioni()] = 1;
+                System.out.println("Punteggi aggiornati!");
+            } else if (setVinti > setPersi){
+                risultati[scorriPosizioni()] = 3;
+                System.out.println("Punteggi aggiornati!");
+            } else if (setVinti < setPersi){
+                risultati[scorriPosizioni()] = 0;
                 System.out.println("Punteggi aggiornati!");
             } else {
                 System.out.println("Limite punteggi raggiunto!");
@@ -129,5 +130,15 @@ public class Pallavolo {
             }
         }
         return stampa + "Partite Vinte: " + partiteVinte + "\nPartite Perse: " + partitePerse;
+    }
+    
+    private int scorriPosizioni(){
+        for (int i = 0; i < 22; i++){
+            if (risultati[i] == -1){
+                return i;
+            }
+        }
+        
+        return -1;
     }
 }
