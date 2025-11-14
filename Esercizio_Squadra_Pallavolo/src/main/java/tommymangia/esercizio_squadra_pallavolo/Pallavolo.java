@@ -12,7 +12,7 @@ public class Pallavolo {
     // Attributi
     private String nomeSquadra;
     private String partitaIva;
-    private int[] punteggi;
+    private int[] risultati;
     private int partiteGiocate;
     private int partiteVinte;
     private int partitePerse;
@@ -27,18 +27,18 @@ public class Pallavolo {
     public Pallavolo(String nome, String iva){
         this.nomeSquadra = nome;
         this.partitaIva = iva;
-        punteggi = new int[22];
+        risultati = new int[22];
         this.partiteGiocate = 0;
         
         for (int i = 0; i < 22; i++){
-            punteggi[i] = -1;
+            risultati[i] = -1;
         }
     }
     
     public Pallavolo(Pallavolo p){
         this.nomeSquadra = p.nomeSquadra;
         this.partitaIva = p.partitaIva;
-        this.punteggi = p.punteggi.clone();
+        this.risultati = p.risultati.clone();
         this.partiteGiocate = p.partiteGiocate;
     }
     
@@ -75,11 +75,37 @@ public class Pallavolo {
         this.partitaIva = partitaIva;
     }
     
-    public void inserisciRisultato(int setVinti, int setPersi){
-        
+    public void inserisciRisultato(int setVinti, int setPersi, boolean tie){
+        for (int i = 0; i < this.risultati.length; i++){
+            if (risultati[i] != -1){
+                if (setVinti > setPersi && tie){
+                    risultati[i] = 2;
+                    partiteVinte++;
+                } else if (setVinti < setPersi && tie){
+                    risultati[i] = 1;
+                    partitePerse++;
+                } else if (setVinti > setPersi) {
+                    risultati[i] = 3;
+                    partiteVinte++;
+                } else if (setVinti < setPersi){
+                    risultati[i] = 0;
+                    partitePerse++;
+                }
+                System.out.println("Punteggi aggiornati!");
+                partiteGiocate++;
+            } else {
+                System.out.println("Limite punteggi raggiunto!");
+            }
+        }
     }
     
     public String toString(){
-        return "";
+        String stampa;
+        stampa = "Nome Squadra: " + nomeSquadra + "\nPartita Iva: " + partitaIva + "\nRisultati:\n";
+        
+        for (int i = 0; i < partiteGiocate; i++){
+            stampa += risultati[i] + "\n";
+        }
+        return stampa + "Partite Vinte: " + partiteVinte + " Partite Perse: " + partitePerse;
     }
 }
