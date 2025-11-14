@@ -127,7 +127,6 @@ public class Pallavolo {
                     partiteVinte++;
                 }
             }
-
         }
         return stampa + "Partite Vinte: " + partiteVinte + "\nPartite Perse: " + partitePerse;
     }
