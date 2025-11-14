@@ -40,22 +40,45 @@ public class Pallavolo {
   
     // Getter
     public String getNomeSquadra() {
-        return nomeSquadra;
+        return this.nomeSquadra;
     }
 
     public String getPartitaIva() {
-        return partitaIva;
+        return this.partitaIva;
     }
    
     public int getPunteggioTotale(){
-        return 0;
+        int punteggiTotali = 0;
+        
+        for (int i = 0; i < 22; i++){
+            if (risultati[i] != -1){
+                punteggiTotali += risultati[i];
+            }
+        }
+        return punteggiTotali;
     }
     
     public int getPartitePerse(){
-        return 0;
+        int partitePerse = 0;
+        
+        for (int i = 0; i < 22; i++){
+            if (risultati[i] != -1){
+                if (risultati[i] == 0 || risultati[i] == 1){
+                    partitePerse++;
+                }
+            }
+        }
+        return partitePerse;
     }
     
     public int getPartiteGiocate(){
+        int partiteGiocate = 0;
+        
+        for (int i = 0; i < 22; i++){
+            if (risultati[i] != i-1){
+                partiteGiocate++;
+            }
+        }
         return 0;
     }
     
