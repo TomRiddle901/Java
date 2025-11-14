@@ -79,7 +79,7 @@ public class Pallavolo {
                 partiteGiocate++;
             }
         }
-        return 0;
+        return partiteGiocate;
     }
     
     // Setter
