@@ -38,4 +38,40 @@ public class Valutazione {
         this.tipo = v.tipo;
         this.punteggio = v.punteggio;
     }
+    
+    // Metodi
+    
+    // Getter
+    public LocalDate getData() {
+        return data;
+    }
+
+    public char getTipo() {
+        return tipo;
+    }
+
+    public String getMateria() {
+        return materia;
+    }
+
+    public double getPunteggio() {
+        return punteggio;
+    }
+    
+    // Setter
+    public void setData(LocalDate data) {
+        this.data = data;
+    }
+
+    public void setTipo(char tipo) {
+        this.tipo = tipo;
+    }
+
+    public void setMateria(String materia) {
+        this.materia = materia;
+    }
+
+    public void setPunteggio(double punteggio) {
+        this.punteggio = punteggio;
+    }
 }
