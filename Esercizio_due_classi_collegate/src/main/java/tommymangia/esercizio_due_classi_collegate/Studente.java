@@ -13,13 +13,13 @@ import java.time.Month;
  */
 public class Studente {
     // Attributi
-    int matricola;
-    String nome;
-    String cognome;
-    LocalDate dataNascita;
-    char sesso;
-    static double costoOffertaFormativa;
-    Valutazione[] valutazioni;
+    private int matricola;
+    private String nome;
+    private String cognome;
+    private LocalDate dataNascita;
+    private char sesso;
+    private static double costoOffertaFormativa;
+    private Valutazione[] valutazioni;
     
     // Costruttori
     public Studente(){
