@@ -29,6 +29,7 @@ public class Studente {
         sesso = 'F';
         dataNascita = LocalDate.of(2025, 11, 18);
         valutazioni = new Valutazione[100];
+        costoOffertaFormativa = 10.99;
     }
     
     public Studente(int matricola, String nome, String cognome, LocalDate dataNascita, char sesso){
@@ -47,5 +48,49 @@ public class Studente {
         this.dataNascita = s.dataNascita;
         this.sesso = s.sesso;
         this.valutazioni = s.valutazioni.clone();
+    }
+    
+    // Metodi
+    
+    // Getter
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCognome() {
+        return cognome;
+    }
+
+    public LocalDate getDataNascita() {
+        return dataNascita;
+    }
+
+    public char getSesso() {
+        return sesso;
+    }
+
+    public int getMatricola() {
+        return matricola;
+    }
+    
+    // Setter
+    public void setMatricola(int matricola) {
+        this.matricola = matricola;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCognome(String cognome) {
+        this.cognome = cognome;
+    }
+
+    public void setDataNascita(LocalDate dataNascita) {
+        this.dataNascita = dataNascita;
+    }
+
+    public void setSesso(char sesso) {
+        this.sesso = sesso;
     }
 }
