@@ -132,6 +132,20 @@ public class Pallavolo {
         return stampa + "Partite Vinte: " + partiteVinte + "\nPartite Perse: " + partitePerse;
     }
     
+    public String confrontaSquadre(Pallavolo squadra2){
+        int punteggioS1 = this.getPunteggioTotale();
+        int punteggioS2 = squadra2.getPunteggioTotale();
+        
+        if (punteggioS1 > punteggioS2){
+            return "Nome squadra: " + this.getNomeSquadra() + "\nPunteggio: " + this.getPunteggioTotale();
+        } else if (punteggioS1 < punteggioS2){
+            return "Nome squadra: " + squadra2.getNomeSquadra() + "\nPunteggio: " + squadra2.getPunteggioTotale();
+        } else {
+            return "Pareggio!";
+        }
+    }
+    
+    // Funzione per scorrere le posizioni
     private int scorriPosizioni(){
         for (int i = 0; i < 22; i++){
             if (risultati[i] == -1){
