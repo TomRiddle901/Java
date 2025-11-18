@@ -5,7 +5,6 @@
 package tommymangia.esercizio_due_classi_collegate;
 
 import java.time.LocalDate;
-import java.time.Month;
 
 /**
  *
