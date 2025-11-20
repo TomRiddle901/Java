@@ -31,4 +31,7 @@ public class Triangolo {
         this.b = t.b;
         this.c = t.c;
     }
+    
+    // Metodi
+    
 }

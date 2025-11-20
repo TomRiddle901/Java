@@ -28,4 +28,28 @@ public class Punto {
         this.y = p.y;
     }
     
+    // Metodi
+    
+    // Getter
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+    
+    // Setter
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+    
+    // Traslazione
+    public void trasla(double x, double y){
+        
+    }
 }
