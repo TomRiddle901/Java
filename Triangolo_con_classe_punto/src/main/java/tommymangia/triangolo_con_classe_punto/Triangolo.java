@@ -33,12 +33,29 @@ public class Triangolo {
     }
     
     // Metodi
-    public double perimetro(){
-        return 0;
+    public double area(){
+        double area = 0, distanzaAb, distanzaBc, distanzaCa, semiPerimetro;
+        
+        distanzaAb = this.a.distanzaPunti(b);
+        distanzaBc = this.b.distanzaPunti(c);
+        distanzaCa = this.c.distanzaPunti(a);
+        
+        semiPerimetro = (distanzaAb + distanzaBc + distanzaCa) / 2;
+        
+        area = Math.sqrt(semiPerimetro * (semiPerimetro - distanzaAb) * (semiPerimetro - distanzaBc) * (semiPerimetro - distanzaCa));
+        
+        return area;
     }
 
-    public double area(){
-        return 0;
+    public double perimetro(){
+        double distanzaAb, distanzaBc, distanzaCa, perimetro;
+        
+        distanzaAb = this.a.distanzaPunti(b);
+        distanzaBc = this.b.distanzaPunti(c);
+        distanzaCa = this.c.distanzaPunti(a);
+        
+        perimetro = distanzaAb + distanzaBc + distanzaCa;
+        return perimetro;
     }
     
     public void trasla(double x, double y){
