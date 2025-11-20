@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.progettazione_classe_punto;
+package tommymangia.progettazione_classe_punto_triangolo;
 
 /**
  *
  * @author tommaso
  */
-public class Progettazione_classe_punto {
+public class MainProgram {
 
     // Main del progetto
     public static void main(String[] args) {
