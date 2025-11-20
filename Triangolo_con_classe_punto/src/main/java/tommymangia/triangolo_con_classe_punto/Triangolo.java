@@ -33,5 +33,23 @@ public class Triangolo {
     }
     
     // Metodi
+    public double perimetro(){
+        return 0;
+    }
+
+    public double area(){
+        return 0;
+    }
     
+    public void trasla(double x, double y){
+        
+    }
+    
+    public boolean equals(Triangolo t){
+        return false;
+    }
+    
+    public String toString(){
+        return "";
+    }
 }
