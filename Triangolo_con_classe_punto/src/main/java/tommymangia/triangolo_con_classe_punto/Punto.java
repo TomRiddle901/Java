@@ -15,7 +15,8 @@ public class Punto {
     
     // Costruttori
     public Punto(){
-        
+        this.x = 0;
+        this.y = 0;
     }
 
     public Punto(double x, double y) {
