@@ -4,6 +4,8 @@
 
 package tommymangia.esercizio_classe_calciatore;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author tommaso

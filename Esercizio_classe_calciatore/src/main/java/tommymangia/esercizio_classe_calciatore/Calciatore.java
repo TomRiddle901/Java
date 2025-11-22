@@ -4,10 +4,50 @@
  */
 package tommymangia.esercizio_classe_calciatore;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author tommaso
  */
 public class Calciatore {
+    // Attributi
+    String nome;
+    String cognome;
+    LocalDate dataNascita;
+    char ruolo;
+    String nazionalita;
+    String[] stagioni;
+    int[] gol;
     
+    // Costruttori
+    public Calciatore(){
+        nome = "";
+        cognome = "";
+        dataNascita = LocalDate.now();
+        ruolo = 'P';
+        nazionalita = "";
+        stagioni = new String[10];
+        gol = new int[10];
+    }
+    
+    public Calciatore(String nome, String congome, LocalDate dataNascita, char ruolo, String nazionalita){
+        this.nome = nome;
+        this.cognome = congome;
+        this.dataNascita = dataNascita;
+        this.ruolo = ruolo;
+        this.nazionalita = nazionalita;
+        this.stagioni = new String[10];
+        this.gol = new int[10];
+    }
+    
+    public Calciatore(Calciatore c){
+        this.nome = c.nome;
+        this.cognome = c.cognome;
+        this.dataNascita = c.dataNascita;
+        this.ruolo = c.ruolo;
+        this.nazionalita = c.nazionalita;
+        this.stagioni = c.stagioni.clone();
+        this.gol = c.gol.clone();
+    }
 }
