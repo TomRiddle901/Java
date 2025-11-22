@@ -136,10 +136,10 @@ public class Calciatore {
     }
     
     public boolean isMovimento(){
-        if(this.ruolo != 'P' || this.ruolo != 'p'){
-            return false;
-        } else{
+        if(this.ruolo == 'P' || this.ruolo == 'p'){
             return true;
+        } else{
+            return false;
         }
     }
     
