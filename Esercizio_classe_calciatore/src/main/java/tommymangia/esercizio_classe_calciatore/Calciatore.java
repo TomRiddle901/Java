@@ -142,4 +142,13 @@ public class Calciatore {
             return true;
         }
     }
+    
+    public String toString(){
+        return "Dati del giocatore " + this.getNome() + " " + this.getCognome()
+                + "\nData di nascita: " + this.getDataNascita()
+                + "\nRuolo: " + this.getRuolo()
+                + "\nNazionalità: " + this.getNazionalita()
+                + "\nGol Totali: " + this.golTotali()
+                + "\nMovimento: " + this.isMovimento();
+    }
 }
