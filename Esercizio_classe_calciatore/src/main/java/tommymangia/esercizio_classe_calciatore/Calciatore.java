@@ -95,4 +95,51 @@ public class Calciatore {
         this.nazionalita = nazionalita;
     }
     
+    public void inserisciStagione(String stagione, int gol){
+        int c = 0;
+        
+        while(c < 10 && this.stagioni[c] != null){
+            c++;
+        }
+        
+        if (c < 10){
+            this.stagioni[c] = stagione;
+            this.gol[c] = gol;
+            System.out.println("Stagione aggiunta!");
+        } else{
+            System.out.println("Limite stagioni raggiunto!");
+        }
+    }
+    
+    public int golStagione(String stagione){
+        int c = 0;
+        
+        while(c < 10 && this.stagioni[c] != null && this.stagioni[c].equals(stagione) != true){
+            c++;
+        }
+        
+        if (c < 10){
+            return gol[c];
+        } else{
+            return -1;
+        }
+    }
+    
+    public int golTotali(){
+        int golTotali = 0;
+        
+        for (int i = 0; i < 10; i++){
+            golTotali += this.gol[i];
+        }
+        
+        return golTotali;
+    }
+    
+    public boolean isMovimento(){
+        if(this.ruolo != 'P' || this.ruolo != 'p'){
+            return false;
+        } else{
+            return true;
+        }
+    }
 }
