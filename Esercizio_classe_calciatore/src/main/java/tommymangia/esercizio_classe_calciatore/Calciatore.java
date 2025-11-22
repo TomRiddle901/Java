@@ -50,4 +50,49 @@ public class Calciatore {
         this.stagioni = c.stagioni.clone();
         this.gol = c.gol.clone();
     }
+    
+    // Metodi
+    
+    // Getter
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCognome() {
+        return cognome;
+    }
+
+    public LocalDate getDataNascita() {
+        return dataNascita;
+    }
+
+    public char getRuolo() {
+        return ruolo;
+    }
+
+    public String getNazionalita() {
+        return nazionalita;
+    }
+    
+    // Setter
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCognome(String cognome) {
+        this.cognome = cognome;
+    }
+
+    public void setDataNascita(LocalDate dataNascita) {
+        this.dataNascita = dataNascita;
+    }
+
+    public void setRuolo(char ruolo) {
+        this.ruolo = ruolo;
+    }
+
+    public void setNazionalita(String nazionalita) {
+        this.nazionalita = nazionalita;
+    }
+    
 }
