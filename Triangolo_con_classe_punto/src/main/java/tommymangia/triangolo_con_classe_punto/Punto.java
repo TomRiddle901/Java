@@ -51,7 +51,8 @@ public class Punto {
     
     // Traslazione
     public void trasla(double x, double y){
-        
+        this.x += x;
+        this.y += y;
     }
     
     public double distanzaPunti(Punto punto2){

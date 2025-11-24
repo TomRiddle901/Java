@@ -59,14 +59,28 @@ public class Triangolo {
     }
     
     public void trasla(double x, double y){
-        
+        a.trasla(x, y);
+        b.trasla(x, y);
+        c.trasla(x, y);
     }
     
     public boolean equals(Triangolo t){
-        return false;
+        if (t == null){
+            return false;
+        } else if (this.a.getX() != t.a.getX() || this.a.getY() != t.a.getY()){
+            return false;
+        } else if (this.b.getX() != t.b.getX() || this.b.getY() != t.b.getY()){
+            return false;
+        } else if (this.c.getX() != t.c.getX() || this.c.getY() != t.c.getY()){
+            return false;
+        } else{
+            return true;
+        }
     }
     
     public String toString(){
-        return "";
+        return "Punto A(" + this.a.getX() + "; " + this.a.getY() + ")\n" +
+               "Punto B(" + this.b.getX() + "; " + this.b.getY() + ")\n" +
+               "Punto C(" + this.c.getX() + "; " + this.c.getY() + ")\n";
     }
 }
