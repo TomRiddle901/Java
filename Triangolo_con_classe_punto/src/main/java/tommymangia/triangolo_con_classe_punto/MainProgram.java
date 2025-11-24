@@ -34,6 +34,9 @@ public class MainProgram {
             System.out.println("Triangolo 1 è diverso dal Triangolo copia");
         }
         
+        triangolo1.trasla(7, 14);
+        triangolo2.trasla(21, 28);
+        
         System.out.println("Punti del Triangolo 1:" + triangolo1.toString());
         System.out.println("Punti del Triangolo 2: " + triangolo2.toString());
         System.out.println("Punti del Triangolo copia:" + triangoloCopia.toString());
