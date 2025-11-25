@@ -67,15 +67,17 @@ public class MainProgram {
             x1 = Double.parseDouble(in.nextLine());
             System.out.print("Inserire coordinata Y del vertice A: ");
             y1 = Double.parseDouble(in.nextLine());
+            
             System.out.print("Inserire coordinata X del vertice B: ");
             x2 = Double.parseDouble(in.nextLine());
             System.out.print("Inserire coordinata Y del vertice B: ");
             y1 = Double.parseDouble(in.nextLine());
+            
             System.out.print("Inserire coordinata X del vertice C: ");
             x3 = Double.parseDouble(in.nextLine());
             System.out.print("Inserire coordinata Y del vertice C: ");
             y3 = Double.parseDouble(in.nextLine());
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException e){
         }
         
         try{
