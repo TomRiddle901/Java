@@ -15,8 +15,26 @@ public class MainProgram {
     public static void main(String[] args) {
         int scelta;
         
-        scelta = visualizzaMenu();
-        System.out.println("Hai scelto " + scelta);
+        do{
+            scelta = visualizzaMenu();
+            
+            switch(scelta){
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Opzione non consentita!");
+            }
+        } while (scelta != 0);
     }
     
     public static int visualizzaMenu(){
