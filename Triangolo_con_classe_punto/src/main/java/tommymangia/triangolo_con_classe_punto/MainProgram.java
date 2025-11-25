@@ -12,7 +12,8 @@ import java.util.Scanner;
  */
 public class MainProgram {
 
-    public static Triangolo t = new Triangolo();
+    private static Triangolo t = new Triangolo();
+    
     public static void main(String[] args) {
         int scelta;
         
