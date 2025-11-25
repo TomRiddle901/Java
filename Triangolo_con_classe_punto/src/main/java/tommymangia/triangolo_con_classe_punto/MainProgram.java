@@ -12,6 +12,7 @@ import java.util.Scanner;
  */
 public class MainProgram {
 
+    public static Triangolo t = new Triangolo();
     public static void main(String[] args) {
         int scelta;
         
@@ -20,6 +21,7 @@ public class MainProgram {
             
             switch(scelta){
                 case 1:
+                    creaTriangolo();
                     break;
                 case 2:
                     break;
@@ -53,5 +55,32 @@ public class MainProgram {
             return -1;
         }
         return scelta;
+    }
+    
+    public static void creaTriangolo(){
+        Scanner in = new Scanner(System.in);
+        double x1, y1, x2, y2, x3, y3;
+        boolean valid = true;
+        try{
+            System.out.print("Inserire coordinata X del vertice A: ");
+            x1 = Double.parseDouble(in.nextLine());
+            System.out.print("Inserire coordinata Y del vertice A: ");
+            y1 = Double.parseDouble(in.nextLine());
+            System.out.print("Inserire coordinata X del vertice B: ");
+            x2 = Double.parseDouble(in.nextLine());
+            System.out.print("Inserire coordinata Y del vertice B: ");
+            y1 = Double.parseDouble(in.nextLine());
+            System.out.print("Inserire coordinata X del vertice C: ");
+            x3 = Double.parseDouble(in.nextLine());
+            System.out.print("Inserire coordinata Y del vertice C: ");
+            y3 = Double.parseDouble(in.nextLine());
+        } catch (NumberFormatException e) {
+        }
+        
+        try{
+            t = new Triangolo(new Punto(x1, y1), new Punto(x2, y2), new Punto(x3, y3));
+        } catch (IllegalArgumentException ex) {
+            System.err.println("Non puoi costrutire un Triangolo con 3 punti che giaciono nella stessa retta");
+        }
     }
 }
