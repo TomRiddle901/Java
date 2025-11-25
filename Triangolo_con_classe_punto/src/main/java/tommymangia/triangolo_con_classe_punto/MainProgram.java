@@ -55,4 +55,3 @@ public class MainProgram {
         return scelta;
     }
 }
-Try... catch funcions test
