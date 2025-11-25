@@ -71,19 +71,19 @@ public class MainProgram {
             System.out.print("Inserire coordinata X del vertice B: ");
             x2 = Double.parseDouble(in.nextLine());
             System.out.print("Inserire coordinata Y del vertice B: ");
-            y1 = Double.parseDouble(in.nextLine());
+            y2 = Double.parseDouble(in.nextLine());
             
             System.out.print("Inserire coordinata X del vertice C: ");
             x3 = Double.parseDouble(in.nextLine());
             System.out.print("Inserire coordinata Y del vertice C: ");
             y3 = Double.parseDouble(in.nextLine());
+            
+            try{
+                t = new Triangolo(new Punto(x1, y1), new Punto(x2, y2), new Punto(x3, y3));
+            } catch (IllegalArgumentException ex) {
+                System.err.println("Non puoi costrutire un Triangolo con 3 punti che giaciono nella stessa retta");
+            }
         } catch (NumberFormatException e){
-        }
-        
-        try{
-            t = new Triangolo(new Punto(x1, y1), new Punto(x2, y2), new Punto(x3, y3));
-        } catch (IllegalArgumentException ex) {
-            System.err.println("Non puoi costrutire un Triangolo con 3 punti che giaciono nella stessa retta");
         }
     }
 }
