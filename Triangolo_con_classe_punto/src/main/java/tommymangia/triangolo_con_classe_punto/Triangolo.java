@@ -64,6 +64,7 @@ public class Triangolo {
         c.trasla(x, y);
     }
     
+    /*
     public boolean equals(Triangolo t){
         if (t == null){
             return false;
@@ -77,7 +78,7 @@ public class Triangolo {
             return true;
         }
     }
-    
+    */
     public String toString(){
         return "Punto A(" + this.a.getX() + "; " + this.a.getY() + ")\n" +
                "Punto B(" + this.b.getX() + "; " + this.b.getY() + ")\n" +
