@@ -55,6 +55,7 @@ public class Punto {
         this.y += y;
     }
     
+    // Distanza tra i 2 punti
     public double distanzaPunti(Punto punto2){
         double distanza = (double)Math.sqrt(Math.pow(punto2.x - this.x, 2) + Math.pow(punto2.y - this.y, 2));
         return distanza;

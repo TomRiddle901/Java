@@ -16,7 +16,7 @@ public class Triangolo {
     
     // Costruttori
     public Triangolo(){
-        
+       
     }
 
     public Triangolo(Punto a, Punto b, Punto c) {
