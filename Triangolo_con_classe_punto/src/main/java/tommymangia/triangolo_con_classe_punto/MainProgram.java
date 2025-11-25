@@ -50,9 +50,9 @@ public class MainProgram {
         try{
             scelta = Integer.parseInt(in.nextLine());
         } catch(NumberFormatException e){
-            System.out.println("Opzione non consentita!");
             return -1;
         }
         return scelta;
     }
 }
+Try... catch funcions test
