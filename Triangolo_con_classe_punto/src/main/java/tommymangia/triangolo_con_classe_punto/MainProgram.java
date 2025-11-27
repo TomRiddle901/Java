@@ -25,14 +25,19 @@ public class MainProgram {
                     creaTriangolo();
                     break;
                 case 2:
+                    System.out.println("Area del triangolo: " + area());
                     break;
                 case 3:
+                    System.out.println("Perimetro del triangolo: " + perimetro());
                     break;
                 case 4:
+                    trasla();
                     break;
                 case 5:
+                    System.out.println(toStringTriangolo());
                     break;
                 case 0:
+                    System.out.println("Uscita dal programma in corso...");
                     break;
                 default:
                     System.out.println("Opzione non consentita!");
@@ -85,5 +90,40 @@ public class MainProgram {
             }
         } catch (NumberFormatException e){
         }
+    }
+    
+    public static double area(){
+        System.out.println("Calcolo dell'area del triangolo...");
+        return t.area();
+    }
+    
+    public static double perimetro(){
+        System.out.println("Calcolo del perimetro in corso...");
+        return t.perimetro();
+    }
+    
+    public static void trasla(){
+        Scanner in = new Scanner(System.in);
+        double x, y;
+        try{
+            System.out.print("Quanto vuoi spostare il triangolo sull'asse X: ");
+            x = Double.parseDouble(in.nextLine());
+            
+            System.out.print("Quanto vuoi spostare il triangolo sull'asse Y: ");
+            y = Double.parseDouble(in.nextLine());
+            
+            try{
+                t.trasla(x, y);
+            } catch (IllegalArgumentException ex) {
+                System.err.println("Non puoi spostare il triangolo!");
+            }
+        } catch (NumberFormatException ex) {
+            System.err.println("Puoi inserire solo numeri!");
+        }
+    }
+    
+    public static String toStringTriangolo(){
+        System.out.println("Stampa delle informazioni del triangolo...");
+        return t.toString();
     }
 }
