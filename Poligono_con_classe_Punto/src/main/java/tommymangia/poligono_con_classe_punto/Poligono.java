@@ -24,7 +24,7 @@ public class Poligono {
     }
     
     // Metodi
-    /* NON ANCORA RICHIESTO
+    /*
     public double perimetro(){
         double perimetro = 0;
         
