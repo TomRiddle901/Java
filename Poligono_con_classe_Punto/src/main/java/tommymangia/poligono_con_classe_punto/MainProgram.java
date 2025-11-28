@@ -12,6 +12,7 @@ import java.util.Scanner;
  */
 public class MainProgram {
 
+    private static Poligono pol = new Poligono();
     public static void main(String[] args) {
         int scelta;
         
@@ -23,7 +24,7 @@ public class MainProgram {
                     creaPoligono();
                     break;
                 case 2:
-                    System.out.println("Funzione non implementata!");
+                    System.out.println("Periemtro del Poligono: " + pol.perimetro());
                     break;
                 case 3:
                     System.out.println("Funzione non implementata");
@@ -88,7 +89,9 @@ public class MainProgram {
                 aP[i] = new Punto(x, y);
             }
             
-            Poligono pol = new Poligono(latoI, aP);
+            pol.setNumeroPunti(latoI);
+            pol.setPunto(aP);
+            
         } catch (NumberFormatException ex) {
             System.err.println("Errore: Devi inserire un numero valido!");
             System.err.println("Più info: " + ex.getMessage());
