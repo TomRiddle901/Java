@@ -24,12 +24,16 @@ public class MainProgram {
                     break;
                 case 2:
                     System.out.println("Funzione non implementata!");
+                    break;
                 case 3:
                     System.out.println("Funzione non implementata");
+                    break;
                 case 0:
                     System.out.println("Uscita dal programma in corso...");
+                    break;
                 default:
                     System.out.println("Scelta non valida!");
+                    break;
             }
         } while(scelta != 0);
     }
