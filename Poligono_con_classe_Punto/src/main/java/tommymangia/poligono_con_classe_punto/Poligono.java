@@ -24,7 +24,16 @@ public class Poligono {
     }
     
     // Metodi
-    /*
+    
+    // Setter
+    public void setNumeroPunti(int punti){
+        numeroPunti = punti;
+    }
+    
+    public void setPunto(Punto[] punti){
+        this.punti = punti;
+    }
+    
     public double perimetro(){
         double perimetro = 0;
         
@@ -37,5 +46,4 @@ public class Poligono {
         
         return perimetro;
     }
-    */
 }
