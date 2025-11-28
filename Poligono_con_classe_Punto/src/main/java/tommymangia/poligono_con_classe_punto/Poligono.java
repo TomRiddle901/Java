@@ -22,4 +22,20 @@ public class Poligono {
         this.numeroPunti = numeroPunti;
         this.punti = new Punto[numeroPunti];
     }
+    
+    // Metodi
+    /* NON ANCORA RICHIESTO
+    public double perimetro(){
+        double perimetro = 0;
+        
+        for (int i = 0; i < numeroPunti; i++){
+            perimetro += punti[i].distanzaPunti(punti[i + 1]);
+        }
+        
+        // Ultimo lato che chiude il poligono
+        perimetro = punti[numeroPunti - 1].distanzaPunti(punti[0]);
+        
+        return perimetro;
+    }
+    */
 }
