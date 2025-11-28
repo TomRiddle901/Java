@@ -9,5 +9,17 @@ package tommymangia.poligono_con_classe_punto;
  * @author tommaso
  */
 public class Poligono {
+    // Attributi
+    private int numeroPunti;
+    private Punto[] punti;
     
+    // Costruttori
+    public Poligono(){
+        
+    }
+    
+    public Poligono(int numeroPunti, Punto[] punti){
+        this.numeroPunti = numeroPunti;
+        this.punti = new Punto[numeroPunti];
+    }
 }
