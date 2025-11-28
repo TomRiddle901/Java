@@ -49,6 +49,7 @@ public class MainProgram {
             scelta = Integer.parseInt(in.nextLine());
         } catch (NumberFormatException ex) {
             System.err.println("Errore: " + ex.getMessage());
+            return -1;
         }
         
         return scelta;
