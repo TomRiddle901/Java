@@ -37,7 +37,7 @@ public class Poligono {
     public double perimetro(){
         double perimetro = 0;
         
-        for (int i = 0; i < numeroPunti; i++){
+        for (int i = 0; i < numeroPunti - 1; i++){
             perimetro += punti[i].distanzaPunti(punti[i + 1]);
         }
         
