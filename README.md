@@ -30,6 +30,10 @@ La repository è organizzata in questo modo:
 ### Esempi di esecuzione
 Supponendo di voler eseguire il programma *Esercizio_classe_calciatore*
 da terminale potresti fare:
+<pre>```cd Java/Esercizio_classe_calciatore
+        javac *.java
+        java Main```
+</pre>
 (Sostituisci *Main* con il nome della classe con metodo *main* corretta presente nel progetto)
 ### Licenza
 Il codice è distribuito **senza una licenza** esplicitamente definita.
