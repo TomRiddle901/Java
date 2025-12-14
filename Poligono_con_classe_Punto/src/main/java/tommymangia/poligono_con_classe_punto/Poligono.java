@@ -14,6 +14,11 @@ public class Poligono {
     private Punto[] punti;
     
     // Costruttori    
+    public Poligono(){
+        numeroPunti = 0;
+        punti = null;
+    }
+    
     public Poligono(int numeroPunti, Punto[] punti){
         
         if (puntiCoallineati(punti, numeroPunti)){
