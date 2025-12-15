@@ -15,6 +15,15 @@ public class Prestiti {
     private LocalDate dataInizio;
     private LocalDate dataFine;
     private Libro[] libriPrestati;
-    private String socio;
+    private Socio socio;
     private boolean riconsegna;
+    
+    // Costruttori
+    public Prestiti(LocalDate dataInizio, LocalDate dataFine, Libro[] libri,Socio socio, boolean riconsegna){
+        this.dataInizio = dataInizio;
+        this.dataFine = dataFine;
+        this.libriPrestati = libri;
+        this.socio = socio;
+        this.riconsegna = riconsegna;
+    }
 }

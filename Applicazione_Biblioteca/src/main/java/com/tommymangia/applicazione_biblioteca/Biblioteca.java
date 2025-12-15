@@ -21,4 +21,13 @@ public class Biblioteca {
     private Libro[] libri;
     private Prestiti[] prestito;
     private Autore[] autori;
+    
+    // Costruttori
+    public Biblioteca(String nome, String indirizzo, String website, String email, String telefono){
+        this.nome = nome;
+        this.indirizzo = indirizzo;
+        this.website = website;
+        this.email = email;
+        this.telefono = telefono;
+    }
 }

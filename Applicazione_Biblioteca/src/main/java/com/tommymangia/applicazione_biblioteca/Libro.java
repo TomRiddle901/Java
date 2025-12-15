@@ -17,4 +17,14 @@ public class Libro {
     private char sala; 
     private int scaffale;
     private int ripiano;
+    
+    // Costruttori
+    public Libro(String isbn, Autore[] autori, String titolo, char sala, int scaffale, int ripiano){
+        this.isbn = isbn;
+        this.autori = autori;     
+        this.titolo = titolo; 
+        this.sala = sala;
+        this.scaffale = scaffale;
+        this.ripiano = ripiano;
+    }
 }
