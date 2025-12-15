@@ -26,4 +26,26 @@ public class Autore {
         this.dataMorte = dataMorte;
         this.sesso = sesso;
     }
+    
+    // Metodi
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCognome(String cognome) {
+        this.cognome = cognome;
+    }
+
+    public void setDataNascita(LocalDate dataNascita) {
+        this.dataNascita = dataNascita;
+    }
+
+    public void setDataMorte(LocalDate dataMorte) {
+        this.dataMorte = dataMorte;
+    }
+
+    public void setSesso(char sesso) {
+        this.sesso = sesso;
+    }
+    
 }

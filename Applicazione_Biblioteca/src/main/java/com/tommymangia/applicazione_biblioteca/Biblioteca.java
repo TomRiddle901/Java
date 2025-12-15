@@ -5,6 +5,7 @@
 package com.tommymangia.applicazione_biblioteca;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 /**
  *
@@ -29,5 +30,13 @@ public class Biblioteca {
         this.website = website;
         this.email = email;
         this.telefono = telefono;
+        libri = new Libro[1000];
+        prestito = new Prestiti[10000];
+        autori = new Autore[10000];
+        soci = new Socio[10000];
+    }
+    
+    public void addLibro(){
+
     }
 }

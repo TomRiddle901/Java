@@ -30,4 +30,33 @@ public class Socio {
         this.email = email;
         this.numeroTelefono = numeroTelefono;
     }
+    
+    // Metodi
+    public void setnTessera(int nTessera) {
+        this.nTessera = nTessera;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCognome(String cognome) {
+        this.cognome = cognome;
+    }
+
+    public void setDataNascita(LocalDate dataNascita) {
+        this.dataNascita = dataNascita;
+    }
+
+    public void setSesso(char sesso) {
+        this.sesso = sesso;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setNumeroTelefono(String numeroTelefono) {
+        this.numeroTelefono = numeroTelefono;
+    }
 }

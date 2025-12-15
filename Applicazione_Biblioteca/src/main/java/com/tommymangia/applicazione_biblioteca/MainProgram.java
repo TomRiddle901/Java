@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class MainProgram {
 
-    private static Biblioteca b;
+    private static Biblioteca b = new Biblioteca("Gianni", "Via Indirizzo 15/B", "www.giannilibrary.com", "giaani@library.com", "+39 1234567890");
 
     public static void main(String[] args) {
         int scelta;

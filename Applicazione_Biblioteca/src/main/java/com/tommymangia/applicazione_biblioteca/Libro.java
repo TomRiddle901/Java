@@ -27,4 +27,30 @@ public class Libro {
         this.scaffale = scaffale;
         this.ripiano = ripiano;
     }
+    
+    // Metodi
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public void setProgressivo(int progressivo) {
+        this.progressivo = progressivo;
+    }
+
+    public void setTitolo(String titolo) {
+        this.titolo = titolo;
+    }
+
+    public void setSala(char sala) {
+        this.sala = sala;
+    }
+
+    public void setScaffale(int scaffale) {
+        this.scaffale = scaffale;
+    }
+
+    public void setRipiano(int ripiano) {
+        this.ripiano = ripiano;
+    }
+    
 }
