@@ -16,7 +16,16 @@ public class MainProgram {
     private static Biblioteca b;
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int scelta;
+        
+        do{
+            scelta = menu();
+            
+            switch (scelta){
+                case 1:
+                    
+            }
+        } while(scelta != 0);
     }
     
     private static int menu(){
@@ -31,6 +40,7 @@ public class MainProgram {
         System.out.println("5) Pulisci prestiti");
         System.out.println("6) Prestiti scaduti");
         System.out.println("7) Lista prestiti");
+        System.out.println("0) Esci");
         System.out.println("------------------------");
         System.out.print("- Scelta: ");
         
