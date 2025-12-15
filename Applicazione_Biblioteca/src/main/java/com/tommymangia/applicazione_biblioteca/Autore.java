@@ -4,10 +4,17 @@
  */
 package com.tommymangia.applicazione_biblioteca;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author tommaso
  */
 public class Autore {
-    
+    // Attributi
+    private String nome;
+    private String cognome;
+    private LocalDate dataNascita;
+    private LocalDate dataMorte;
+    private char sesso;
 }

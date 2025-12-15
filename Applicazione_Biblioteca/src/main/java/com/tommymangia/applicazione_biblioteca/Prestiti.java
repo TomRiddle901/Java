@@ -4,10 +4,17 @@
  */
 package com.tommymangia.applicazione_biblioteca;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author tommaso
  */
 public class Prestiti {
-    
+    // Attributi
+    private LocalDate dataInizio;
+    private LocalDate dataFine;
+    private Libro[] libriPrestati;
+    private String socio;
+    private boolean riconsegna;
 }

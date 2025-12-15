@@ -9,5 +9,12 @@ package com.tommymangia.applicazione_biblioteca;
  * @author tommaso
  */
 public class Libro {
-    
+    // Attributi
+    private String isbn;
+    private int progressivo;
+    private Autore[] autori;
+    private String titolo;
+    private char sala; 
+    private int scaffale;
+    private int ripiano;
 }

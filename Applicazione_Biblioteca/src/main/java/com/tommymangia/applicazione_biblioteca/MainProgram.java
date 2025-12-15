@@ -10,6 +10,8 @@ package com.tommymangia.applicazione_biblioteca;
  */
 public class MainProgram {
 
+    private static Biblioteca b;
+
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }

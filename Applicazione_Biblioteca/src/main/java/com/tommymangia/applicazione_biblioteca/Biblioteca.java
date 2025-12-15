@@ -4,10 +4,21 @@
  */
 package com.tommymangia.applicazione_biblioteca;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author tommaso
  */
 public class Biblioteca {
-    
+    // Attributi
+    private String nome;
+    private String indirizzo;
+    private String website;
+    private String email;
+    private String telefono;
+    private Socio[] soci;
+    private Libro[] libri;
+    private Prestiti[] prestito;
+    private Autore[] autori;
 }
