@@ -50,6 +50,8 @@ public class Biblioteca {
             System.out.print("\nISBN del libro");
             libri[i].setIsbn(in.nextLine());
             libri[i].setAutore();
+            System.out.print("\nCopie del libro: ");
+            libri[i].setProgressivo(Integer.parseInt(in.nextLine()));
             libri[i].setSala();
             System.out.print("\nScaffale: ");
             libri[i].setScaffale(Integer.parseInt(in.nextLine()));
@@ -58,5 +60,11 @@ public class Biblioteca {
         } else{
             System.out.println("Libreria piena!");
         }
+    }
+    
+    public void addSocio(){
+        Scanner in = new Scanner(System.in);
+        
+        
     }
 }
