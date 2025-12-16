@@ -36,7 +36,7 @@ public class Biblioteca {
         soci = new Socio[10000];
     }
     
-    public boolean addLibro(){
+    public void addLibro(){
         Scanner in = new Scanner(System.in);
         int i = 0;
         
@@ -47,11 +47,16 @@ public class Biblioteca {
         if (i < 1000 && libri[i] == null){
             System.out.print("Titolo del libro: ");
             libri[i].setTitolo(in.nextLine());
-            System.out.println("\nISBN del libro");
+            System.out.print("\nISBN del libro");
             libri[i].setIsbn(in.nextLine());
             libri[i].setAutore();
-            
+            libri[i].setSala();
+            System.out.print("\nScaffale: ");
+            libri[i].setScaffale(Integer.parseInt(in.nextLine()));
+            System.out.print("\nRipiano: ");
+            libri[i].setRipiano(Integer.parseInt(in.nextLine()));
+        } else{
+            System.out.println("Libreria piena!");
         }
-        return true;
     }
 }
