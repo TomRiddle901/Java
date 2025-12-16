@@ -4,6 +4,9 @@
  */
 package com.tommymangia.applicazione_biblioteca;
 
+import java.time.LocalDate;
+import java.util.Scanner;
+
 /**
  *
  * @author tommaso
@@ -53,4 +56,34 @@ public class Libro {
         this.ripiano = ripiano;
     }
     
+    public void setAutore(){
+        Scanner in = new Scanner(System.in);
+        String input;
+        int i = 0;
+        
+        while (i < 10000 && autori[i] != null){
+            i++;
+        }
+        
+        if (i < 1000 && autori[i] == null){
+            System.out.print("Nome Autore: ");
+            autori[i].setNome(in.nextLine());
+            System.out.print("\nCognome autore: ");
+            autori[i].setCognome(in.nextLine());
+            System.out.print("\nData di nascita dell'autore: ");
+            autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
+            System.out.println("\nInserisci la data di morte (0 per vivo): ");
+            if (in.nextLine() != "0"){
+                autori[i].setDataMorte(LocalDate.parse(in.nextLine()));
+            }
+            System.out.print("\nInserisci sesso (M/F): ");
+            input = in.nextLine().toUpperCase();
+            
+            if (input.equals("M") || input.equals("F")){                
+                if (!input.isEmpty()){
+                    autori[i].setSesso(input.charAt(0));
+                }
+            }
+        }
+    }
 }

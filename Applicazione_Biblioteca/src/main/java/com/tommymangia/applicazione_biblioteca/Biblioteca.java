@@ -36,7 +36,22 @@ public class Biblioteca {
         soci = new Socio[10000];
     }
     
-    public void addLibro(){
-
+    public boolean addLibro(){
+        Scanner in = new Scanner(System.in);
+        int i = 0;
+        
+        while(i < 1000 && libri[i] != null){
+            i++;
+        }
+        
+        if (i < 1000 && libri[i] == null){
+            System.out.print("Titolo del libro: ");
+            libri[i].setTitolo(in.nextLine());
+            System.out.println("\nISBN del libro");
+            libri[i].setIsbn(in.nextLine());
+            libri[i].setAutore();
+            
+        }
+        return true;
     }
 }
