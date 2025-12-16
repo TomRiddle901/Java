@@ -73,6 +73,8 @@ public class Libro {
         
         do{        
             if (i < 1000 && autori[i] == null){
+                autori[i] = new Autore();
+                
                 System.out.print("Nome Autore: ");
                 autori[i].setNome(in.nextLine());
                 System.out.print("\nCognome autore: ");
