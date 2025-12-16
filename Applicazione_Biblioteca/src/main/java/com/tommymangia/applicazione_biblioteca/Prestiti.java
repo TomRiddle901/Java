@@ -14,7 +14,7 @@ public class Prestiti {
     // Attributi
     private LocalDate dataInizio;
     private LocalDate dataFine;
-    private Libro[] libriPrestati;
+    private Libro libriPrestati;
     private Socio socio;
     private boolean riconsegna;
     
@@ -36,7 +36,7 @@ public class Prestiti {
         this.dataFine = dataFine;
     }
 
-    public void setLibriPrestati(Libro[] libriPrestati) {
+    public void setLibriPrestati(Libro libriPrestati) {
         this.libriPrestati = libriPrestati;
     }
 

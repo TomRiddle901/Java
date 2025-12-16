@@ -98,4 +98,8 @@ public class Libro {
             }
         } while (i < 10000 && autori[i] != null);
     }
+
+    public String getIsbn() {
+        return isbn;
+    }
 }

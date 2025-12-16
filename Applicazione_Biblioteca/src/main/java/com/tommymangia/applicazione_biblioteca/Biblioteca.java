@@ -93,7 +93,8 @@ public class Biblioteca {
     
     public void nuovoPrestito(){
         Scanner in = new Scanner(System.in);
-        int i = 0, j = 0, idSocio, posSocio = -1;
+        int i = 0, j = 0, idSocio, posSocio = -1, posLibro = -1;
+        String isbn;
         
         while (i < 10000 && prestito[i] != null){
             i++;
@@ -112,7 +113,28 @@ public class Biblioteca {
         }
         
         if (posSocio != -1){
-            prestito[i].
+            prestito[i] = new Prestiti();
+            
+            prestito[i].setSocio(soci[posSocio]);
+            System.out.print("\nData inizio (formato: AAAA-MM-GG): ");
+            prestito[i].setDataInizio(LocalDate.parse(in.nextLine()));
+            System.out.print("\nData fine (formato: AAAA-MM-GG): ");
+            prestito[i].setDataFine(LocalDate.parse(in.nextLine()));
+            System.out.print("\nISBN Libro: ");
+            isbn = in.nextLine();
+            
+            for (int k = 0; k < 1000 && libri[k] != null; k++){
+                if (libri[k].getIsbn().equals(isbn)){
+                    posLibro = k;
+                }
+            }
+            if (posLibro != -1){
+                prestito[i].setLibriPrestati(libri[posLibro]);
+            } else{
+                System.out.println("Libro non trovato!");
+            }
+            
+            System.out.println("Prestito aggiunto!");
         }
     }
 }
