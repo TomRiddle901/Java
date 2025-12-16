@@ -77,9 +77,13 @@ public class Biblioteca {
             soci[i].setNome(in.nextLine());
             System.out.print("\nCognome: ");
             soci[i].setCognome(in.nextLine());
-            System.out.print("\nData di nascita: ");
+            System.out.print("\nData di nascita (formato: AAAA-MM-GG): ");
             soci[i].setDataNascita(LocalDate.parse(in.nextLine()));
             soci[i].setSesso();
+            System.out.print("\nEmail: ");
+            soci[i].setEmail(in.nextLine());
+            System.out.println("\nNumero di telefono: ");
+            soci[i].setNumeroTelefono(in.nextLine());
         }
     }
 }

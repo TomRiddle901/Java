@@ -77,9 +77,9 @@ public class Libro {
                 autori[i].setNome(in.nextLine());
                 System.out.print("\nCognome autore: ");
                 autori[i].setCognome(in.nextLine());
-                System.out.print("\nData di nascita dell'autore: ");
+                System.out.print("\nData di nascita dell'autore (formato: AAAA-MM-GG): ");
                 autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
-                System.out.println("\nInserisci la data di morte (0 per vivo): ");
+                System.out.println("\nInserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
                 if (in.nextLine() != "0"){
                     autori[i].setDataMorte(LocalDate.parse(in.nextLine()));
                 }
