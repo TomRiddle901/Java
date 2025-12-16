@@ -57,7 +57,7 @@ public class Socio {
         input = in.nextLine().toUpperCase();
         
         if (!input.isEmpty()){
-            sesso = input.charAt(0);
+            this.sesso = input.charAt(0);
         }
     }
 

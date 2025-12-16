@@ -52,7 +52,7 @@ public class Libro {
         input = in.nextLine().toUpperCase();
         
         if (!input.isEmpty()){
-            sala = input.charAt(0);
+            this.sala = input.charAt(0);
         } else{
             System.out.println("Sala non valida!");
         }
