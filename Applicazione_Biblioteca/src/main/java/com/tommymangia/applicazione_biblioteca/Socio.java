@@ -5,6 +5,7 @@
 package com.tommymangia.applicazione_biblioteca;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 /**
  *
@@ -48,8 +49,16 @@ public class Socio {
         this.dataNascita = dataNascita;
     }
 
-    public void setSesso(char sesso) {
-        this.sesso = sesso;
+    public void setSesso() {
+        Scanner in = new Scanner(System.in);
+        String input;
+        
+        System.out.print("\nSesso: ");
+        input = in.nextLine().toUpperCase();
+        
+        if (!input.isEmpty()){
+            sesso = input.charAt(0);
+        }
     }
 
     public void setEmail(String email) {

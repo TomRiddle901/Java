@@ -64,7 +64,22 @@ public class Biblioteca {
     
     public void addSocio(){
         Scanner in = new Scanner(System.in);
+        int i = 0;
         
+        while (i < 10000 && soci[i] != null){
+            i++;
+        }
         
+        if (i < 10000 && soci[i] == null){
+            soci[i].setnTessera(i);
+            System.out.println("Numero tessera: " + i);
+            System.out.println("Nome: ");
+            soci[i].setNome(in.nextLine());
+            System.out.print("\nCognome: ");
+            soci[i].setCognome(in.nextLine());
+            System.out.print("\nData di nascita: ");
+            soci[i].setDataNascita(LocalDate.parse(in.nextLine()));
+            soci[i].setSesso();
+        }
     }
 }
