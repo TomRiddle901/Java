@@ -44,8 +44,18 @@ public class Libro {
         this.titolo = titolo;
     }
 
-    public void setSala(char sala) {
-        this.sala = sala;
+    public void setSala() {
+        Scanner in = new Scanner(System.in);
+        String input;
+       
+        System.out.print("\nSala: ");
+        input = in.nextLine().toUpperCase();
+        
+        if (!input.isEmpty()){
+            sala = input.charAt(0);
+        } else{
+            System.out.println("Sala non valida!");
+        }
     }
 
     public void setScaffale(int scaffale) {
@@ -61,29 +71,29 @@ public class Libro {
         String input;
         int i = 0;
         
-        while (i < 10000 && autori[i] != null){
-            i++;
-        }
-        
-        if (i < 1000 && autori[i] == null){
-            System.out.print("Nome Autore: ");
-            autori[i].setNome(in.nextLine());
-            System.out.print("\nCognome autore: ");
-            autori[i].setCognome(in.nextLine());
-            System.out.print("\nData di nascita dell'autore: ");
-            autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
-            System.out.println("\nInserisci la data di morte (0 per vivo): ");
-            if (in.nextLine() != "0"){
-                autori[i].setDataMorte(LocalDate.parse(in.nextLine()));
-            }
-            System.out.print("\nInserisci sesso (M/F): ");
-            input = in.nextLine().toUpperCase();
+        do{        
+            if (i < 1000 && autori[i] == null){
+                System.out.print("Nome Autore: ");
+                autori[i].setNome(in.nextLine());
+                System.out.print("\nCognome autore: ");
+                autori[i].setCognome(in.nextLine());
+                System.out.print("\nData di nascita dell'autore: ");
+                autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
+                System.out.println("\nInserisci la data di morte (0 per vivo): ");
+                if (in.nextLine() != "0"){
+                    autori[i].setDataMorte(LocalDate.parse(in.nextLine()));
+                }
+                System.out.print("\nInserisci sesso (M/F): ");
+                input = in.nextLine().toUpperCase();
             
-            if (input.equals("M") || input.equals("F")){                
-                if (!input.isEmpty()){
-                    autori[i].setSesso(input.charAt(0));
+                if (input.equals("M") || input.equals("F")){                
+                    if (!input.isEmpty()){
+                        autori[i].setSesso(input.charAt(0));
+                    } else{
+                        System.out.println("Devi inserire il sesso!");
+                    }
                 }
             }
-        }
+        } while (i < 10000 && autori[i] != null);
     }
 }
