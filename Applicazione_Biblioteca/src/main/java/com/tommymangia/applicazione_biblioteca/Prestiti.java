@@ -19,12 +19,12 @@ public class Prestiti {
     private boolean riconsegna;
     
     // Costruttori
-    public Prestiti(LocalDate dataInizio, LocalDate dataFine, Libro[] libri,Socio socio, boolean riconsegna){
-        this.dataInizio = dataInizio;
-        this.dataFine = dataFine;
-        this.libriPrestati = libri;
-        this.socio = socio;
-        this.riconsegna = riconsegna;
+    public Prestiti(){
+        this.dataInizio = null;
+        this.dataFine = null;
+        this.libriPrestati = null;
+        this.socio = null;
+        this.riconsegna = false;
     }
     
     // Metodi

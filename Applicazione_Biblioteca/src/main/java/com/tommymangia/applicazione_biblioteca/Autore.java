@@ -19,12 +19,12 @@ public class Autore {
     private char sesso;
     
     // Costruttori
-    public Autore(String nome, String cognome, LocalDate dataNascita, LocalDate dataMorte, char sesso){
-        this.nome = nome;
-        this.cognome = cognome;
-        this.dataNascita = dataNascita;
-        this.dataMorte = dataMorte;
-        this.sesso = sesso;
+    public Autore(){
+        this.nome = "";
+        this.cognome = "";
+        this.dataNascita = null;
+        this.dataMorte = null;
+        this.sesso = '?';
     }
     
     // Metodi

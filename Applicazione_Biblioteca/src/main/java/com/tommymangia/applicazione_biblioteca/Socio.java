@@ -22,14 +22,14 @@ public class Socio {
     private String numeroTelefono;
     
     // Costruttori
-    public Socio(int nTessera, String nome, String cognome, LocalDate dataNascita, char sesso, String email, String numeroTelefono){
-        this.nTessera = nTessera;
-        this.nome = nome;
-        this.cognome = cognome;
-        this.dataNascita = dataNascita;
-        this.sesso = sesso;
-        this.email = email;
-        this.numeroTelefono = numeroTelefono;
+    public Socio(){
+        this.nTessera = 0;
+        this.nome = "";
+        this.cognome = "";
+        this.dataNascita = null;
+        this.sesso = '?';
+        this.email = "";
+        this.numeroTelefono = "";
     }
     
     // Metodi
@@ -67,5 +67,9 @@ public class Socio {
 
     public void setNumeroTelefono(String numeroTelefono) {
         this.numeroTelefono = numeroTelefono;
+    }
+
+    public int getnTessera() {
+        return nTessera;
     }
 }

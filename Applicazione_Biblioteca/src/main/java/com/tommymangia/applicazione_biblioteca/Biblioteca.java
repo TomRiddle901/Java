@@ -45,6 +45,8 @@ public class Biblioteca {
         }
         
         if (i < 1000 && libri[i] == null){
+            libri[i] = new Libro();
+            
             System.out.print("Titolo del libro: ");
             libri[i].setTitolo(in.nextLine());
             System.out.print("\nISBN del libro");
@@ -71,6 +73,8 @@ public class Biblioteca {
         }
         
         if (i < 10000 && soci[i] == null){
+            soci[i] = new Socio();
+            
             soci[i].setnTessera(i);
             System.out.println("Numero tessera: " + i);
             System.out.println("Nome: ");
@@ -84,6 +88,31 @@ public class Biblioteca {
             soci[i].setEmail(in.nextLine());
             System.out.println("\nNumero di telefono: ");
             soci[i].setNumeroTelefono(in.nextLine());
+        }
+    }
+    
+    public void nuovoPrestito(){
+        Scanner in = new Scanner(System.in);
+        int i = 0, j = 0, idSocio, posSocio = -1;
+        
+        while (i < 10000 && prestito[i] != null){
+            i++;
+        }
+        
+        if (i < 10000){
+            System.out.print("ID Tessera: ");
+            idSocio = Integer.parseInt(in.nextLine());
+            
+            while (j < 10000 && soci[j] != null){
+                if (soci[j].getnTessera() == idSocio){
+                    posSocio = j;
+                }
+                j++;
+            }
+        }
+        
+        if (posSocio != -1){
+            prestito[i].
         }
     }
 }
