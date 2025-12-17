@@ -230,4 +230,41 @@ public class Biblioteca {
             }
         }
     }
+    
+    public void visualizzaPrestiti(){
+        int c = 0;
+        for (int i = 0; i < 10000 && prestito[i] != null; i++){
+            c++;
+        }
+        
+        Prestiti[] temp = new Prestiti[c];
+        for (int i = 0; i < c; i++){
+            temp[i] = prestito[i];
+        }
+        
+        for (int i = 0; i < c; i++){
+            for (int j = 0; j < c - i - 1; j++){
+                if (temp[j].getDataInizio().isAfter(temp[j + 1].getDataInizio())){
+                    Prestiti t = temp[j];
+                    temp[j] = temp[j + 1];
+                    temp[j + 1] = t;
+                }
+            }
+        }
+        
+        for (int i = 0; i < 10000 && temp[i] != null; i++){
+            System.out.println("ID socio: " + temp[i].getSocio().getnTessera());
+            System.out.println("Nome: " + temp[i].getSocio().getNome());
+            System.out.println("Cognome: " + temp[i].getSocio().getCognome());
+            System.out.println("ISBN lisbro: " + temp[i].getLibriPrestati().getIsbn());
+            System.out.println("Titolo libro: " + temp[i].getLibriPrestati().getTitolo());
+            System.out.println("Data inizio prestito: " + temp[i].getDataInizio());
+            System.out.println("Data fine prestito: " + temp[i].getDataFine());
+            if (temp[i].isRiconsegna()){
+                System.out.println("Riconsegnato");                
+            } else{
+                System.out.println("Da restituire");
+            }
+        }
+    }
 }
