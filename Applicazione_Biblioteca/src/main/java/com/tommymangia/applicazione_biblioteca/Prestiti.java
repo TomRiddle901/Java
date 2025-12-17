@@ -47,5 +47,23 @@ public class Prestiti {
     public void setRiconsegna(boolean riconsegna) {
         this.riconsegna = riconsegna;
     }
-    
+
+    public Socio getSocio() {
+        return socio;
+    }
+    public Libro getLibriPrestati() {
+        return libriPrestati;
+    }
+
+    public LocalDate getDataInizio() {
+        return dataInizio;
+    }
+
+    public LocalDate getDataFine() {
+        return dataFine;
+    }
+
+    public boolean isRiconsegna() {
+        return riconsegna;
+    }
 }

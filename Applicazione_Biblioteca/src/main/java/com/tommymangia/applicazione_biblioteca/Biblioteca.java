@@ -156,4 +156,46 @@ public class Biblioteca {
             System.out.println("Limite massimo di prestiti raggiunto!");
         }
     }
+    
+    public void riconsegna(){
+        Scanner in = new Scanner(System.in);
+        int idSocio;
+        String isbn;
+        boolean socioTrovato = false, prestitoTrovato = false;
+        
+        // Ricerca socio
+        System.out.print("ID socio: ");
+        idSocio = Integer.parseInt(in.nextLine());
+        
+        for (int i = 0; i < 10000 && soci[i] != null; i++){
+            if (soci[i].getnTessera() == idSocio){
+                socioTrovato = true;
+            }
+        }
+        
+        // Solo se il socio esiste si va avanti
+        if (socioTrovato){
+            // Ricerca libro
+            System.out.print("\nISBN libro: ");
+            isbn = in.nextLine();
+            
+            for (int i = 0; i < 10000 && libri[i] != null; i++){
+                if (prestito[i].getSocio().getnTessera() == idSocio &&
+                    prestito[i].getLibriPrestati().getIsbn().equals(isbn) &&
+                    !prestito[i].isRiconsegna()){
+                    
+                    prestito[i].setRiconsegna(true);
+                    prestitoTrovato = true;
+                }
+            }
+            
+            if (prestitoTrovato){
+                System.out.println("Riconsegna effettuata correttamente!");
+            } else{
+                System.out.println("Impossibile riconsegnare!");
+            }
+        } else{
+            System.out.println("Socio non registrato!");
+        }
+    }
 }
