@@ -72,7 +72,7 @@ public class Libro {
         int i = 0;
         
         do{        
-            if (i < 1000 && autori[i] == null){
+            if (i < 1000){
                 autori[i] = new Autore();
                 
                 System.out.print("Nome Autore: ");
@@ -81,7 +81,7 @@ public class Libro {
                 autori[i].setCognome(in.nextLine());
                 System.out.print("Data di nascita dell'autore (formato: AAAA-MM-GG): ");
                 autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
-                System.out.println("Inserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
+                System.out.print("Inserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
                 if (!in.nextLine().equals("0")){
                     autori[i].setDataMorte(LocalDate.parse(in.nextLine()));
                 }
