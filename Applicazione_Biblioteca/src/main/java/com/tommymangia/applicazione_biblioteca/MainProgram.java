@@ -16,7 +16,37 @@ public class MainProgram {
     private static Biblioteca b = new Biblioteca("Gianni", "Via Indirizzo 15/B", "www.giannilibrary.com", "giaani@library.com", "+39 1234567890");
 
     public static void main(String[] args) {
+        int scelta = menu();
         
+        do{
+            switch (scelta) {
+                case 1:
+                    b.addLibro();
+                    break;
+                case 2:
+                    b.addSocio();
+                    break;
+                case 3:
+                    b.nuovoPrestito();
+                    break;
+                case 4:
+                    b.riconsegna();
+                    break;
+                case 5:
+                    b.pulisciPrestiti();
+                    break;
+                case 6:
+                    b.scaduti();
+                    break;
+                case 7:
+                    b.visualizzaPrestiti();
+                    break;
+                case 0:
+                    System.out.println("Uscitra dal programma in corso...");
+                default:
+                    System.out.println("Scelta non valida!");;
+            }
+        } while (scelta != 0);
     }
     
     private static int menu(){
