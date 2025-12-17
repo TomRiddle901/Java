@@ -4,6 +4,7 @@
  */
 package com.tommymangia.applicazione_biblioteca;
 
+import java.lang.classfile.instruction.TableSwitchInstruction;
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -93,14 +94,17 @@ public class Biblioteca {
     
     public void nuovoPrestito(){
         Scanner in = new Scanner(System.in);
-        int i = 0, j = 0, idSocio, posSocio = -1, posLibro = -1;
+        int i = 0, j = 0, k = 0, idSocio, posSocio = -1, posLibro = -1;
         String isbn;
         
+        // Ricerca posizione libera per il prestito
         while (i < 10000 && prestito[i] != null){
             i++;
         }
         
+        // Condizione esistenza posizione prestito
         if (i < 10000){
+            // Ricerca socio
             System.out.print("ID Tessera: ");
             idSocio = Integer.parseInt(in.nextLine());
             
@@ -110,31 +114,47 @@ public class Biblioteca {
                 }
                 j++;
             }
-        }
-        
-        if (posSocio != -1){
-            prestito[i] = new Prestiti();
             
-            prestito[i].setSocio(soci[posSocio]);
-            System.out.print("\nData inizio (formato: AAAA-MM-GG): ");
-            prestito[i].setDataInizio(LocalDate.parse(in.nextLine()));
-            System.out.print("\nData fine (formato: AAAA-MM-GG): ");
-            prestito[i].setDataFine(LocalDate.parse(in.nextLine()));
-            System.out.print("\nISBN Libro: ");
-            isbn = in.nextLine();
-            
-            for (int k = 0; k < 1000 && libri[k] != null; k++){
-                if (libri[k].getIsbn().equals(isbn)){
-                    posLibro = k;
+            // Codizione esistenza socio
+            if (posSocio != -1){
+                // Creazione prestito
+                prestito[i] = new Prestiti();
+                
+                // Inserimento socio
+                prestito[i].setSocio(soci[posSocio]);
+                
+                // Inserimento date inizio/scadenza prestito
+                System.out.print("\nData inizio (AAAA-MM-GG): ");
+                prestito[i].setDataInizio(LocalDate.parse(in.nextLine()));
+                System.out.print("\nData fine (AAAA-MM-GG): ");
+                prestito[i].setDataFine(LocalDate.parse(in.nextLine()));
+                
+                // Ricerca e inserimento libro
+                System.out.print("\nISBN libro: ");
+                isbn = in.nextLine();
+                
+                while (k < 1000 && libri[k] != null){
+                    if (libri[k].getIsbn().equals(isbn)){
+                        posLibro = k;
+                    }
+                    k++;
                 }
-            }
-            if (posLibro != -1){
-                prestito[i].setLibriPrestati(libri[posLibro]);
+                
+                if (posLibro != -1){
+                    prestito[i].setLibriPrestati(libri[posLibro]);
+                    
+                    // Riconsegna false perché è consegna
+                    prestito[i].setRiconsegna(false);
+                    
+                    System.out.println("Prestito aggiunto correttamente!");
+                } else{
+                    System.out.println("Libro inesistente!");
+                }
             } else{
-                System.out.println("Libro non trovato!");
+                System.out.println("Socio inesistente!");
             }
-            
-            System.out.println("Prestito aggiunto!");
+        } else{
+            System.out.println("Limite massimo di prestiti raggiunto!");
         }
     }
 }
