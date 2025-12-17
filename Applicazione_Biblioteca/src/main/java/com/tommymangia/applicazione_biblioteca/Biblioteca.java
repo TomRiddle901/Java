@@ -49,7 +49,7 @@ public class Biblioteca {
             
             System.out.print("Titolo del libro: ");
             libri[i].setTitolo(in.nextLine());
-            System.out.print("\nISBN del libro");
+            System.out.print("\nISBN del libro: ");
             libri[i].setIsbn(in.nextLine());
             libri[i].setAutore();
             System.out.print("\nCopie del libro: ");

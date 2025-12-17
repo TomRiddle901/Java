@@ -24,7 +24,7 @@ public class Libro {
     // Costruttori
     public Libro(){
         this.isbn = "";
-        this.autori = null;     
+        this.autori = new Autore[10];     
         this.titolo = ""; 
         this.sala = '?';
         this.scaffale = 0;
@@ -82,7 +82,7 @@ public class Libro {
                 System.out.print("\nData di nascita dell'autore (formato: AAAA-MM-GG): ");
                 autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
                 System.out.println("\nInserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
-                if (in.nextLine() != "0"){
+                if (!in.nextLine().equals("0")){
                     autori[i].setDataMorte(LocalDate.parse(in.nextLine()));
                 }
                 System.out.print("\nInserisci sesso (M/F): ");
