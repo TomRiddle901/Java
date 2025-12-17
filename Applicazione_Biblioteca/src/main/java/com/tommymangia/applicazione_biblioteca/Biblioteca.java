@@ -49,15 +49,15 @@ public class Biblioteca {
             
             System.out.print("Titolo del libro: ");
             libri[i].setTitolo(in.nextLine());
-            System.out.print("\nISBN del libro: ");
+            System.out.print("ISBN del libro: ");
             libri[i].setIsbn(in.nextLine());
             libri[i].setAutore();
-            System.out.print("\nCopie del libro: ");
+            System.out.print("Copie del libro: ");
             libri[i].setProgressivo(Integer.parseInt(in.nextLine()));
             libri[i].setSala();
-            System.out.print("\nScaffale: ");
+            System.out.print("Scaffale: ");
             libri[i].setScaffale(Integer.parseInt(in.nextLine()));
-            System.out.print("\nRipiano: ");
+            System.out.print("Ripiano: ");
             libri[i].setRipiano(Integer.parseInt(in.nextLine()));
         } else{
             System.out.println("Libreria piena!");
@@ -79,14 +79,14 @@ public class Biblioteca {
             System.out.println("Numero tessera: " + i);
             System.out.println("Nome: ");
             soci[i].setNome(in.nextLine());
-            System.out.print("\nCognome: ");
+            System.out.print("Cognome: ");
             soci[i].setCognome(in.nextLine());
-            System.out.print("\nData di nascita (formato: AAAA-MM-GG): ");
+            System.out.print("Data di nascita (formato: AAAA-MM-GG): ");
             soci[i].setDataNascita(LocalDate.parse(in.nextLine()));
             soci[i].setSesso();
-            System.out.print("\nEmail: ");
+            System.out.print("Email: ");
             soci[i].setEmail(in.nextLine());
-            System.out.println("\nNumero di telefono: ");
+            System.out.println("Numero di telefono: ");
             soci[i].setNumeroTelefono(in.nextLine());
         }
     }
@@ -123,13 +123,13 @@ public class Biblioteca {
                 prestito[i].setSocio(soci[posSocio]);
                 
                 // Inserimento date inizio/scadenza prestito
-                System.out.print("\nData inizio (AAAA-MM-GG): ");
+                System.out.print("Data inizio (AAAA-MM-GG): ");
                 prestito[i].setDataInizio(LocalDate.parse(in.nextLine()));
-                System.out.print("\nData fine (AAAA-MM-GG): ");
+                System.out.print("Data fine (AAAA-MM-GG): ");
                 prestito[i].setDataFine(LocalDate.parse(in.nextLine()));
                 
                 // Ricerca e inserimento libro
-                System.out.print("\nISBN libro: ");
+                System.out.print("ISBN libro: ");
                 isbn = in.nextLine();
                 
                 while (k < 1000 && libri[k] != null){
@@ -176,7 +176,7 @@ public class Biblioteca {
         // Solo se il socio esiste si va avanti
         if (socioTrovato){
             // Ricerca libro
-            System.out.print("\nISBN libro: ");
+            System.out.print("ISBN libro: ");
             isbn = in.nextLine();
             
             for (int i = 0; i < 10000 && libri[i] != null; i++){

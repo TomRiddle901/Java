@@ -48,7 +48,7 @@ public class Libro {
         Scanner in = new Scanner(System.in);
         String input;
        
-        System.out.print("\nSala: ");
+        System.out.print("Sala: ");
         input = in.nextLine().toUpperCase();
         
         if (!input.isEmpty()){
@@ -77,15 +77,15 @@ public class Libro {
                 
                 System.out.print("Nome Autore: ");
                 autori[i].setNome(in.nextLine());
-                System.out.print("\nCognome autore: ");
+                System.out.print("Cognome autore: ");
                 autori[i].setCognome(in.nextLine());
-                System.out.print("\nData di nascita dell'autore (formato: AAAA-MM-GG): ");
+                System.out.print("Data di nascita dell'autore (formato: AAAA-MM-GG): ");
                 autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
-                System.out.println("\nInserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
+                System.out.println("Inserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
                 if (!in.nextLine().equals("0")){
                     autori[i].setDataMorte(LocalDate.parse(in.nextLine()));
                 }
-                System.out.print("\nInserisci sesso (M/F): ");
+                System.out.print("Inserisci sesso (M/F): ");
                 input = in.nextLine().toUpperCase();
             
                 if (input.equals("M") || input.equals("F")){                
