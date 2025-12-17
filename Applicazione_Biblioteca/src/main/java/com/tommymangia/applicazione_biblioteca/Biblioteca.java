@@ -32,7 +32,7 @@ public class Biblioteca {
         this.telefono = telefono;
         libri = new Libro[1000];
         prestito = new Prestiti[10000];
-        autori = new Autore[10000];
+        autori = null;
         soci = new Socio[10000];
     }
     
