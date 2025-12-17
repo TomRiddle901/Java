@@ -4,7 +4,6 @@
 
 package com.tommymangia.applicazione_biblioteca;
 
-import java.time.LocalDate;
 import java.util.Scanner;
 
 /**
