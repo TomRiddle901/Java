@@ -71,33 +71,40 @@ public class Libro {
         String input, dataMorteIn;
         int i = 0;
         
-        do{        
-            if (i < 1000){
-                autori[i] = new Autore();
-                
-                System.out.print("Nome Autore: ");
-                autori[i].setNome(in.nextLine());
-                System.out.print("Cognome autore: ");
-                autori[i].setCognome(in.nextLine());
-                System.out.print("Data di nascita dell'autore (formato: AAAA-MM-GG): ");
-                autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
-                System.out.print("Inserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
-                dataMorteIn = in.nextLine();
-                if (!dataMorteIn.equals("0")){
-                    autori[i].setDataMorte(LocalDate.parse(dataMorteIn));
-                }
-                System.out.print("Inserisci sesso (M/F): ");
+        while (i < 10) {
+            autori[i] = new Autore();
+
+            System.out.print("Nome Autore: ");
+            autori[i].setNome(in.nextLine());
+            System.out.print("Cognome autore: ");
+            autori[i].setCognome(in.nextLine());
+            System.out.print("Data di nascita dell'autore (formato: AAAA-MM-GG): ");
+            autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
+
+            System.out.print("Inserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
+            dataMorteIn = in.nextLine();
+            if (!dataMorteIn.equals("0")) {
+                autori[i].setDataMorte(LocalDate.parse(dataMorteIn));
+            }
+
+            System.out.print("Inserisci sesso (M/F): ");
+            input = in.nextLine().toUpperCase();
+            while (!input.equals("M") && !input.equals("F")) {
+                System.out.println("Sesso non valido! Inserisci M o F:");
                 input = in.nextLine().toUpperCase();
-            
-                if (input.equals("M") || input.equals("F")){                
-                    if (!input.isEmpty()){
-                        autori[i].setSesso(input.charAt(0));
-                    } else{
-                        System.out.println("Devi inserire il sesso!");
-                    }
+            }
+            autori[i].setSesso(input.charAt(0));
+
+            i++;
+
+            if (i < 10) {
+                System.out.print("Vuoi inserire un altro autore? (S/N): ");
+                String risposta = in.nextLine().toUpperCase();
+                if (!risposta.equals("S")) {
+                    i = 10; // esci dal ciclo se non vuole inserire altri autori
                 }
             }
-        } while (i < 10000 && autori[i] != null);
+    }
     }
 
     public String getIsbn() {
