@@ -68,7 +68,7 @@ public class Libro {
     
     public void setAutore(){
         Scanner in = new Scanner(System.in);
-        String input;
+        String input, dataMorteIn;
         int i = 0;
         
         do{        
@@ -82,8 +82,9 @@ public class Libro {
                 System.out.print("Data di nascita dell'autore (formato: AAAA-MM-GG): ");
                 autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
                 System.out.print("Inserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
-                if (!in.nextLine().equals("0")){
-                    autori[i].setDataMorte(LocalDate.parse(in.nextLine()));
+                dataMorteIn = in.nextLine();
+                if (!dataMorteIn.equals("0")){
+                    autori[i].setDataMorte(LocalDate.parse(dataMorteIn));
                 }
                 System.out.print("Inserisci sesso (M/F): ");
                 input = in.nextLine().toUpperCase();
