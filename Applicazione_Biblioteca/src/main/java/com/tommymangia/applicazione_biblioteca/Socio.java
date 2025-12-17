@@ -53,7 +53,7 @@ public class Socio {
         Scanner in = new Scanner(System.in);
         String input;
         
-        System.out.print("\nSesso: ");
+        System.out.print("Sesso: ");
         input = in.nextLine().toUpperCase();
         
         if (!input.isEmpty()){
