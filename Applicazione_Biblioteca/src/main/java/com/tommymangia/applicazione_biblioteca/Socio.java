@@ -72,4 +72,29 @@ public class Socio {
     public int getnTessera() {
         return nTessera;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCognome() {
+        return cognome;
+    }
+
+    public LocalDate getDataNascita() {
+        return dataNascita;
+    }
+
+    public char getSesso() {
+        return sesso;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getNumeroTelefono() {
+        return numeroTelefono;
+    }
+    
 }

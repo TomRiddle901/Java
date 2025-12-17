@@ -211,4 +211,23 @@ public class Biblioteca {
             }
         }
     }
+    
+    public void scaduti(){
+        System.out.println("Lista prestiti scaduti da più di 1 settimana: ");
+        
+        for (int i = 0; i < 10000 && prestito[i] != null; i++){
+            if (prestito[i].getDataFine().isBefore(LocalDate.now().minusWeeks(3)) &&
+                    !prestito[i].isRiconsegna()){
+                System.out.println("ID Socio: " + prestito[i].getSocio().getnTessera());
+                System.out.println("Nome: " + prestito[i].getSocio().getNome());
+                System.out.println("Cognome: " + prestito[i].getSocio().getCognome());
+                System.out.println("Numero di telefono: " + prestito[i].getSocio().getNumeroTelefono());
+                System.out.println("Email: " + prestito[i].getSocio().getEmail());
+                System.out.println("ISBN Libro: " + prestito[i].getLibriPrestati().getIsbn());
+                System.out.println("Titolo: " + prestito[i].getLibriPrestati().getTitolo());
+                System.out.println("Data inizio prestito: " + prestito[i].getDataInizio());
+                System.out.println("Data fine prestito: " + prestito[i].getDataFine());
+            }
+        }
+    }
 }
