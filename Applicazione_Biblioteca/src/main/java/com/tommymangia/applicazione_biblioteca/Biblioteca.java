@@ -232,7 +232,7 @@ public class Biblioteca {
                 System.out.println("ISBN Libro: " + prestito[i].getLibriPrestati().getIsbn());
                 System.out.println("Titolo: " + prestito[i].getLibriPrestati().getTitolo());
                 System.out.println("Data inizio prestito: " + prestito[i].getDataInizio());
-                System.out.println("Data fine prestito: " + prestito[i].getDataFine());
+                System.out.println("Data fine prestito: " + prestito[i].getDataFine() + "\n");
             }
         }
     }
