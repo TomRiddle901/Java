@@ -86,7 +86,7 @@ public class Biblioteca {
             soci[i].setSesso();
             System.out.print("Email: ");
             soci[i].setEmail(in.nextLine());
-            System.out.println("Numero di telefono: ");
+            System.out.print("Numero di telefono: ");
             soci[i].setNumeroTelefono(in.nextLine());
         }
     }
@@ -215,8 +215,8 @@ public class Biblioteca {
     public void scaduti(){
         System.out.println("Lista prestiti scaduti da più di 1 settimana: ");
         
-        for (int i = 0; i < 10000 && prestito[i] != null; i++){
-            if (prestito[i].getDataFine().isBefore(LocalDate.now().minusWeeks(3)) &&
+        for (int i = 0; i < 10000; i++){
+            if (prestito[i] != null && prestito[i].getDataFine().isBefore(LocalDate.now().minusWeeks(3)) &&
                     !prestito[i].isRiconsegna()){
                 System.out.println("ID Socio: " + prestito[i].getSocio().getnTessera());
                 System.out.println("Nome: " + prestito[i].getSocio().getNome());
