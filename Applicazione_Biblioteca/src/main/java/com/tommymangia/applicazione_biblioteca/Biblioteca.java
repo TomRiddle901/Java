@@ -5,6 +5,7 @@
 package com.tommymangia.applicazione_biblioteca;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
 /**
@@ -123,10 +124,15 @@ public class Biblioteca {
                 prestito[i].setSocio(soci[posSocio]);
                 
                 // Inserimento date inizio/scadenza prestito
-                System.out.print("Data inizio (AAAA-MM-GG): ");
-                prestito[i].setDataInizio(LocalDate.parse(in.nextLine()));
-                System.out.print("Data fine (AAAA-MM-GG): ");
-                prestito[i].setDataFine(LocalDate.parse(in.nextLine()));
+                try {
+                    System.out.print("Data inizio (AAAA-MM-GG): ");
+                    prestito[i].setDataInizio(LocalDate.parse(in.nextLine()));
+                    System.out.print("Data fine (AAAA-MM-GG): ");
+                    prestito[i].setDataFine(LocalDate.parse(in.nextLine()));
+                } catch (DateTimeParseException ex){
+                    System.err.println("Errore, data non valida! " + ex.getMessage());                    
+                }
+                
                 
                 // Ricerca e inserimento libro
                 System.out.print("ISBN libro: ");
@@ -216,7 +222,7 @@ public class Biblioteca {
         System.out.println("Lista prestiti scaduti da più di 1 settimana: ");
         
         for (int i = 0; i < 10000; i++){
-            if (prestito[i] != null && prestito[i].getDataFine().isBefore(LocalDate.now().minusWeeks(3)) &&
+            if (prestito[i] != null && prestito[i].getDataFine().isBefore(LocalDate.now().minusWeeks(1)) &&
                     !prestito[i].isRiconsegna()){
                 System.out.println("ID Socio: " + prestito[i].getSocio().getnTessera());
                 System.out.println("Nome: " + prestito[i].getSocio().getNome());
