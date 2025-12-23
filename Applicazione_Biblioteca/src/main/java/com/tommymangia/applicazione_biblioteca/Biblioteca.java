@@ -203,8 +203,8 @@ public class Biblioteca {
         LocalDate limite = LocalDate.now().minusYears(3);
         System.out.println("Eliminazione dei prestiti scaduti...");
         
-        for (int i = 0; i < 10000 && prestito[i] != null; i++){
-            if (prestito[i].getDataFine().isBefore(limite) &&
+        for (int i = 0; i < 10000; i++){
+            if (prestito[i] != null && prestito[i].getDataFine().isBefore(limite) &&
                     prestito[i].isRiconsegna()){
                 
                 prestito[i] = null;
