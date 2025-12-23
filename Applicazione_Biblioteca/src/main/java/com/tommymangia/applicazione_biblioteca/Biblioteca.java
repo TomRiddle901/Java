@@ -232,17 +232,17 @@ public class Biblioteca {
     }
     
     public void visualizzaPrestiti(){
-        // Trovo quanti prestiti ci sono nell'array
+        // Creo un array temporaneo
+        Prestiti[] temp = new Prestiti[prestito.length];
         int c = 0;
-        for (int i = 0; i < 10000 && prestito[i] != null; i++){
-            c++;
+        
+        for (int  i = 0; i < prestito.length; i++){
+            if (prestito[i] != null){
+                temp[c++] = prestito[i];
+            }
         }
         
-        // Creo un array temporaneo
-        Prestiti[] temp = prestito.clone();
-        
-        // Metto in ordine l'array
-        for (int i = 0; i < c; i++){
+        for (int i = 0; i < c - 1; i++){
             for (int j = 0; j < c - i - 1; j++){
                 if (temp[j].getDataInizio().isAfter(temp[j + 1].getDataInizio())){
                     Prestiti t = temp[j];
@@ -253,19 +253,24 @@ public class Biblioteca {
         }
         
         // Stampo i prestiti
-        for (int i = 0; i < 10000 && temp[i] != null; i++){
-            System.out.println("ID socio: " + temp[i].getSocio().getnTessera());
-            System.out.println("Nome: " + temp[i].getSocio().getNome());
-            System.out.println("Cognome: " + temp[i].getSocio().getCognome());
-            System.out.println("ISBN libro: " + temp[i].getLibriPrestati().getIsbn());
-            System.out.println("Titolo libro: " + temp[i].getLibriPrestati().getTitolo());
-            System.out.println("Data inizio prestito: " + temp[i].getDataInizio());
-            System.out.println("Data fine prestito: " + temp[i].getDataFine());
-            if (temp[i].isRiconsegna()){
-                System.out.println("Riconsegnato");                
-            } else{
-                System.out.println("Da restituire");
-            }
+        try{
+            for (int i = 0; i < c; i++){
+                System.out.println("ID socio: " + temp[i].getSocio().getnTessera());
+                System.out.println("Nome: " + temp[i].getSocio().getNome());
+                System.out.println("Cognome: " + temp[i].getSocio().getCognome());
+                System.out.println("ISBN libro: " + temp[i].getLibriPrestati().getIsbn());
+                System.out.println("Titolo libro: " + temp[i].getLibriPrestati().getTitolo());
+                System.out.println("Data inizio prestito: " + temp[i].getDataInizio());
+                System.out.println("Data fine prestito: " + temp[i].getDataFine());
+                if (temp[i].isRiconsegna()){
+                    System.out.println("Riconsegnato");                
+                } else{
+                    System.out.println("Da restituire");
+                }
+            } 
+        } catch (ArrayIndexOutOfBoundsException ex) {
+            System.err.println("La lunghezza dell'array non corrisponde: " + ex.getMessage());
         }
+        
     }
 }
