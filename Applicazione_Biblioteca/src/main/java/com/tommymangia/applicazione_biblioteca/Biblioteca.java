@@ -232,16 +232,16 @@ public class Biblioteca {
     }
     
     public void visualizzaPrestiti(){
+        // Trovo quanti prestiti ci sono nell'array
         int c = 0;
         for (int i = 0; i < 10000 && prestito[i] != null; i++){
             c++;
         }
         
-        Prestiti[] temp = new Prestiti[c];
-        for (int i = 0; i < c; i++){
-            temp[i] = prestito[i];
-        }
+        // Creo un array temporaneo
+        Prestiti[] temp = prestito.clone();
         
+        // Metto in ordine l'array
         for (int i = 0; i < c; i++){
             for (int j = 0; j < c - i - 1; j++){
                 if (temp[j].getDataInizio().isAfter(temp[j + 1].getDataInizio())){
@@ -252,6 +252,7 @@ public class Biblioteca {
             }
         }
         
+        // Stampo i prestiti
         for (int i = 0; i < 10000 && temp[i] != null; i++){
             System.out.println("ID socio: " + temp[i].getSocio().getnTessera());
             System.out.println("Nome: " + temp[i].getSocio().getNome());
