@@ -72,15 +72,17 @@ public class Libro {
         String input, dataMorteIn;
         int i = 0;
         
-        while (i < 10) {
-            autori[i] = new Autore();
+        try {
             
-            System.out.print("Nome Autore: ");
-            autori[i].setNome(in.nextLine());
-            System.out.print("Cognome autore: ");
-            autori[i].setCognome(in.nextLine());
+            while (i < 10) {
+                autori[i] = new Autore();
             
-            try {
+                System.out.print("Nome Autore: ");
+                autori[i].setNome(in.nextLine());
+                System.out.print("Cognome autore: ");
+                autori[i].setCognome(in.nextLine());
+            
+            
                 System.out.print("Data di nascita dell'autore (formato: AAAA-MM-GG): ");
                 autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
                 System.out.print("Inserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
@@ -88,28 +90,27 @@ public class Libro {
                 if (!dataMorteIn.equals("0")) {
                     autori[i].setDataMorte(LocalDate.parse(dataMorteIn));
                 }   
-            } catch (DateTimeParseException ex) {
-                System.err.println("Errore, data non valida! " + ex.getMessage());
-            }
             
-            System.out.print("Inserisci sesso (M/F): ");
-            input = in.nextLine().toUpperCase();
-            while (!input.equals("M") && !input.equals("F")) {
-                System.out.println("Sesso non valido! Inserisci M o F:");
+                System.out.print("Inserisci sesso (M/F): ");
                 input = in.nextLine().toUpperCase();
-            }
-            autori[i].setSesso(input.charAt(0));
+                while (!input.equals("M") && !input.equals("F")) {
+                    System.out.println("Sesso non valido! Inserisci M o F:");
+                    input = in.nextLine().toUpperCase();
+                }
+                autori[i].setSesso(input.charAt(0));
+                i++;
 
-            i++;
-
-            if (i < 10) {
-                System.out.print("Vuoi inserire un altro autore? (S/N): ");
-                String risposta = in.nextLine().toUpperCase();
-                if (!risposta.equals("S")) {
-                    i = 10; // esci dal ciclo se non vuole inserire altri autori
+                if (i < 10) {
+                    System.out.print("Vuoi inserire un altro autore? (S/N): ");
+                    String risposta = in.nextLine().toUpperCase();
+                    if (!risposta.equals("S")) {
+                        i = 10; // esci dal ciclo se non vuole inserire altri autori
+                    }
                 }
             }
-    }
+        } catch (DateTimeParseException ex) {
+            System.err.println("Errore, data non valida! " + ex.getMessage());
+        }
     }
 
     public String getIsbn() {
