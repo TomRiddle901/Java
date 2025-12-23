@@ -97,69 +97,69 @@ public class Biblioteca {
         int i = 0, j = 0, k = 0, idSocio, posSocio = -1, posLibro = -1;
         String isbn;
         
-        // Ricerca posizione libera per il prestito
-        while (i < 10000 && prestito[i] != null){
-            i++;
-        }
-        
-        // Condizione esistenza posizione prestito
-        if (i < 10000){
-            // Ricerca socio
-            System.out.print("ID Tessera: ");
-            idSocio = Integer.parseInt(in.nextLine());
-            
-            while (j < 10000 && soci[j] != null){
-                if (soci[j].getnTessera() == idSocio){
-                    posSocio = j;
-                }
-                j++;
+        try{
+            // Ricerca posizione libera per il prestito
+            while (i < 10000 && prestito[i] != null){
+                i++;
             }
+        
+            // Condizione esistenza posizione prestito
+            if (i < 10000){
+                // Ricerca socio
+                System.out.print("ID Tessera: ");
+                idSocio = Integer.parseInt(in.nextLine());
             
-            // Codizione esistenza socio
-            if (posSocio != -1){
-                // Creazione prestito
-                prestito[i] = new Prestiti();
+                while (j < 10000 && soci[j] != null){
+                    if (soci[j].getnTessera() == idSocio){
+                        posSocio = j;
+                    }
+                    j++;
+                }
+            
+                // Codizione esistenza socio
+                if (posSocio != -1){
+                    // Creazione prestito
+                    prestito[i] = new Prestiti();
                 
-                // Inserimento socio
-                prestito[i].setSocio(soci[posSocio]);
+                    // Inserimento socio
+                    prestito[i].setSocio(soci[posSocio]);
                 
-                // Inserimento date inizio/scadenza prestito
-                try {
+                    // Inserimento date inizio/scadenza prestito
+               
                     System.out.print("Data inizio (AAAA-MM-GG): ");
                     prestito[i].setDataInizio(LocalDate.parse(in.nextLine()));
                     System.out.print("Data fine (AAAA-MM-GG): ");
                     prestito[i].setDataFine(LocalDate.parse(in.nextLine()));
-                } catch (DateTimeParseException ex){
-                    System.err.println("Errore, data non valida! " + ex.getMessage());                    
-                }
                 
+                    // Ricerca e inserimento libro
+                    System.out.print("ISBN libro: ");
+                    isbn = in.nextLine();
                 
-                // Ricerca e inserimento libro
-                System.out.print("ISBN libro: ");
-                isbn = in.nextLine();
-                
-                while (k < 1000 && libri[k] != null){
-                    if (libri[k].getIsbn().equals(isbn)){
-                        posLibro = k;
+                    while (k < 1000 && libri[k] != null){
+                        if (libri[k].getIsbn().equals(isbn)){
+                            posLibro = k;
+                        }
+                        k++;
                     }
-                    k++;
-                }
                 
-                if (posLibro != -1){
-                    prestito[i].setLibriPrestati(libri[posLibro]);
+                    if (posLibro != -1){
+                        prestito[i].setLibriPrestati(libri[posLibro]);
                     
-                    // Riconsegna false perché è consegna
-                    prestito[i].setRiconsegna(false);
+                        // Riconsegna false perché è consegna
+                        prestito[i].setRiconsegna(false);
                     
-                    System.out.println("Prestito aggiunto correttamente!");
+                        System.out.println("Prestito aggiunto correttamente!");
+                    } else{
+                        System.out.println("Libro inesistente!");
+                    }
                 } else{
-                    System.out.println("Libro inesistente!");
+                    System.out.println("Socio inesistente!");
                 }
             } else{
-                System.out.println("Socio inesistente!");
+                System.out.println("Limite massimo di prestiti raggiunto!");
             }
-        } else{
-            System.out.println("Limite massimo di prestiti raggiunto!");
+        } catch (DateTimeParseException ex) {
+            System.err.println("Errore, data non valida!" + ex.getMessage());
         }
     }
     
