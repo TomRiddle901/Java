@@ -5,6 +5,7 @@
 package com.tommymangia.applicazione_biblioteca;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
 /**
@@ -73,20 +74,24 @@ public class Libro {
         
         while (i < 10) {
             autori[i] = new Autore();
-
+            
             System.out.print("Nome Autore: ");
             autori[i].setNome(in.nextLine());
             System.out.print("Cognome autore: ");
             autori[i].setCognome(in.nextLine());
-            System.out.print("Data di nascita dell'autore (formato: AAAA-MM-GG): ");
-            autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
-
-            System.out.print("Inserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
-            dataMorteIn = in.nextLine();
-            if (!dataMorteIn.equals("0")) {
-                autori[i].setDataMorte(LocalDate.parse(dataMorteIn));
+            
+            try {
+                System.out.print("Data di nascita dell'autore (formato: AAAA-MM-GG): ");
+                autori[i].setDataNascita(LocalDate.parse(in.nextLine()));
+                System.out.print("Inserisci la data di morte (0 per vivo, formato: AAAA-MM-GG): ");
+                dataMorteIn = in.nextLine();
+                if (!dataMorteIn.equals("0")) {
+                    autori[i].setDataMorte(LocalDate.parse(dataMorteIn));
+                }   
+            } catch (DateTimeParseException ex) {
+                System.err.println("Errore, data non valida! " + ex.getMessage());
             }
-
+            
             System.out.print("Inserisci sesso (M/F): ");
             input = in.nextLine().toUpperCase();
             while (!input.equals("M") && !input.equals("F")) {
