@@ -38,6 +38,6 @@ java Main
 (Sostituisci *Main* con il nome della classe con metodo *main* corretta presente nel progetto)
 ### Licenza
 Il codice è distribuito **senza una licenza** esplicitamente definita.
-Se desideri usarlo a fini personali o didattici, puoi copiarlo o modificarlo.Il codice è distribuito **senza una licenza** esplicitamente definita.
+Se desideri usarlo a fini personali o didattici, puoi copiarlo o modificarlo.
 L'assenza di una licenza limita l'uso a scopi personali o didattici, non commerciali.
 Se desideri usarlo a fini personali o didattici, puoi copiarlo o modificarlo, ma non è consentito l'uso commerciale senza autorizzazione esplicita.
