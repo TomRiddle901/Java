@@ -70,4 +70,14 @@ public class Esercizio_recupero_1 {
         
         sim = new Sim(nome, cognome, numeroTelefono, credito);
     }
+    
+    private static void aggiungiChiamata(){
+        Scanner in = new Scanner(System.in);
+        String numeroTelefonoChiamato;
+        
+        System.out.print("Numero di telefono chiamato: ");
+        numeroTelefonoChiamato = in.nextLine();
+        
+        sim.inserisciTelefonata(numeroTelefonoChiamato);
+    }
 }
