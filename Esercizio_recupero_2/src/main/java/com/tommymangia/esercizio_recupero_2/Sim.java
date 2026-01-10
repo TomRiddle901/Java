@@ -4,6 +4,8 @@
  */
 package com.tommymangia.esercizio_recupero_2;
 
+import java.time.LocalTime;
+
 /**
  *
  * @author tommaso
@@ -13,7 +15,7 @@ public class Sim {
     private String nome;
     private String cognome;
     private String numeroTelefono;
-    private String[] listaTelefonate;
+    private Chiamate[] listaTelefonate;
     private float credito;
     
     // Costruttori
@@ -22,10 +24,10 @@ public class Sim {
         this.cognome = cognome;
         this.numeroTelefono = numeroTelefono;
         this.credito = credito;
-        listaTelefonate = new String[100];
+        listaTelefonate = new Chiamate[100];
     }
     
-    public boolean inserisciTelefonata(String numeroChiamato){
+    public boolean inserisciTelefonata(String numeroChiamato, LocalTime durataChiamata){
         int i = 0;
         
         while (i < 100 && listaTelefonate[i] != null){
@@ -33,11 +35,12 @@ public class Sim {
         }
         
         if (i < 100){
-            listaTelefonate[i] = numeroChiamato;
+            listaTelefonate[i] = new Chiamate(numeroChiamato, durataChiamata);
             return true;
         } else{
             return false;
         }
+        
     }
     
     public String toString(){
@@ -53,5 +56,19 @@ public class Sim {
         }
         
         return output;
+    }
+    
+    public LocalTime tempoConversazioneTotale(){
+        int i = 0;
+        LocalTime durataTotale = LocalTime.of(0, 0, 0);
+        
+        while (listaTelefonate[i] != null && i < 100){
+            durataTotale = durataTotale.plusSeconds(listaTelefonate[i].getDurata().getSecond());
+            durataTotale = durataTotale.plusMinutes(listaTelefonate[i].getDurata().getMinute());
+            durataTotale = durataTotale.plusHours(listaTelefonate[i].getDurata().getHour());
+            i++;
+        }
+
+        return durataTotale;
     }
 }
