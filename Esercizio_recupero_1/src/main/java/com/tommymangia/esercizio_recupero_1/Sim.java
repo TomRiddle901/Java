@@ -9,5 +9,12 @@ package com.tommymangia.esercizio_recupero_1;
  * @author tommaso
  */
 public class Sim {
+    // Attributi
+    private String nome;
+    private String cognome;
+    private String numeroTelefono;
+    private String[] listaTelefonate;
+    private float credito;
+    
     
 }
