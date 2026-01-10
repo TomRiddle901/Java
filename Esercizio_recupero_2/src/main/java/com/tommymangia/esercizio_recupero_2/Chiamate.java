@@ -20,4 +20,12 @@ public class Chiamate {
         this.numeroTelefono = numeroChiamato;
         this.durata = durataChiamata;
     }
+    
+    public String getNumeroChiamato(){
+        return numeroTelefono;
+    }
+    
+    public LocalTime getDurata(){
+        return durata;
+    }
 }
