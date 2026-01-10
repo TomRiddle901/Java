@@ -44,7 +44,7 @@ public class Sim {
         String output;
         
         output = "Nome utente: " + nome + "\nCognome utente: " + cognome + "\nNumero di telefono: " + numeroTelefono +
-                 "\nCredito: " + credito + "\nLista chiamate effettuate:";
+                 "\nCredito: €" + credito + "\nLista chiamate effettuate:";
         
         for (int i = 0; i < 100; i++){
             if (listaTelefonate[i] != null){
