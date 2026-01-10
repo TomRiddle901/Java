@@ -71,4 +71,21 @@ public class Sim {
 
         return durataTotale;
     }
+    
+    public LocalTime tempoConversazioneUtente(String numero){
+        LocalTime durata = LocalTime.of(0, 0, 0);
+        int i = 0;
+        
+        while (listaTelefonate[i] != null && i < 100){
+            if (listaTelefonate[i].getNumeroChiamato() == numero){
+                durata = durata.plusSeconds(listaTelefonate[i].getDurata().getSecond());
+                durata = durata.plusMinutes(listaTelefonate[i].getDurata().getMinute());
+                durata = durata.plusHours(listaTelefonate[i].getDurata().getHour());
+            }
+            
+            i++;
+        }
+        
+        return durata;
+    }
 }
