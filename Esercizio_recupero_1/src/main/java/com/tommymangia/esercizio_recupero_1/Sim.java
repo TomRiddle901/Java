@@ -16,5 +16,13 @@ public class Sim {
     private String[] listaTelefonate;
     private float credito;
     
+    // Costruttori
+    public Sim(String nome, String cognome, String numeroTelefono, float credito) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.numeroTelefono = numeroTelefono;
+        this.credito = credito;
+    }
+    
     
 }
