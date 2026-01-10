@@ -22,7 +22,21 @@ public class Sim {
         this.cognome = cognome;
         this.numeroTelefono = numeroTelefono;
         this.credito = credito;
+        listaTelefonate = new String[100];
     }
     
-    
+    public boolean inserisciTelefonata(String numeroChiamato){
+        int i = 0;
+        
+        while (i < 100 && listaTelefonate[i] != null){
+            i++;
+        }
+        
+        if (i < 100){
+            listaTelefonate[i] = numeroChiamato;
+            return true;
+        } else{
+            return false;
+        }
+    }
 }
