@@ -78,6 +78,15 @@ public class Esercizio_recupero_1 {
         System.out.print("Numero di telefono chiamato: ");
         numeroTelefonoChiamato = in.nextLine();
         
-        sim.inserisciTelefonata(numeroTelefonoChiamato);
+        if (sim.inserisciTelefonata(numeroTelefonoChiamato)){
+            System.out.println("Telefonata aggiunta correttamente");
+        } else{
+            System.out.println("Errore: Impossibile aggiungere la telefonata");
+        }
+    }
+    
+    private static void visualizzaDettagli(){
+        System.out.println("Dettagli SIM:");
+        System.out.println(sim.toString());
     }
 }
