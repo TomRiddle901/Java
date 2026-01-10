@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Esercizio_recupero_1 {
 
-    private Sim sim;
+    private static Sim sim;
     
     public static void main(String[] args){
         int scelta;
@@ -49,8 +49,25 @@ public class Esercizio_recupero_1 {
         System.out.println("3) Visualizza dettagli SIM");
         System.out.println("0) Esci");
         System.out.print("Scelta: ");
-        scelta = in.nextInt();
+        scelta = in.nextInt(); // Input viene trasformato in int senza fare parseInt()
         
         return scelta;
+    }
+    
+    private static void aggiungiSim(){
+        Scanner in = new Scanner(System.in);
+        String nome, cognome, numeroTelefono;
+        float credito;
+        
+        System.out.print("Nome: ");
+        nome = in.nextLine();
+        System.out.print("Cognome: ");
+        cognome = in.nextLine();
+        System.out.print("Numero di telefono: ");
+        numeroTelefono = in.nextLine();
+        System.out.print("Credito: ");
+        credito = in.nextFloat(); // Input viene trasformato in float senza fare parseFloat()
+        
+        sim = new Sim(nome, cognome, numeroTelefono, credito);
     }
 }
