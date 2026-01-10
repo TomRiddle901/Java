@@ -15,10 +15,31 @@ public class Esercizio_recupero_1 {
     private Sim sim;
     
     public static void main(String[] args){
+        int scelta;
         
+        do{
+            scelta = menu();
+            
+            switch(scelta){
+                case 1:
+                    aggiungiSim();
+                    break;
+                case 2:
+                    aggiungiChiamata();
+                    break;
+                case 3:
+                    visualizzaDettagli();
+                    break;
+                case 0:
+                    System.out.println("Uscita dal programma in corso...");
+                    break;
+                default:
+                    System.out.println("Errore: Scelta non valida!");
+            }
+        } while(scelta != 0);
     }
     
-    private int menu(){
+    private static int menu(){
         Scanner in = new Scanner(System.in);
         int scelta;
         
