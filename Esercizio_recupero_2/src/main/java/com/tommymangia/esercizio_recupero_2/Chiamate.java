@@ -30,6 +30,6 @@ public class Chiamate {
     }
     
     public String toString(){
-        return numeroTelefono + "      " + durata;
+        return "|" + numeroTelefono + "      |  " + durata + "       |";
     }
 }

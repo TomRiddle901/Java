@@ -46,8 +46,8 @@ public class Sim {
     public String toString(){
         String output;
         
-        output = "Nome utente: " + nome + "\nCognome utente: " + cognome + "\nNumero di telefono: " + numeroTelefono +
-                 "\nCredito: €" + credito + "\nLista chiamate effettuate:" + "\nNumero di telefono     Durata chiamata";
+        output = "|Nome utente: " + nome + "\n|Cognome utente: " + cognome + "\n|Numero di telefono: " + numeroTelefono +
+                 "\n|Credito: €" + credito + "\n|Lista chiamate effettuate:" + "\n|Numero di telefono  |  Durata chiamata|";
         
         for (int i = 0; i < 100; i++){
             if (listaTelefonate[i] != null){
