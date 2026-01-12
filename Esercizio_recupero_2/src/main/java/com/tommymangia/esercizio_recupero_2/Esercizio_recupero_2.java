@@ -5,6 +5,7 @@
 package com.tommymangia.esercizio_recupero_2;
 
 import java.util.Scanner;
+import java.time.LocalTime;
 
 /**
  *
@@ -74,14 +75,17 @@ public class Esercizio_recupero_2 {
     private static void aggiungiChiamata(){
         Scanner in = new Scanner(System.in);
         String numeroTelefonoChiamato;
+        LocalTime durataConversazione;
         
         System.out.print("Numero di telefono chiamato: ");
         numeroTelefonoChiamato = in.nextLine();
+        System.out.print("Durata conversazione (hh:mm:ss): ");
+        durataConversazione = LocalTime.parse(in.nextLine());
         
-        if (sim.inserisciTelefonata(numeroTelefonoChiamato)){
-            System.out.println("Telefonata aggiunta correttamente");
+        if (sim.inserisciTelefonata(numeroTelefonoChiamato, durataConversazione)){
+            System.out.println("Chiamata aggiunta correttamente!");
         } else{
-            System.out.println("Errore: Impossibile aggiungere la telefonata");
+            System.out.println("Errore: impossibile aggiungere chiamata!");
         }
     }
     
