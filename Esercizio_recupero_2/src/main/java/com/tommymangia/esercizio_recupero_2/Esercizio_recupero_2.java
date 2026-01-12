@@ -50,14 +50,14 @@ public class Esercizio_recupero_2 {
         Scanner in = new Scanner(System.in);
         int scelta;
         
-        System.out.println("+------Menù------+");
-        System.out.println("1) Aggiungi SIM");
-        System.out.println("2) Aggiungi chiamata");
-        System.out.println("3) Tempo totale chiamate");
-        System.out.println("4) Tempo conversazione");
-        System.out.println("5) Visualizza dettagli SIM");
-        System.out.println("0) Esci");
-        System.out.print("Scelta: ");
+        System.out.println("+-----------Menù-----------+");
+        System.out.println("|1) Aggiungi SIM           |");
+        System.out.println("|2) Aggiungi chiamata      |");
+        System.out.println("|3) Tempo totale chiamate  |");
+        System.out.println("|4) Tempo conversazione    |");
+        System.out.println("|5) Visualizza dettagli SIM|");
+        System.out.println("|0) Esci");
+        System.out.print("|Scelta: ");
         scelta = in.nextInt(); // Input viene trasformato in int senza fare parseInt()
         
         return scelta;
@@ -68,14 +68,15 @@ public class Esercizio_recupero_2 {
         String nome, cognome, numeroTelefono;
         float credito;
         
-        System.out.print("Nome: ");
+        System.out.print("|Nome: ");
         nome = in.nextLine();
-        System.out.print("Cognome: ");
+        System.out.print("|Cognome: ");
         cognome = in.nextLine();
-        System.out.print("Numero di telefono: ");
+        System.out.print("|Numero di telefono: ");
         numeroTelefono = in.nextLine();
-        System.out.print("Credito: ");
+        System.out.print("|Credito: ");
         credito = in.nextFloat(); // Input viene trasformato in float senza fare parseFloat()
+        System.out.println("+--------------------------+");
         
         sim = new Sim(nome, cognome, numeroTelefono, credito);
     }
@@ -85,36 +86,41 @@ public class Esercizio_recupero_2 {
         String numeroTelefonoChiamato;
         LocalTime durataConversazione;
         
-        System.out.print("Numero di telefono chiamato: ");
+        System.out.print("|Numero di telefono chiamato: ");
         numeroTelefonoChiamato = in.nextLine();
-        System.out.print("Durata conversazione (hh:mm:ss): ");
+        System.out.print("|Durata conversazione (hh:mm:ss): ");
         durataConversazione = LocalTime.parse(in.nextLine());
         
         if (sim.inserisciTelefonata(numeroTelefonoChiamato, durataConversazione)){
-            System.out.println("Chiamata aggiunta correttamente!");
+            System.out.println("|Chiamata aggiunta correttamente!|");
+            System.out.println("+--------------------------------+");
         } else{
-            System.out.println("Errore: impossibile aggiungere chiamata!");
+            System.out.println("|Errore: impossibile aggiungere chiamata!|");
+            System.out.println("+----------------------------------------+");
         }
     }
     
     private static void totaleTempoConversazione(){
-        System.out.println("Tempo totale chiamate: " + sim.tempoConversazioneTotale());
+        System.out.println("|Tempo totale chiamate: " + sim.tempoConversazioneTotale() + "|");
+        System.out.println("+-------------------------------+");
     }
     
     private static void tempoConversazione(){
         Scanner in = new Scanner(System.in);
         String numeroTelefonoChiamato;
         
-        System.out.print("Numero di telefono chiamato: ");
+        System.out.print("|Numero di telefono chiamato: ");
         numeroTelefonoChiamato = in.nextLine();
         
-        System.out.println("Durata conversazione con il numero " + numeroTelefonoChiamato + ":");
-        System.out.println(sim.tempoConversazioneUtente(numeroTelefonoChiamato));
+        System.out.println("|Durata conversazione con il numero " + numeroTelefonoChiamato + ":|");
+        System.out.println("|" + sim.tempoConversazioneUtente(numeroTelefonoChiamato) + "                                          |");
+        System.out.println("+-------------------------------------------------+");
         
     }
     
     private static void visualizzaDettagli(){
-        System.out.println("Dettagli SIM:");
+        System.out.println("|Dettagli SIM:");
         System.out.println(sim.toString());
+        System.out.println("+--------------------------------------+");
     }
 }
