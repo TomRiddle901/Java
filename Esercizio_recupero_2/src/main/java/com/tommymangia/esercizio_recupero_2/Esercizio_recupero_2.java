@@ -89,6 +89,10 @@ public class Esercizio_recupero_2 {
         }
     }
     
+    private static void totaleTempoConversazione(){
+        System.out.println("Tempo totale chiamate: " + sim.tempoConversazioneTotale());
+    }
+    
     private static void visualizzaDettagli(){
         System.out.println("Dettagli SIM:");
         System.out.println(sim.toString());
