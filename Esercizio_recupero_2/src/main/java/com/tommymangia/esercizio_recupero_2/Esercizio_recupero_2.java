@@ -29,6 +29,12 @@ public class Esercizio_recupero_2 {
                     aggiungiChiamata();
                     break;
                 case 3:
+                    totaleTempoConversazione();
+                    break;
+                case 4:
+                    tempoConversazione();
+                    break;
+                case 5:
                     visualizzaDettagli();
                     break;
                 case 0:
@@ -47,7 +53,9 @@ public class Esercizio_recupero_2 {
         System.out.println("+------Menù------+");
         System.out.println("1) Aggiungi SIM");
         System.out.println("2) Aggiungi chiamata");
-        System.out.println("3) Visualizza dettagli SIM");
+        System.out.println("3) Tempo totale chiamate");
+        System.out.println("4) Tempo conversazione");
+        System.out.println("5) Visualizza dettagli SIM");
         System.out.println("0) Esci");
         System.out.print("Scelta: ");
         scelta = in.nextInt(); // Input viene trasformato in int senza fare parseInt()
@@ -93,7 +101,7 @@ public class Esercizio_recupero_2 {
         System.out.println("Tempo totale chiamate: " + sim.tempoConversazioneTotale());
     }
     
-    private static void tempoxConversazione(){
+    private static void tempoConversazione(){
         Scanner in = new Scanner(System.in);
         String numeroTelefonoChiamato;
         
