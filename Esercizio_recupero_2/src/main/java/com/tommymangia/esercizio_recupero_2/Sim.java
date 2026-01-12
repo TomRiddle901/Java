@@ -47,11 +47,11 @@ public class Sim {
         String output;
         
         output = "Nome utente: " + nome + "\nCognome utente: " + cognome + "\nNumero di telefono: " + numeroTelefono +
-                 "\nCredito: €" + credito + "\nLista chiamate effettuate:";
+                 "\nCredito: €" + credito + "\nLista chiamate effettuate:" + "\nNumero di telefono     Durata chiamata";
         
         for (int i = 0; i < 100; i++){
             if (listaTelefonate[i] != null){
-                output += "\n" + listaTelefonate[i];
+                output += "\n" + listaTelefonate[i].toString();
             }
         }
         
@@ -77,7 +77,7 @@ public class Sim {
         int i = 0;
         
         while (listaTelefonate[i] != null && i < 100){
-            if (listaTelefonate[i].getNumeroChiamato().equals(nome)){
+            if (listaTelefonate[i].getNumeroChiamato().equals(numero)){
                 durata = durata.plusSeconds(listaTelefonate[i].getDurata().getSecond());
                 durata = durata.plusMinutes(listaTelefonate[i].getDurata().getMinute());
                 durata = durata.plusHours(listaTelefonate[i].getDurata().getHour());

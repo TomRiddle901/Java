@@ -28,4 +28,8 @@ public class Chiamate {
     public LocalTime getDurata(){
         return durata;
     }
+    
+    public String toString(){
+        return numeroTelefono + "      " + durata;
+    }
 }
