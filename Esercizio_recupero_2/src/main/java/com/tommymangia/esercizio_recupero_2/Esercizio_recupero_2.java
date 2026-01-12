@@ -93,6 +93,18 @@ public class Esercizio_recupero_2 {
         System.out.println("Tempo totale chiamate: " + sim.tempoConversazioneTotale());
     }
     
+    private static void tempoxConversazione(){
+        Scanner in = new Scanner(System.in);
+        String numeroTelefonoChiamato;
+        
+        System.out.print("Numero di telefono chiamato: ");
+        numeroTelefonoChiamato = in.nextLine();
+        
+        System.out.println("Durata conversazione con il numero " + numeroTelefonoChiamato + ":");
+        System.out.println(sim.tempoConversazioneUtente(numeroTelefonoChiamato));
+        
+    }
+    
     private static void visualizzaDettagli(){
         System.out.println("Dettagli SIM:");
         System.out.println(sim.toString());
