@@ -77,7 +77,7 @@ public class Sim {
         int i = 0;
         
         while (listaTelefonate[i] != null && i < 100){
-            if (listaTelefonate[i].getNumeroChiamato() == numero){
+            if (listaTelefonate[i].getNumeroChiamato().equals(nome)){
                 durata = durata.plusSeconds(listaTelefonate[i].getDurata().getSecond());
                 durata = durata.plusMinutes(listaTelefonate[i].getDurata().getMinute());
                 durata = durata.plusHours(listaTelefonate[i].getDurata().getHour());
