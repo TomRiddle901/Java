@@ -37,4 +37,8 @@ public class Ricetta {
             ingredienti[i] = new Ingrediente(nomeIngrediente, quantitaIngrediente, unitaMisuraIngrediente, allergene);
         }
     }
+    
+    public void setImmagine(String percorsoImmagine){
+        pathImmagine = percorsoImmagine;
+    }
 }
