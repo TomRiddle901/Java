@@ -18,11 +18,23 @@ public class Ricetta {
     private String pathImmagine;
     
     // Costruttore
-    public Ricetta(String nome, LocalTime tempoPreparazione){
+    public Ricetta(String nome, LocalTime tempoPreparazione, String descrizionePreparazione, String pathImmagine){
         this.nomeRicetta = nome;
         this.tempoPreparazione = tempoPreparazione;
         ingredienti = new Ingrediente[64];
-        pathImmagine = null;
-        descrizionePreparazione = null;
+        this.descrizionePreparazione = descrizionePreparazione;
+        this.pathImmagine = pathImmagine;
+    }
+    
+    public void setIngredienti(String nomeIngrediente, float quantitaIngrediente, char unitaMisuraIngrediente, String allergene){
+        int i = 0;
+        
+        while(i < 60 && ingredienti[i] != null){
+            i++;
+        }
+        
+        if (i < 60){
+            ingredienti[i] = new Ingrediente(nomeIngrediente, quantitaIngrediente, unitaMisuraIngrediente, allergene);
+        }
     }
 }
