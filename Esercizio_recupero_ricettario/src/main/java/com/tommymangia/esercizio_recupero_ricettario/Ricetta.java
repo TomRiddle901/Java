@@ -18,12 +18,12 @@ public class Ricetta {
     private String pathImmagine;
     
     // Costruttore
-    public Ricetta(String nome, LocalTime tempoPreparazione, String descrizionePreparazione, String pathImmagine){
+    public Ricetta(String nome, LocalTime tempoPreparazione, String descrizionePreparazione){
         this.nomeRicetta = nome;
         this.tempoPreparazione = tempoPreparazione;
         ingredienti = new Ingrediente[64];
         this.descrizionePreparazione = descrizionePreparazione;
-        this.pathImmagine = pathImmagine;
+        this.pathImmagine = null;
     }
     
     public void setIngredienti(String nomeIngrediente, float quantitaIngrediente, char unitaMisuraIngrediente, String allergene){

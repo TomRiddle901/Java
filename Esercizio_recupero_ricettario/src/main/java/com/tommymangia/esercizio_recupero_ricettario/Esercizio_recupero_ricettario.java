@@ -59,4 +59,45 @@ public class Esercizio_recupero_ricettario {
         
         return scelta;
     }
+    
+    private void aggiungiRicetta(){
+        Scanner in = new Scanner(System.in);
+        String nomeRicetta, descrizionePreparazione, nomeIngrediente, allergeneIngrediente, scelta;
+        LocalTime tempoPreparazione;
+        float quantitaIngrediente;
+        char unitaMisura;
+        int i = 0;
+        
+        System.out.print("Nome ricetta: ");
+        nomeRicetta = in.nextLine();
+        System.out.print("Tempo di preparazione (hh:mm:ss): ");
+        tempoPreparazione = LocalTime.parse(in.nextLine());
+        System.out.println("Descrizione preparazione:");
+        descrizionePreparazione = in.nextLine();
+        
+        while (i < 100 && ricette[i] != null){
+            i++;
+        }
+        
+        if (i < 100){
+            ricette[i] = new Ricetta(nomeRicetta, tempoPreparazione, descrizionePreparazione);
+        }
+        
+        do{
+            System.out.print("Nome ingrediente: ");
+            nomeIngrediente = in.nextLine();
+            System.out.print("Quantità ingrediente: ");
+            quantitaIngrediente = in.nextFloat();
+            System.out.print("Unità di misura (g, L, Kg, mL): ");
+            unitaMisura = in.nextLine().charAt(0);
+            System.out.print("Allergene: ");
+            allergeneIngrediente = in.nextLine();
+            
+            ricette[i].setIngredienti(nomeIngrediente, quantitaIngrediente, unitaMisura, allergeneIngrediente);
+            
+            System.out.println("Aggiungere un altro ingrediente?");
+            System.out.print("Scelta (y/n): ");
+            scelta = in.nextLine();
+        }while(scelta.equals('y'));
+    }
 }
