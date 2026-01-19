@@ -123,7 +123,7 @@ public class Esercizio_recupero_ricettario {
     private static void inserisciImmagine(){
         Scanner in = new Scanner(System.in);
         String percorsoImmagine, scelta;
-        int i = 0, j;
+        int i = 0, j = -1;
         
         do{
             System.out.print("Nome ricetta: ");
