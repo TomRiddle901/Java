@@ -105,7 +105,7 @@ public class Esercizio_recupero_ricettario {
     
     private static void ottieniAllergeni(){
         Scanner in = new Scanner(System.in);
-        int i = 0, j;
+        int i = 0, j = -1;
         String scelta;
         
         System.out.print("Nome ricetta: ");
