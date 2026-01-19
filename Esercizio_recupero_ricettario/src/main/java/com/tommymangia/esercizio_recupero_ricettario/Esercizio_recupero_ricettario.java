@@ -29,7 +29,7 @@ public class Esercizio_recupero_ricettario {
                     System.out.println("Funzione non implementata");
                     break;
                 case 3:
-                    System.out.println("Funzione non implementata");
+                    inserisciImmagine();
                     break;
                 case 4:
                     System.out.println("Funzione non implementata");
