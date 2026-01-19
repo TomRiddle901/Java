@@ -100,7 +100,7 @@ public class Esercizio_recupero_ricettario {
             System.out.println("Aggiungere un altro ingrediente?");
             System.out.print("Scelta (y/n): ");
             scelta = in.nextLine();
-        }while(!scelta.equals("y"));
+        }while(scelta.equals("y"));
     }
     
     private static void ottieniAllergeni(){
