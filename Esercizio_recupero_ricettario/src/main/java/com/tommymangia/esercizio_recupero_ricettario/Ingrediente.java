@@ -32,7 +32,7 @@ public class Ingrediente {
         return quantita;
     }
     
-    public char getUnitaMisura(){
+    public String getUnitaMisura(){
         return unitaMisura;
     }
     
