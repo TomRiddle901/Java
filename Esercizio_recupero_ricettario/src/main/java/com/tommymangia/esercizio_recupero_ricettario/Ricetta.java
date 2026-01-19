@@ -23,7 +23,7 @@ public class Ricetta {
         this.tempoPreparazione = tempoPreparazione;
         ingredienti = new Ingrediente[64];
         this.descrizionePreparazione = descrizionePreparazione;
-        this.pathImmagine = null;
+        this.pathImmagine = new String[10];
     }
     
     public void setIngredienti(String nomeIngrediente, float quantitaIngrediente, String unitaMisuraIngrediente, String allergene){
@@ -59,6 +59,7 @@ public class Ricetta {
         String allergeni = "";
         
         while (i < 64 && ingredienti[i] != null){
+            allergeni += ingredienti[i].getNome() + ":\n";
             allergeni += ingredienti[i].getAllergene() + "\n";
             i++;
         }
