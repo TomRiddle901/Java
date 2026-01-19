@@ -22,4 +22,21 @@ public class Ingrediente {
         this.unitaMisura = unitaMisura;
         this.allergene = allergene;
     }
+    
+    // Metodi
+    public String getNome(){
+        return nome;
+    }
+    
+    public float getQuantita(){
+        return quantita;
+    }
+    
+    public char getUnitaMisura(){
+        return unitaMisura;
+    }
+    
+    public String getAllergene(){
+        return allergene;
+    }
 }
