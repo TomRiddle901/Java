@@ -100,4 +100,30 @@ public class Esercizio_recupero_ricettario {
             scelta = in.nextLine();
         }while(scelta.equals('y'));
     }
+    
+    private void inserisciImmagine(){
+        Scanner in = new Scanner(System.in);
+        String percorsoImmagine, scelta;
+        int i = 0, j = 0;
+        
+        do{
+            System.out.print("Nome ricetta: ");
+            scelta = in.nextLine();
+                
+            while (i < 100 && ricette[i] != null){
+                if (scelta.equals(ricette[i].getNomeRicetta())){
+                    j = i;
+                }
+                i++;
+            }
+            
+            System.out.print("Percorso immagine (/assets/image.jpg): ");
+            percorsoImmagine = in.nextLine();
+            
+            ricette[j].setImmagine(percorsoImmagine);
+            
+            System.out.println("Vuoi aggiungere un altra imamgine?");
+            System.out.print("Scelta (y/n): ");
+        }while(scelta.equals('y'));
+    }
 }

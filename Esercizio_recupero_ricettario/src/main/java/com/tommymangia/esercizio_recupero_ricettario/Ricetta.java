@@ -49,4 +49,8 @@ public class Ricetta {
             pathImmagine[i] = percorsoImmagine;
         }
     }
+    
+    public String getNomeRicetta(){
+        return nomeRicetta;
+    }
 }
