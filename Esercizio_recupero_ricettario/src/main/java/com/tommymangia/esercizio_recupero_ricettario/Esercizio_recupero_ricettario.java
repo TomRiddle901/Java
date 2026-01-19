@@ -89,6 +89,7 @@ public class Esercizio_recupero_ricettario {
             nomeIngrediente = in.nextLine();
             System.out.print("Quantità ingrediente: ");
             quantitaIngrediente = in.nextFloat();
+            in.nextLine();
             System.out.print("Unità di misura (g, L, Kg, mL): ");
             unitaMisura = in.nextLine();
             System.out.print("Allergene: ");
@@ -99,7 +100,7 @@ public class Esercizio_recupero_ricettario {
             System.out.println("Aggiungere un altro ingrediente?");
             System.out.print("Scelta (y/n): ");
             scelta = in.nextLine();
-        }while(scelta.equals('y'));
+        }while(!scelta.equals("y"));
     }
     
     private static void ottieniAllergeni(){
@@ -144,6 +145,7 @@ public class Esercizio_recupero_ricettario {
             
             System.out.println("Vuoi aggiungere un altra imamgine?");
             System.out.print("Scelta (y/n): ");
+            scelta = in.nextLine();
         }while(scelta.equals('y'));
     }
 }
