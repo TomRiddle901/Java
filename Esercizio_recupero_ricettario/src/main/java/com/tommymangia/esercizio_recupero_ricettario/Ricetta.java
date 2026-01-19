@@ -54,7 +54,7 @@ public class Ricetta {
         return nomeRicetta;
     }
     
-    public String getAllerneni(){
+    public String getAllergeni(){
         int i = 0;
         String allergeni = "";
         
