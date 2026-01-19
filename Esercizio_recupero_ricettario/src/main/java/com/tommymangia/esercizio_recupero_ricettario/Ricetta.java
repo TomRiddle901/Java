@@ -56,7 +56,7 @@ public class Ricetta {
     
     public String getAllerneni(){
         int i = 0;
-        String allergeni = null;
+        String allergeni = "";
         
         while (i < 64 && ingredienti[i] != null){
             allergeni += ingredienti[i].getAllergene() + "\n";
