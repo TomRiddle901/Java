@@ -26,7 +26,7 @@ public class Ricetta {
         this.pathImmagine = null;
     }
     
-    public void setIngredienti(String nomeIngrediente, float quantitaIngrediente, char unitaMisuraIngrediente, String allergene){
+    public void setIngredienti(String nomeIngrediente, float quantitaIngrediente, String unitaMisuraIngrediente, String allergene){
         int i = 0;
         
         while(i < 60 && ingredienti[i] != null){

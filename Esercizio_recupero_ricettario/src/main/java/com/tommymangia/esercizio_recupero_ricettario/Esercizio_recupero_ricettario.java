@@ -64,10 +64,9 @@ public class Esercizio_recupero_ricettario {
     
     private static void aggiungiRicetta(){
         Scanner in = new Scanner(System.in);
-        String nomeRicetta, descrizionePreparazione, nomeIngrediente, allergeneIngrediente, scelta;
+        String nomeRicetta, descrizionePreparazione, nomeIngrediente, allergeneIngrediente, unitaMisura,scelta;
         LocalTime tempoPreparazione;
         float quantitaIngrediente;
-        char unitaMisura;
         int i = 0;
         
         System.out.print("Nome ricetta: ");
@@ -91,7 +90,7 @@ public class Esercizio_recupero_ricettario {
             System.out.print("Quantità ingrediente: ");
             quantitaIngrediente = in.nextFloat();
             System.out.print("Unità di misura (g, L, Kg, mL): ");
-            unitaMisura = in.nextLine().charAt(0);
+            unitaMisura = in.nextLine();
             System.out.print("Allergene: ");
             allergeneIngrediente = in.nextLine();
             
