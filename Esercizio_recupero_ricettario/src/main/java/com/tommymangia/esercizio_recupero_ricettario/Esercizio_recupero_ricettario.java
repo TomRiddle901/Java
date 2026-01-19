@@ -101,10 +101,29 @@ public class Esercizio_recupero_ricettario {
         }while(scelta.equals('y'));
     }
     
+    private static void ottieniAllergeni(){
+        Scanner in = new Scanner(System.in);
+        int i = 0, j;
+        String scelta;
+        
+        System.out.print("Nome ricetta: ");
+        scelta = in.nextLine();
+        
+        while (i < 100 && ricette[i] != null){
+            if (scelta.equals(ricette[i].getNomeRicetta())){
+                j = i;
+            }
+            i++;
+        }
+        
+        System.out.println("Lista degli allergeni:");
+        System.out.println(ricette[i].getAllerneni());
+    }
+    
     private static void inserisciImmagine(){
         Scanner in = new Scanner(System.in);
         String percorsoImmagine, scelta;
-        int i = 0, j = 0;
+        int i = 0, j;
         
         do{
             System.out.print("Nome ricetta: ");
