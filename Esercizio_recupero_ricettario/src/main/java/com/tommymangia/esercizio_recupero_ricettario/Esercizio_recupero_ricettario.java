@@ -18,6 +18,8 @@ public class Esercizio_recupero_ricettario {
     public static void main(String[] args) {
         int scelta;
         
+        ricette = new Ricetta[100];
+        
         do{
             scelta = menu();
             
