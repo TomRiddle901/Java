@@ -13,7 +13,7 @@ import java.time.LocalTime;
  */
 public class Esercizio_recupero_ricettario {
     
-    private Ricetta ricette[];
+    private static Ricetta ricette[];
 
     public static void main(String[] args) {
         int scelta;
@@ -23,7 +23,7 @@ public class Esercizio_recupero_ricettario {
             
             switch (scelta) {
                 case 1:
-                    System.out.println("Funzione non implementata");
+                    aggiungiRicetta();
                     break;
                 case 2:
                     System.out.println("Funzione non implementata");
@@ -60,7 +60,7 @@ public class Esercizio_recupero_ricettario {
         return scelta;
     }
     
-    private void aggiungiRicetta(){
+    private static void aggiungiRicetta(){
         Scanner in = new Scanner(System.in);
         String nomeRicetta, descrizionePreparazione, nomeIngrediente, allergeneIngrediente, scelta;
         LocalTime tempoPreparazione;
@@ -101,7 +101,7 @@ public class Esercizio_recupero_ricettario {
         }while(scelta.equals('y'));
     }
     
-    private void inserisciImmagine(){
+    private static void inserisciImmagine(){
         Scanner in = new Scanner(System.in);
         String percorsoImmagine, scelta;
         int i = 0, j = 0;
