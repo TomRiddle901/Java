@@ -16,10 +16,35 @@ public class Esercizio_recupero_ricettario {
     private Ricetta ricette[];
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int scelta;
+        
+        do{
+            scelta = menu();
+            
+            switch (scelta) {
+                case 1:
+                    System.out.println("Funzione non implementata");
+                    break;
+                case 2:
+                    System.out.println("Funzione non implementata");
+                    break;
+                case 3:
+                    System.out.println("Funzione non implementata");
+                    break;
+                case 4:
+                    System.out.println("Funzione non implementata");
+                    break;
+                case 0:
+                    System.out.println("Uscita dal programma in corso...");
+                    break;
+                default:
+                    System.out.println("Scelta non valida!");
+                    break;
+            }
+        } while(scelta != 0);
     }
     
-    private int menu(){
+    private static int menu(){
         Scanner in = new Scanner(System.in);
         int scelta;
         
