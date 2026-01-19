@@ -26,7 +26,7 @@ public class Esercizio_recupero_ricettario {
                     aggiungiRicetta();
                     break;
                 case 2:
-                    System.out.println("Funzione non implementata");
+                    ottieniAllergeni();
                     break;
                 case 3:
                     inserisciImmagine();

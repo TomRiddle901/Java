@@ -53,4 +53,16 @@ public class Ricetta {
     public String getNomeRicetta(){
         return nomeRicetta;
     }
+    
+    public String getAllerneni(){
+        int i = 0;
+        String allergeni = null;
+        
+        while (i < 64 && ingredienti[i] != null){
+            allergeni += ingredienti[i].getAllergene() + "\n";
+            i++;
+        }
+        
+        return allergeni;
+    }
 }
