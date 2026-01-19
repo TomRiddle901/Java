@@ -119,7 +119,7 @@ public class Esercizio_recupero_ricettario {
         }
         
         System.out.println("Lista degli allergeni:");
-        System.out.println(ricette[i].getAllerneni());
+        System.out.println(ricette[j].getAllerneni());
     }
     
     private static void inserisciImmagine(){
