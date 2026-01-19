@@ -15,7 +15,7 @@ public class Ricetta {
     private LocalTime tempoPreparazione;
     private String descrizionePreparazione;
     private Ingrediente[] ingredienti;
-    private String pathImmagine;
+    private String[] pathImmagine;
     
     // Costruttore
     public Ricetta(String nome, LocalTime tempoPreparazione, String descrizionePreparazione){
@@ -39,6 +39,14 @@ public class Ricetta {
     }
     
     public void setImmagine(String percorsoImmagine){
-        pathImmagine = percorsoImmagine;
+        int i = 0;
+        
+        while (i < 10 && pathImmagine[i] != null){
+            i++;
+        }
+        
+        if (i < 10){
+            pathImmagine[i] = percorsoImmagine;
+        }
     }
 }
