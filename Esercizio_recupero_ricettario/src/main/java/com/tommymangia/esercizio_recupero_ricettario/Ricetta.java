@@ -79,8 +79,28 @@ public class Ricetta {
     }
     
     public String toString(){
-        String output;
+        StringBuilder output = new StringBuilder();
         
+        output.append("Nome ricetta: " + nomeRicetta + "\nTempo di preparazione: " + tempoPreparazione + "</p>\n");
+        
+        output.append("     </div>\n");
+        output.append("     <div>\n");
+        output.append("         <h2>Ingredienti</h2>\n");
+        output.append("         <p>" + getIngredienti() + "</p>\n");
+        output.append("     </div>\n");
+        output.append("     <div>\n");
+        output.append("         <p>" + descrizionePreparazione + "</p>\n");
+        output.append("     </div>\n");
+        
+        output.append("     <div>");
+        for (int i = 0; i < 10; i++){
+            if (pathImmagine[i] != null){
+                output.append("         <img src=\"" + pathImmagine[i] + "\">\n");
+            }
+        }
+        output.append("     </div>");
+        
+        /*
         output = "Nome ricetta: " + nomeRicetta + "\nTempo di preparazione: " + tempoPreparazione + "</p>\n";
         
         output += "             <div>\n" 
@@ -102,7 +122,7 @@ public class Ricetta {
                 + "             </div>\n";
             }
         }
-        
-        return output;
+        */
+        return output.toString();
     }
 }
