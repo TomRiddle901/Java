@@ -153,6 +153,7 @@ public class Esercizio_recupero_ricettario {
     }
     
     private static void generaHtml(){
+        int i = 0;
         try(BufferedWriter writer = new BufferedWriter(new FileWriter("index.html"))){
             
             StringBuilder html = new StringBuilder();
@@ -170,11 +171,9 @@ public class Esercizio_recupero_ricettario {
                 .append("       <p>Qui vedrai tutte le ricette inserite nel programma Java</p>\n")
                 .append("       <div>\n");
             
-            for (int i = 0; i < 100; i++){
-                if (ricette[i] != null){
-                    html.append("       <p>")
-                        .append(ricette[i].toString());
-                }
+            while (i < 100 && ricette[i] != null){
+                html.append("       <p>")
+                    .append(ricette[i].toString());
             }
             
             html.append("   </body>\n")

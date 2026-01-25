@@ -80,6 +80,7 @@ public class Ricetta {
     
     public String toString(){
         StringBuilder output = new StringBuilder();
+        int i = 0;
         
         output.append("Nome ricetta: ")
               .append(nomeRicetta)
@@ -97,12 +98,10 @@ public class Ricetta {
               .append("</p>\n");
 
         output.append("     <div>");
-        for (int i = 0; i < 10; i++){
-            if (pathImmagine[i] != null){
-                output.append("         <img src=\"")
-                      .append(pathImmagine[i])
-                      .append("\">\n");
-            }
+        while (i < 10 && pathImmagine[i] != null){
+            output.append("         <img src=\"")
+                  .append(pathImmagine[i])
+                  .append("\">\n");
         }
         output.append("     </div>\n");
         
