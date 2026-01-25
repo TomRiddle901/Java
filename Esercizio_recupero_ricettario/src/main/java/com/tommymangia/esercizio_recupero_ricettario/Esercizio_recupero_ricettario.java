@@ -160,8 +160,8 @@ public class Esercizio_recupero_ricettario {
             html.append("<!DOCTYPE html>\n")
                 .append("<html>\n")
                 .append("   <head>\n")
-                .append("       <meta charset=\"UTF_8\\\">\n")
-                .append("       <meta name=\"viewport\" content=\"width=device-width\", initial-scale=1\">\\n")
+                .append("       <meta charset=\"UTF_8\">\n")
+                .append("       <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n")
                 .append("       <title>Ricettario</title>\n")
                 .append("       <link rel=\"stylesheet\" href=\"style.css\">\n")
                 .append("   </head>\n")
@@ -172,7 +172,8 @@ public class Esercizio_recupero_ricettario {
             
             for (int i = 0; i < 100; i++){
                 if (ricette[i] != null){
-                    html.append("       <p>" + ricette[i].toString() + "\n</p>\n");
+                    html.append("       <p>")
+                        .append(ricette[i].toString());
                 }
             }
             

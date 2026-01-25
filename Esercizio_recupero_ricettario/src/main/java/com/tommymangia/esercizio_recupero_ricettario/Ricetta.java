@@ -81,24 +81,30 @@ public class Ricetta {
     public String toString(){
         StringBuilder output = new StringBuilder();
         
-        output.append("Nome ricetta: " + nomeRicetta + "\nTempo di preparazione: " + tempoPreparazione + "</p>\n");
-        
-        output.append("     </div>\n");
-        output.append("     <div>\n");
-        output.append("         <h2>Ingredienti</h2>\n");
-        output.append("         <p>" + getIngredienti() + "</p>\n");
-        output.append("     </div>\n");
-        output.append("     <div>\n");
-        output.append("         <p>" + descrizionePreparazione + "</p>\n");
-        output.append("     </div>\n");
-        
+        output.append("Nome ricetta: ")
+              .append(nomeRicetta)
+              .append("<br>Tempo di preparazione: ")
+              .append(tempoPreparazione)
+              .append("<br>Descrizione preparazione:<br>")
+              .append(descrizionePreparazione)
+              .append("</p>\n")
+              .append("         <h2>Ingredienti</h2>\n")
+              .append("         <p>")
+              .append(getIngredienti())
+              .append("</p>\n")
+              .append("         <p>")
+              .append(descrizionePreparazione)
+              .append("</p>\n");
+
         output.append("     <div>");
         for (int i = 0; i < 10; i++){
             if (pathImmagine[i] != null){
-                output.append("         <img src=\"" + pathImmagine[i] + "\">\n");
+                output.append("         <img src=\"")
+                      .append(pathImmagine[i])
+                      .append("\">\n");
             }
         }
-        output.append("     </div>");
+        output.append("     </div>\n");
         
         /*
         output = "Nome ricetta: " + nomeRicetta + "\nTempo di preparazione: " + tempoPreparazione + "</p>\n";
