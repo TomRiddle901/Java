@@ -102,6 +102,7 @@ public class Ricetta {
             output.append("         <img src=\"")
                   .append(pathImmagine[i])
                   .append("\">\n");
+            i++;
         }
         output.append("     </div>\n");
         

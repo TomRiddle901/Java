@@ -174,6 +174,7 @@ public class Esercizio_recupero_ricettario {
             while (i < 100 && ricette[i] != null){
                 html.append("       <p>")
                     .append(ricette[i].toString());
+                i++;
             }
             
             html.append("   </body>\n")
