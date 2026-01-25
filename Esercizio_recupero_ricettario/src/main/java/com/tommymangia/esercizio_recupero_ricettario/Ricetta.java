@@ -87,7 +87,7 @@ public class Ricetta {
               .append(nomeRicetta)
               .append("\n         <br>Tempo di preparazione: ")
               .append(tempoPreparazione)
-              .append("\n         <br>Descrizione preparazione:<br>")
+              .append("\n         <br>Descrizione preparazione:\n         <br>")
               .append(descrizionePreparazione)
               .append("</p>\n")
               .append("         <h2>Ingredienti</h2>\n")
