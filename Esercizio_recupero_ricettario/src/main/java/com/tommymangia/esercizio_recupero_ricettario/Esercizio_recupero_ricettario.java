@@ -176,7 +176,8 @@ public class Esercizio_recupero_ricettario {
                 i++;
             }
             
-            html.append("   </body>\n")
+            html.append("</div>\n")
+                .append("   </body>\n")
                 .append("</html>");
                     
             /*
