@@ -128,9 +128,9 @@ public class Esercizio_recupero_ricettario {
     private static void inserisciImmagine(){
         Scanner in = new Scanner(System.in);
         String percorsoImmagine, scelta;
-        int i = 0, j = -1;
         
         do{
+            int i = 0, j = -1;
             System.out.print("Nome ricetta: ");
             scelta = in.nextLine();
                 
@@ -141,15 +141,20 @@ public class Esercizio_recupero_ricettario {
                 i++;
             }
             
+            if (j == -1){
+                System.out.println("Ricetta non trovata!");
+                continue; // Salta tutto il ciclo
+            }
+            
             System.out.print("Percorso immagine (/assets/image.jpg): ");
             percorsoImmagine = in.nextLine();
             
             ricette[j].setImmagine(percorsoImmagine);
             
-            System.out.println("Vuoi aggiungere un altra imamgine?");
+            System.out.println("Vuoi aggiungere un altra immagine?");
             System.out.print("Scelta (y/n): ");
             scelta = in.nextLine();
-        }while(scelta.equals('y'));
+        }while(scelta.equalsIgnoreCase("y"));
     }
     
     private static void generaHtml(){
