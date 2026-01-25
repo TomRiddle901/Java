@@ -72,7 +72,7 @@ public class Ricetta {
         String output = "";
         
         while (i < 60 && ingredienti[i] != null){
-            output += ingredienti[i].getIngrediente() + "\n"; 
+            output += ingredienti[i].getIngrediente(); 
             i++;
         }
         
@@ -85,9 +85,9 @@ public class Ricetta {
         
         output.append("         <p>Nome ricetta: ")
               .append(nomeRicetta)
-              .append("\n<br>Tempo di preparazione: ")
+              .append("         \n<br>Tempo di preparazione: ")
               .append(tempoPreparazione)
-              .append("\n<br>Descrizione preparazione:<br>")
+              .append("         \n<br>Descrizione preparazione:<br>")
               .append(descrizionePreparazione)
               .append("</p>\n")
               .append("         <h2>Ingredienti</h2>\n")
@@ -98,14 +98,14 @@ public class Ricetta {
               .append(descrizionePreparazione)
               .append("</p>\n");
 
-        output.append("     <div>");
+        output.append("         <div>\n");
         while (i < 10 && pathImmagine[i] != null){
             output.append("         <img src=\"")
                   .append(pathImmagine[i])
                   .append("\">\n");
             i++;
         }
-        output.append("     </div>\n");
+        output.append("         </div>\n");
         
         /*
         output = "Nome ricetta: " + nomeRicetta + "\nTempo di preparazione: " + tempoPreparazione + "</p>\n";
