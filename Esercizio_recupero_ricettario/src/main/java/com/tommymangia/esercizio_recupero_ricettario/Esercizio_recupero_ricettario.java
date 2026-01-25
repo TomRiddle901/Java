@@ -154,11 +154,37 @@ public class Esercizio_recupero_ricettario {
     
     private static void generaHtml(){
         try(BufferedWriter writer = new BufferedWriter(new FileWriter("index.html"))){
+            
+            StringBuilder html = new StringBuilder();
+            
+            html.append("<!DOCTYPE html>\n")
+                .append("<html>\n")
+                .append("   <head>\n")
+                .append("       <meta charset=\"UTF_8\\\">\n")
+                .append("       <meta name=\"viewport\" content=\"width=device-width\", initial-scale=1\">\\n")
+                .append("       <title>Ricettario</title>\n")
+                .append("       <link rel=\"stylesheet\" href=\"style.css\">\n")
+                .append("   </head>\n")
+                .append("   <body>\n")
+                .append("       <h1>Ricettario</h1>\n")
+                .append("       <p>Qui vedrai tutte le ricette inserite nel programma Java</p>\n")
+                .append("       <div>\n");
+            
+            for (int i = 0; i < 100; i++){
+                if (ricette[i] != null){
+                    html.append("       <p>" + ricette[i].toString() + "\n</p>\n");
+                }
+            }
+            
+            html.append("   </body>\n")
+                .append("</html>");
+                    
+            /*
             String html = "<!DOCTYPE html>\n"
                         + "<html>\n"
                         + "    <head>\n"
                         + "         <meta charset=\"UTF_8\">\n"
-                        + "         <meta name=\"viewport\" content=\"device-width, initial-scale=1\">\n"
+                        + "         <meta name=\"viewport\" content=\"width=device-width\", initial-scale=1\">\n"
                         + "         <title>Ricettario</title>\n"
                         + "         <link rel=\"stylesheet\" href=\"style.css\">\n"
                         + "    </head>\n"
@@ -172,11 +198,9 @@ public class Esercizio_recupero_ricettario {
                     html += "          <p>" + ricette[i].toString() + "\n</p>\n";
                 }
             }
+            */
             
-            html += "    </body>\n"
-                  + "</html>";
-            
-            writer.write(html);
+            writer.write(html.toString());
         } catch (IOException ex) {
             System.err.println("Errore! " + ex.getMessage());
         }
