@@ -168,7 +168,9 @@ public class Esercizio_recupero_ricettario {
                         + "        <div>\n";
             
             for (int i = 0; i < 100; i++){
-                html += "          <p>" + ricette[i].toString() + "\n</p>\n";
+                if (ricette[i] != null){
+                    html += "          <p>" + ricette[i].toString() + "\n</p>\n";
+                }
             }
             
             html += "    </body>\n"
