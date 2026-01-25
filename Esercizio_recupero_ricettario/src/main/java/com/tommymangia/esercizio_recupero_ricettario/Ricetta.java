@@ -92,6 +92,7 @@ public class Ricetta {
               .append("         <p>")
               .append(getIngredienti())
               .append("</p>\n")
+              .append("         <h2>Prepatrazione</h2>\n")
               .append("         <p>")
               .append(descrizionePreparazione)
               .append("</p>\n");
