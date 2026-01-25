@@ -92,7 +92,7 @@ public class Ricetta {
               .append("</p>\n")
               .append("         <h2>Ingredienti</h2>\n")
               .append("         <p>")
-              .append()
+              .append(getIngredienti())
               .append("</p>\n")
               .append("         <p>")
               .append(descrizionePreparazione)
