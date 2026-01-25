@@ -6,6 +6,9 @@ package com.tommymangia.esercizio_recupero_ricettario;
 
 import java.util.Scanner;
 import java.time.LocalTime;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  *
@@ -34,7 +37,7 @@ public class Esercizio_recupero_ricettario {
                     inserisciImmagine();
                     break;
                 case 4:
-                    System.out.println("Funzione non implementata");
+                    generaHtml();
                     break;
                 case 0:
                     System.out.println("Uscita dal programma in corso...");
@@ -147,5 +150,33 @@ public class Esercizio_recupero_ricettario {
             System.out.print("Scelta (y/n): ");
             scelta = in.nextLine();
         }while(scelta.equals('y'));
+    }
+    
+    private static void generaHtml(){
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter("index.html"))){
+            String html = "<!DOCTYPE html>\n"
+                        + "<html>\n"
+                        + "    <head>\n"
+                        + "         <meta charset=\"UTF_8\">\n"
+                        + "         <meta name=\"viewport\" content=\"device-width, initial-scale=1\">\n"
+                        + "         <title>Ricettario</title>\n"
+                        + "         <link rel=\"stylesheet\" href=\"style.css\">\n"
+                        + "    </head>\n"
+                        + "    <body>\n"
+                        + "        <h1>Ricettario</h1>\n"
+                        + "        <p>Qui vedrai tutte le ricette inserite nel programma Java</p>\n"
+                        + "        <div>\n";
+            
+            for (int i = 0; i < 100; i++){
+                html += "          <p>" + ricette[i].toString() + "\n</p>\n";
+            }
+            
+            html += "    </body>\n"
+                  + "</html>";
+            
+            writer.write(html);
+        } catch (IOException ex) {
+            System.err.println("Errore! " + ex.getMessage());
+        }
     }
 }

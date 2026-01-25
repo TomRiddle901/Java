@@ -66,4 +66,43 @@ public class Ricetta {
         
         return allergeni;
     }
+    
+    public String getIngredienti(){
+        int i = 0;
+        String output = "";
+        
+        while (i < 60 && ingredienti[i] != null){
+            output += ingredienti[i].getIngrediente() + "\n"; 
+        }
+        
+        return output;
+    }
+    
+    public String toString(){
+        String output;
+        
+        output = "Nome ricetta: " + nomeRicetta + "\nTempo di preparazione: " + tempoPreparazione + "</p>\n";
+        
+        output += "             <div>\n" 
+                + "                <p>Ingredienti:</p>\n"
+                + "                <p>" + getIngredienti() + "</p>\n"
+                + "             </div>\n"
+                + "             <div>\n"
+                + "                 <p>" + descrizionePreparazione + "</p>\n"
+                + "             </div>\n";
+        
+        for (int i = 0; i < 10; i++){
+            if (pathImmagine[i] != null){
+                output += "           <div>\n"
+                + "                 <img src=\"" + pathImmagine + "\">\n"
+                + "             </div>\n";
+            } else{
+                output += "           <div>\n"
+                + "                 <p>Nessuna immagine inserita per questa ricetta!</p>\n"
+                + "             </div>\n";
+            }
+        }
+        
+        return output;
+    }
 }

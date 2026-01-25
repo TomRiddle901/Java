@@ -39,4 +39,8 @@ public class Ingrediente {
     public String getAllergene(){
         return allergene;
     }
+    
+    public String getIngrediente(){
+        return "Nome: " + nome + "\nQuantità: " + quantita + unitaMisura + "\nAllergene: " + allergene;
+    }
 }
