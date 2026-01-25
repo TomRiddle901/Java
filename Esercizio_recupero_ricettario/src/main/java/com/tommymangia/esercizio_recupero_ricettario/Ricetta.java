@@ -82,7 +82,7 @@ public class Ricetta {
         StringBuilder output = new StringBuilder();
         int i = 0;
         
-        output.append("Nome ricetta: ")
+        output.append("         <p>Nome ricetta: ")
               .append(nomeRicetta)
               .append("<br>Tempo di preparazione: ")
               .append(tempoPreparazione)

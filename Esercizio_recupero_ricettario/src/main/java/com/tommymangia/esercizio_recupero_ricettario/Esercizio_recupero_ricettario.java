@@ -161,7 +161,7 @@ public class Esercizio_recupero_ricettario {
             html.append("<!DOCTYPE html>\n")
                 .append("<html>\n")
                 .append("   <head>\n")
-                .append("       <meta charset=\"UTF_8\">\n")
+                .append("       <meta charset=\"UTF-8\">\n")
                 .append("       <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n")
                 .append("       <title>Ricettario</title>\n")
                 .append("       <link rel=\"stylesheet\" href=\"style.css\">\n")
@@ -172,8 +172,7 @@ public class Esercizio_recupero_ricettario {
                 .append("       <div>\n");
             
             while (i < 100 && ricette[i] != null){
-                html.append("       <p>")
-                    .append(ricette[i].toString());
+                html.append(ricette[i].toString());
                 i++;
             }
             
