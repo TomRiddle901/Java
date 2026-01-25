@@ -28,7 +28,8 @@ public class Test_pagina_html {
                     + "     <h1>Wow funziona</h1>\n"
                     + "     <p>Se vedi questo vuol dire che funziona!</p>\n"
                     + "     <script src=\"script.js\"></script>\n"
-                    + " </body>";     
+                    + " </body>"
+                    + "Prendere fetta di pane, mettere sopra fetta di pane sottiletta, sopra sottiletta mettere prosciutto cotto per toast, sopra prosciutto mettere pane, mettere panino nel tostapane e aspettare 5/10 minuti";     
             writer.write(html);
         } catch(IOException e){
             System.err.println("Errore: " + e.getMessage());
