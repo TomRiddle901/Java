@@ -73,6 +73,7 @@ public class Ricetta {
         
         while (i < 60 && ingredienti[i] != null){
             output += ingredienti[i].getIngrediente() + "\n"; 
+            i++;
         }
         
         return output;
@@ -91,7 +92,7 @@ public class Ricetta {
               .append("</p>\n")
               .append("         <h2>Ingredienti</h2>\n")
               .append("         <p>")
-              .append(getIngredienti())
+              .append()
               .append("</p>\n")
               .append("         <p>")
               .append(descrizionePreparazione)
