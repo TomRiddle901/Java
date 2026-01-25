@@ -168,16 +168,16 @@ public class Esercizio_recupero_ricettario {
                 .append("   </head>\n")
                 .append("   <body>\n")
                 .append("       <h1>Ricettario</h1>\n")
-                .append("       <p>Qui vedrai tutte le ricette inserite nel programma Java</p>\n")
-                .append("       <div>\n");
+                .append("       <p>Qui vedrai tutte le ricette inserite nel programma Java</p>\n");
             
             while (i < 100 && ricette[i] != null){
-                html.append(ricette[i].toString());
+                html.append("       <div>\n")
+                    .append(ricette[i].toString())
+                    .append("       </div>\n");
                 i++;
             }
             
-            html.append("   </div>\n")
-                .append("   </body>\n")
+            html.append("   </body>\n")
                 .append("</html>");
                     
             /*

@@ -85,9 +85,9 @@ public class Ricetta {
         
         output.append("         <p>Nome ricetta: ")
               .append(nomeRicetta)
-              .append("<br>Tempo di preparazione: ")
+              .append("\n<br>Tempo di preparazione: ")
               .append(tempoPreparazione)
-              .append("<br>Descrizione preparazione:<br>")
+              .append("\n<br>Descrizione preparazione:<br>")
               .append(descrizionePreparazione)
               .append("</p>\n")
               .append("         <h2>Ingredienti</h2>\n")
