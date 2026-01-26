@@ -168,7 +168,7 @@ public class Esercizio_recupero_ricettario {
             StringBuilder html = new StringBuilder();
             
             html.append("<!DOCTYPE html>\n")
-                .append("<html>\n")
+                .append("<html lang=\"it\">\n")
                 .append("   <head>\n")
                 .append("       <meta charset=\"UTF-8\">\n")
                 .append("       <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n")
@@ -177,12 +177,13 @@ public class Esercizio_recupero_ricettario {
                 .append("   </head>\n")
                 .append("   <body>\n")
                 .append("       <h1>Ricettario</h1>\n")
-                .append("       <p>Qui vedrai tutte le ricette inserite nel programma Java</p>\n");
-            
+                .append("       <p>Qui vedrai tutte le ricette inserite nel programma Java</p>\n")
+                .append("       <div class=\"ricettario\">\n");
+
             while (i < 100 && ricette[i] != null){
-                html.append("       <div>\n")
+                html.append("           <div class=\"ricetta-content\">\n")
                     .append(ricette[i].toString())
-                    .append("       </div>\n");
+                    .append("           </div>\n");
                 i++;
             }
             

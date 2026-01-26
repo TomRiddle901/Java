@@ -83,28 +83,33 @@ public class Ricetta {
         StringBuilder output = new StringBuilder();
         int i = 0;
         
-        output.append("         <p>Nome ricetta: ")
+        output.append("             <h2>")
               .append(nomeRicetta)
-              .append("\n         <br>Tempo di preparazione: ")
+              .append("<h2>\n               <br>Tempo di preparazione: ")
               .append(tempoPreparazione)
               .append("</p>\n")
-              .append("         <h2>Ingredienti</h2>\n")
-              .append("         <p>")
+              .append("             <div calss=\"sezione\">\n")
+              .append("                 <h3>Ingredienti</h3>\n")
+              .append("                 <ul>")
               .append(getIngredienti())
-              .append("</p>\n")
-              .append("         <h2>Preparazione</h2>\n")
-              .append("         <p>")
+              .append("                 </ul>\n")
+              .append("             </div>\n")
+              .append("             <div class=\"sezione\">\n")
+              .append("                 <h3>Procedimento</h3>\n")
+              .append("                 <p>")
               .append(descrizionePreparazione)
               .append("</p>\n");
 
-        output.append("         <div>\n");
+        output.append("             </div>\n")
+              .append("             <div class=\"immagini\">\n");
         while (i < 10 && pathImmagine[i] != null){
-            output.append("         <img src=\"")
+            output.append("                 <img src=\"")
                   .append(pathImmagine[i])
                   .append("\">\n");
             i++;
         }
-        output.append("         </div>\n");
+        output.append("             </div>\n")
+              .append("        </div>\n");
         
         return output.toString();
     }
