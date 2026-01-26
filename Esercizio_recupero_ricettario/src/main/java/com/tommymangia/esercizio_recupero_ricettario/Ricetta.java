@@ -106,29 +106,6 @@ public class Ricetta {
         }
         output.append("         </div>\n");
         
-        /*
-        output = "Nome ricetta: " + nomeRicetta + "\nTempo di preparazione: " + tempoPreparazione + "</p>\n";
-        
-        output += "             <div>\n" 
-                + "                <p>Ingredienti:</p>\n"
-                + "                <p>" + getIngredienti() + "</p>\n"
-                + "             </div>\n"
-                + "             <div>\n"
-                + "                 <p>" + descrizionePreparazione + "</p>\n"
-                + "             </div>\n";
-        
-        for (int i = 0; i < 10; i++){
-            if (pathImmagine[i] != null){
-                output += "           <div>\n"
-                + "                 <img src=\"" + pathImmagine + "\">\n"
-                + "             </div>\n";
-            } else{
-                output += "           <div>\n"
-                + "                 <p>Nessuna immagine inserita per questa ricetta!</p>\n"
-                + "             </div>\n";
-            }
-        }
-        */
         return output.toString();
     }
 }

@@ -188,27 +188,6 @@ public class Esercizio_recupero_ricettario {
             
             html.append("   </body>\n")
                 .append("</html>");
-                    
-            /*
-            String html = "<!DOCTYPE html>\n"
-                        + "<html>\n"
-                        + "    <head>\n"
-                        + "         <meta charset=\"UTF_8\">\n"
-                        + "         <meta name=\"viewport\" content=\"width=device-width\", initial-scale=1\">\n"
-                        + "         <title>Ricettario</title>\n"
-                        + "         <link rel=\"stylesheet\" href=\"style.css\">\n"
-                        + "    </head>\n"
-                        + "    <body>\n"
-                        + "        <h1>Ricettario</h1>\n"
-                        + "        <p>Qui vedrai tutte le ricette inserite nel programma Java</p>\n"
-                        + "        <div>\n";
-            
-            for (int i = 0; i < 100; i++){
-                if (ricette[i] != null){
-                    html += "          <p>" + ricette[i].toString() + "\n</p>\n";
-                }
-            }
-            */
             
             writer.write(html.toString());
         } catch (IOException ex) {
