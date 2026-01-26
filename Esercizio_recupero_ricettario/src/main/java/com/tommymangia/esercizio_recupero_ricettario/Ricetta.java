@@ -85,10 +85,10 @@ public class Ricetta {
         
         output.append("             <h2>")
               .append(nomeRicetta)
-              .append("<h2>\n             <br>Tempo di preparazione: ")
+              .append("</h2>\n             <p>Tempo di preparazione: ")
               .append(tempoPreparazione)
               .append("</p>\n")
-              .append("             <div calss=\"sezione\">\n")
+              .append("             <div class=\"sezione\">\n")
               .append("                 <h3>Ingredienti</h3>\n")
               .append("                 <ul>")
               .append(getIngredienti())

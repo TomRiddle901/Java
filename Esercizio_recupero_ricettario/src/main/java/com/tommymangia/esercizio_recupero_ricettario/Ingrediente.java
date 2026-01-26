@@ -41,6 +41,6 @@ public class Ingrediente {
     }
     
     public String getIngrediente(){
-        return "\n                    <li>Nome: " + nome + "</li>\n                    <li>Quantità: " + quantita + unitaMisura + "</li>\n                    </li>Allergene: " + allergene + "</li>\n";
+        return "\n                    <li>Nome: " + nome + "</li>\n                    <li>Quantità: " + quantita + unitaMisura + "</li>\n                    <li>Allergene: " + allergene + "</li>\n";
     }
 }
