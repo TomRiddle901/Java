@@ -121,8 +121,12 @@ public class Esercizio_recupero_ricettario {
             i++;
         }
         
-        System.out.println("Lista degli allergeni:");
-        System.out.println(ricette[j].getAllergeni());
+        if (scelta.equals(ricette[i].getNomeRicetta())){
+            System.out.println("Lista degli allergeni:");
+            System.out.println(ricette[j].getAllergeni());
+        }else{
+            System.out.println("Ricetta non trovata!");
+        }
     }
     
     private static void inserisciImmagine(){
