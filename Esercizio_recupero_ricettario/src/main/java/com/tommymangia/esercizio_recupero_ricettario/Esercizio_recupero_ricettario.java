@@ -197,7 +197,3 @@ public class Esercizio_recupero_ricettario {
         }
     }
 }
-
-/*
-Riso, Patate e Cozze
-*/
