@@ -10,6 +10,8 @@ package com.tommymangia.esercizio_ereditarieta_1;
  */
 public class MainProgram {
 
+    private static Dipendente[] dipendenti;
+    
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
