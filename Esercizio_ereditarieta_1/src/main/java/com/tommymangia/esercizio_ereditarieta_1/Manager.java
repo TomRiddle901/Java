@@ -4,10 +4,18 @@
  */
 package com.tommymangia.esercizio_ereditarieta_1;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author tommaso
  */
-public class Manager {
+public class Manager extends Dipendente{
+    // Attributi
+    private Programmatore[] elencoProgrammatori;
     
+    // Costruttori
+    public Manager(String codice, String nome, String cognome, LocalDate dataAssunzione, double stipendioBaseAssunzione) {
+        super(codice, nome, cognome, dataAssunzione, stipendioBaseAssunzione);
+    }
 }
