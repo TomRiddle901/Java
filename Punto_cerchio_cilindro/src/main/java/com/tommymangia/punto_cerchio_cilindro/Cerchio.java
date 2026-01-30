@@ -13,8 +13,8 @@ public class Cerchio extends Punto{
     protected double raggio;
     
     // Costruttore
-    public Cerchio(double x, double y, double raggio){
-        super(x, y);
+    public Cerchio(Punto punto, double raggio){
+        super(punto.x, punto.y);
         this.raggio = raggio;
     }
     

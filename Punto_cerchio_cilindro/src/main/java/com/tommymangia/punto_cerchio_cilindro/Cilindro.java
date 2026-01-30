@@ -13,8 +13,8 @@ public class Cilindro extends Cerchio{
     private double altezza;
     
     // Cstruttore
-    public Cilindro(double x, double y, double raggio, double altezza){
-        super(x, y, raggio);;
+    public Cilindro(Punto punto, double raggio, double altezza){
+        super(punto, raggio);
         this.altezza = altezza;
     }
     
