@@ -27,4 +27,12 @@ public class Punto {
         
         return distanza;
     }
+    
+    public double distanzaPuntoCerchio(Cerchio cerchio){
+        double distanza;
+        
+        distanza = distanzaPunto(this) - cerchio.getRaggio();
+        
+        return distanza;
+    }
 }
