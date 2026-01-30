@@ -34,4 +34,8 @@ public class Cilindro extends Cerchio{
         
         return volume;
     }
+    
+    public String toString(){
+        return "Centro del cilindro: (" + x + "; " + y + ") raggio: " + raggio + " altezza: " + altezza;
+    }
 }
