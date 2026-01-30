@@ -17,4 +17,13 @@ public class Cilindro extends Cerchio{
         super(x, y, raggio);;
         this.altezza = altezza;
     }
+    
+    // Metodi
+    public double areaSuperficie(){
+        double areaSuper;
+        
+        areaSuper = 2 * area() + circonferenza() * altezza;
+        
+        return areaSuper;
+    }
 }
