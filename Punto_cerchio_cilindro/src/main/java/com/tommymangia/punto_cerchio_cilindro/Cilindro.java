@@ -8,6 +8,13 @@ package com.tommymangia.punto_cerchio_cilindro;
  *
  * @author tommaso
  */
-public class Cilindro {
+public class Cilindro extends Cerchio{
+    // Attributi
+    private double altezza;
     
+    // Cstruttore
+    public Cilindro(double x, double y, double raggio, double altezza){
+        super(x, y, raggio);;
+        this.altezza = altezza;
+    }
 }

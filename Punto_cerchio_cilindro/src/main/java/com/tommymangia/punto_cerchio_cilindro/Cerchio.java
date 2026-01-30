@@ -8,6 +8,13 @@ package com.tommymangia.punto_cerchio_cilindro;
  *
  * @author tommaso
  */
-public class Cerchio {
+public class Cerchio extends Punto{
+    // Attributi
+    protected double raggio;
     
+    // Costruttore
+    public Cerchio(double x, double y, double raggio){
+        super(x, y);
+        this.raggio = raggio;
+    }
 }
