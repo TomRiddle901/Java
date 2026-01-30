@@ -35,4 +35,22 @@ public class Programmatore extends Dipendente{
             return false;
         }
     }
+    
+    public double calcolaStipendio(){
+        double stipendio = stipendioBaseAssunzione;
+        int anniServizio = LocalDate.now().getYear() - dataAssunzione.getYear();
+        int blocchiAnni = 0;
+        
+        if (LocalDate.now().getMonthValue() < dataAssunzione.getMonthValue() || 
+                (LocalDate.now().getMonthValue() == dataAssunzione.getMonthValue() && 
+                    LocalDate.now().getDayOfMonth() < dataAssunzione.getDayOfMonth())){
+            anniServizio--;
+        }
+        
+        blocchiAnni = anniServizio / 5;
+        
+        stipendio += stipendioBaseAssunzione * 0.01 * blocchiAnni;
+        
+        return stipendio;
+    }
 }
