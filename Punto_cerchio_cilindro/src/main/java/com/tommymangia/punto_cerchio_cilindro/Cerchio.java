@@ -22,4 +22,12 @@ public class Cerchio extends Punto{
     public double getRaggio(){
         return raggio;
     }
+    
+    public double area(){
+        double area;
+        
+        area = Math.PI * Math.pow(raggio, 2);
+        
+        return area;
+    }
 }
