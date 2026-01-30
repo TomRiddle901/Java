@@ -12,11 +12,27 @@ import java.time.LocalDate;
  */
 public class Programmatore extends Dipendente{
     // Attributi
-    private String[] lunguaggiProgrammazione;
+    private String[] linguaggiProgrammazione;
     
     // Costruttore
     public Programmatore(String codice, String nome, String cognome, LocalDate dataAssunzione, double stipendioBaseAssunzione) {
         super(codice, nome, cognome, dataAssunzione, stipendioBaseAssunzione);
+        linguaggiProgrammazione = new String[20];
     }
     
+    // Metodi
+    public boolean aggiungiLinguaggioProgrammazione(String linguaggio){
+        int i = 0;
+        
+        while(i < 20 && linguaggiProgrammazione != null){
+            i++;
+        }
+        
+        if (i < 20){
+            linguaggiProgrammazione[i] = linguaggio;
+            return true;
+        } else{
+            return false;
+        }
+    }
 }
