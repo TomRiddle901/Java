@@ -26,4 +26,12 @@ public class Cilindro extends Cerchio{
         
         return areaSuper;
     }
+    
+    public double volume(){
+        double volume;
+        
+        volume = area() * altezza;
+        
+        return volume;
+    }
 }
