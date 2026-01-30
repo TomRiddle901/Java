@@ -38,4 +38,8 @@ public class Cerchio extends Punto{
         
         return circonferenza;
     }
+    
+    public String toString(){
+        return "Centro del cerchio: (" + x + "; " + y + "), raggio: " + raggio;
+    }
 }
