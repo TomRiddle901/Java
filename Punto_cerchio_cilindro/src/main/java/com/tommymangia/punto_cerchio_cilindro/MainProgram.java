@@ -18,5 +18,14 @@ public class MainProgram {
         
         System.out.println("Distanza da p1 a p2: " + p.distanzaPunto(p2));
         System.out.println("Distanza punto da cerchio: " + p.distanzaPuntoCerchio(cerchio));
+        System.out.println(p.toString());
+        
+        System.out.println("Area del cerchio: " + cerchio.area());
+        System.out.println("Circonferenza cerchio: " + cerchio.circonferenza());
+        System.out.println(cerchio.toString());
+        
+        System.out.println("Area superficie cilindro: " + cilindro.areaSuperficie());
+        System.out.println("Volume cilindro: " + cilindro.volume());
+        System.out.println(cilindro.toString());
     }
 }
