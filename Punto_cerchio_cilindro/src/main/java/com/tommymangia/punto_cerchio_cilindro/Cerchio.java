@@ -30,4 +30,12 @@ public class Cerchio extends Punto{
         
         return area;
     }
+    
+    public double circonferenza(){
+        double circonferenza;
+        
+        circonferenza = 2 * Math.PI * raggio;
+        
+        return circonferenza;
+    }
 }
