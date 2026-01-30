@@ -17,4 +17,9 @@ public class Cerchio extends Punto{
         super(x, y);
         this.raggio = raggio;
     }
+    
+    // Metodi
+    public double getRaggio(){
+        return raggio;
+    }
 }
