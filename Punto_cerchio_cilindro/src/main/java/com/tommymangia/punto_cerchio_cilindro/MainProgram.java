@@ -15,6 +15,8 @@ public class MainProgram {
         Punto p2 = new Punto(11.2, 12.6665);
         Cerchio cerchio = new Cerchio(p, 5);
         Cilindro cilindro = new Cilindro(p, cerchio.getRaggio(), 15);
+        Cerchio cerchio2 = new Cerchio(p2, 5);
+        Cilindro cilindro2 = new Cilindro(p2, cerchio2.getRaggio(), 15);
         
         System.out.println("Distanza da p1 a p2: " + p.distanzaPunto(p2));
         System.out.println("Distanza punto da cerchio: " + p.distanzaPuntoCerchio(cerchio));
@@ -27,5 +29,19 @@ public class MainProgram {
         System.out.println("Area superficie cilindro: " + cilindro.areaSuperficie());
         System.out.println("Volume cilindro: " + cilindro.volume());
         System.out.println(cilindro.toString());
+        
+        System.out.println("Distanza punto 2 da cerchio 2: " + p2.distanzaPuntoCerchio(cerchio2));
+        System.out.println(p2.toString());
+        
+        System.out.println("Area del cerchio 2: " + cerchio2.area());
+        System.out.println("Circonferenza cerchio 2: " + cerchio2.circonferenza());
+        System.out.println(cerchio2.toString());
+        
+        System.out.println("Area superficie cilindro 2: " + cilindro2.areaSuperficie());
+        System.out.println("Volume cilindro 2: " + cilindro2.volume());
+        System.out.println(cilindro2.toString());
+        
+        System.out.println("Distanza punto da cerchio 2: " + p.distanzaPuntoCerchio(cerchio2));
+        System.out.println("Distanza punto 2 da cerchio: " + p2.distanzaPuntoCerchio(cerchio));
     }
 }
