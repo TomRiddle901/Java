@@ -35,4 +35,8 @@ public class Punto {
         
         return distanza;
     }
+    
+    public String toString(){
+        return "Punto (" + x + "; " + y + ")";
+    }
 }
