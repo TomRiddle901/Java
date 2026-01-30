@@ -18,4 +18,13 @@ public class Punto {
         this.x = x;
         this.y = y;
     }
+    
+    // Metodi
+    public double distanzaPunto(Punto puntoDue){
+        double distanza;
+        
+        distanza = Math.sqrt(Math.pow(this.x - puntoDue.x, 2) + Math.pow(this.y - puntoDue.y, 2));
+        
+        return distanza;
+    }
 }
