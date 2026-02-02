@@ -10,10 +10,10 @@ import java.time.LocalDate;
  *
  * @author Tommaso
  */
-public class Manager extends Dipendente{
-    private Programmatore[] sviluppatore;
+public class Programmatore extends Dipendente{
+    private String[] linguaggi;
     
-    public Manager(String codice, String nome, String cognome, LocalDate dataAssunzione, double stipendioBase){
+    public Programmatore(String codice, String nome, String cognome, LocalDate dataAssunzione, double stipendioBase){
         super(codice, nome, cognome, dataAssunzione, stipendioBase);
     }
 }
