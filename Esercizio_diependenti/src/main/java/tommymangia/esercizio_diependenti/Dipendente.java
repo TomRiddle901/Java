@@ -24,4 +24,8 @@ public class Dipendente {
         this.dataAssunzione = dataAssunzione;
         this.stipendioBase = stipendioBase;
     }
+    
+    public double calcolaStipendio(){
+        return 0;
+    }
 }
