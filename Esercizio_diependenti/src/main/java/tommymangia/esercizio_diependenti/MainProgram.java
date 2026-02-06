@@ -94,27 +94,23 @@ public class MainProgram {
         String codiceProgrammatore, codiceManager;
         Manager man = null;
         Programmatore prog = null;
-        int i = 0;
         
         System.out.print("Codice manager: ");
         codiceManager = in.nextLine();
         
-        while (i < dipendenti.size()){
+        for (int i = 0; i < dipendenti.size(); i++){
             if (dipendenti.get(i).getCodice().equals(codiceManager)){
                 man = (Manager) dipendenti.get(i);
             }
-            i++;
         }
         
-        i = 0;
         System.out.print("Codice programmatore: ");
         codiceProgrammatore = in.nextLine();
         
-        while (i < dipendenti.size()){
+        for (int i = 0; i < dipendenti.size(); i++){
             if (dipendenti.get(i).getCodice().equals(codiceProgrammatore)){
                 prog = (Programmatore) dipendenti.get(i);
             }
-            i++;
         }
         
         if (man != null && prog != null){
@@ -130,6 +126,15 @@ public class MainProgram {
     }
     
     private static void calcolaStipendio(){
+        Scanner in = new Scanner(System.in);
+        String codice;
+        
+        System.out.print("Codice: ");
+        codice = in.nextLine();
+        
+        for (int i = 0; i < dipendenti.size(); i++){
+            
+        }
         System.out.println("Non implementato!");
     }
 }
