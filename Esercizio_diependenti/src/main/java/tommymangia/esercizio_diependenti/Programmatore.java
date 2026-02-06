@@ -30,7 +30,7 @@ public class Programmatore extends Dipendente{
         }
         
         incrementoStipendio = anniAnzianita / 5;
-        percentualeAumento = stipendioBase * (1 / 100) * incrementoStipendio;
+        percentualeAumento = stipendioBase * 0.01 * incrementoStipendio;
         
         stipendio = stipendioBase + percentualeAumento;
         

@@ -4,6 +4,7 @@
  */
 package tommymangia.esercizio_diependenti;
 
+import java.lang.classfile.TypeKind;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -31,7 +32,7 @@ public class Manager extends Dipendente{
         }
         
         incrementoStipendio = anniAnzianita / 4;
-        percentualeAumento = stipendioBase * (2 / 100) * incrementoStipendio;
+        percentualeAumento = stipendioBase * 0.02 * incrementoStipendio;
         bonusProgrammatori = numeroProgrammatori * 10;
         
         stipendio = stipendioBase + percentualeAumento + bonusProgrammatori;
