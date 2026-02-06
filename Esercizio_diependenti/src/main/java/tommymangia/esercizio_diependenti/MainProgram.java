@@ -128,13 +128,20 @@ public class MainProgram {
     private static void calcolaStipendio(){
         Scanner in = new Scanner(System.in);
         String codice;
+        Dipendente dip = null;
         
         System.out.print("Codice: ");
         codice = in.nextLine();
         
         for (int i = 0; i < dipendenti.size(); i++){
-            
+            if (dipendenti.get(i).getCodice().equals(codice)){
+                dip = dipendenti.get(i);
+            }
         }
-        System.out.println("Non implementato!");
+        
+        System.out.println("Stipendio attuale di " + dip.getNome() + " " + dip.getCognome());
+        System.out.println("Codice: " + dip.getCodice() + "\nData assunzione: " + dip.getDataAssunzione());
+        System.out.println("Stipendio base: " + dip.getStipendioBase());
+        System.out.println("Stipendio attuale: " + dip.calcolaStipendio());
     }
 }

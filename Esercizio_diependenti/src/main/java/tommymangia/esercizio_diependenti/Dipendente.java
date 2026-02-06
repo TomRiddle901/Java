@@ -32,4 +32,20 @@ public abstract class Dipendente {
     public String getCodice(){
         return codice;
     }
+    
+    public String getNome(){
+        return nome;
+    }
+    
+    public String getCognome(){
+        return cognome;
+    }
+    
+    public LocalDate getDataAssunzione(){
+        return dataAssunzione;
+    }
+    
+    public double getStipendioBase(){
+        return stipendioBase;
+    }
 }
