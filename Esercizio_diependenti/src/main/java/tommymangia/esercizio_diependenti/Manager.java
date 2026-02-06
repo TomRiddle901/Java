@@ -16,6 +16,7 @@ public class Manager extends Dipendente{
     
     public Manager(String codice, String nome, String cognome, LocalDate dataAssunzione, double stipendioBase){
         super(codice, nome, cognome, dataAssunzione, stipendioBase);
+        sviluppatore = new ArrayList<>();
     }
     
     @Override
@@ -36,5 +37,9 @@ public class Manager extends Dipendente{
         stipendio = stipendioBase + percentualeAumento + bonusProgrammatori;
         
         return stipendio;
+    }
+    
+    public void aggiungiProgrammatore(Programmatore programmatore){
+        sviluppatore.add(programmatore);
     }
 }
