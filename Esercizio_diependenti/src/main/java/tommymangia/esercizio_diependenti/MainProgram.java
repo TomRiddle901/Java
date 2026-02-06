@@ -73,7 +73,7 @@ public class MainProgram {
         nome = in.nextLine();
         System.out.print("Cognome: ");
         cognome = in.nextLine();
-        System.out.print("Data assunzione (GG/MM/AAAA): ");
+        System.out.print("Data assunzione (AAAA-MM-GG): ");
         dataAssunzione = LocalDate.parse(in.nextLine());
         System.out.print("Stipendio iniziale: ");
         stipendioBase = in.nextDouble();
