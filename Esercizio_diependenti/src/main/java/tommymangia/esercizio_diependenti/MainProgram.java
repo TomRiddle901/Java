@@ -61,6 +61,10 @@ public class MainProgram {
     }
     
     private static void aggiungiDipendente(){
+        String codice, nome, cognome;
+        LocalDate dataAssunzione;
+        double stipendioBase;
+        Scanner in = new Scanner(System.in);
         System.out.println("Non implementato!");
     }
     
