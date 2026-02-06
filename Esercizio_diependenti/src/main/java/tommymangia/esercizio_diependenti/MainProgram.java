@@ -65,6 +65,17 @@ public class MainProgram {
         LocalDate dataAssunzione;
         double stipendioBase;
         Scanner in = new Scanner(System.in);
+        
+        System.out.print("Codice: ");
+        codice = in.nextLine();
+        System.out.print("Nome: ");
+        nome = in.nextLine();
+        System.out.print("Cognome: ");
+        cognome = in.nextLine();
+        System.out.print("Data assunzione (GG/MM/AAAA): ");
+        dataAssunzione = LocalDate.parse(in.nextLine());
+        System.out.print("Stipendio iniziale: ");
+        stipendioBase = in.nextDouble();
         System.out.println("Non implementato!");
     }
     
