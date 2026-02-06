@@ -92,6 +92,8 @@ public class MainProgram {
     private static void assegnaManager(){
         Scanner in = new Scanner(System.in);
         String codiceProgrammatore, codiceManager;
+        Manager man = null;
+        Programmatore prog = null;
         int i = 0;
         
         System.out.print("Codice manager: ");
@@ -99,7 +101,7 @@ public class MainProgram {
         
         while (i < dipendenti.size()){
             if (dipendenti.get(i).getCodice().equals(codiceManager)){
-                Manager m = (Manager) dipendenti.get(i);
+                man = (Manager) dipendenti.get(i);
             }
             i++;
         }
@@ -110,12 +112,17 @@ public class MainProgram {
         
         while (i < dipendenti.size()){
             if (dipendenti.get(i).getCodice().equals(codiceProgrammatore)){
-                Programmatore p = (Programmatore) dipendenti.get(i);
+                prog = (Programmatore) dipendenti.get(i);
             }
             i++;
         }
         
-        System.out.println("Non implementato!");
+        if (man != null && prog != null){
+            man.aggiungiProgrammatore(prog);
+            System.out.println("Programmatore asssegnato con successo!");
+        }else{
+            System.out.println("Nessun programmatore/manager trovato!");
+        }
     }
     
     private static void modificaPercentualiContributo(){
