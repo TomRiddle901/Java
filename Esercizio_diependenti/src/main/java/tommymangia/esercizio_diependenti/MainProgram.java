@@ -16,7 +16,31 @@ public class MainProgram {
     private static ArrayList<Dipendente> dipendenti = new ArrayList<>();
     
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int scelta;
+        
+        do{
+            scelta = menu();
+            
+            switch (scelta) {
+                case 1:
+                    aggiungiDipendente();
+                    break;
+                case 2:
+                    assegnaManager();
+                    break;
+                case 3:
+                    modificaPercentualiContributo();
+                    break;
+                case 4:
+                    calcolaStipendio();
+                    break;
+                case 0:
+                    System.out.println("Uscita dal programma in corso...");
+                default:
+                    System.out.println("Scelta non valida!");
+            }
+            
+        }while(scelta != 0);
     }
     
     public static int menu(){
