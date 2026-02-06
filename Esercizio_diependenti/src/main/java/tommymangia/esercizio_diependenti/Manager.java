@@ -18,7 +18,23 @@ public class Manager extends Dipendente{
         super(codice, nome, cognome, dataAssunzione, stipendioBase);
     }
     
+    @Override
     public double calcolaStipendio(){
-        return 0;
+        LocalDate annoAttuale = LocalDate.now();
+        int anniAnzianita = annoAttuale.getYear() - dataAssunzione.getYear();
+        int numeroProgrammatori = sviluppatore.size();
+        double stipendio, incrementoStipendio, percentualeAumento, bonusProgrammatori;
+        
+        if (annoAttuale.getDayOfYear() < dataAssunzione.getDayOfYear()){
+            anniAnzianita--;
+        }
+        
+        incrementoStipendio = anniAnzianita / 4;
+        percentualeAumento = stipendioBase * (2 / 100) * incrementoStipendio;
+        bonusProgrammatori = numeroProgrammatori * 10;
+        
+        stipendio = stipendioBase + percentualeAumento + bonusProgrammatori;
+        
+        return stipendio;
     }
 }

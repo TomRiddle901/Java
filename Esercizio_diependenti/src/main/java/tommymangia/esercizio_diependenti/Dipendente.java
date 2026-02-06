@@ -10,7 +10,7 @@ import java.time.LocalDate;
  *
  * @author Tommaso
  */
-public class Dipendente {
+public abstract class Dipendente {
     protected String codice;
     protected String nome;
     protected String cognome;
@@ -25,7 +25,5 @@ public class Dipendente {
         this.stipendioBase = stipendioBase;
     }
     
-    public double calcolaStipendio(){
-        return 0;
-    }
+    public abstract double calcolaStipendio();
 }

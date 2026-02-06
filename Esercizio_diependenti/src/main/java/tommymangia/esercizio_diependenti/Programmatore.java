@@ -18,7 +18,8 @@ public class Programmatore extends Dipendente{
         super(codice, nome, cognome, dataAssunzione, stipendioBase);
     }
     
+    @Override
     public double calcolaStipendio(){
-        return 0;
+        
     }
 }
