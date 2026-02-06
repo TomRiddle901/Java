@@ -10,6 +10,8 @@ import java.time.LocalDate;
  *
  * @author Tommaso
  */
+
+
 public abstract class Dipendente {
     protected String codice;
     protected String nome;
