@@ -76,8 +76,16 @@ public class MainProgram {
         dataAssunzione = LocalDate.parse(in.nextLine());
         System.out.print("Stipendio iniziale: ");
         stipendioBase = in.nextDouble();
-        System.out.print("Manager o programmatore: ");
+        System.out.print("Manager o Programmatore: ");
         tipo = in.nextLine();
+        
+        if (tipo.equals("Manager")){
+            
+        }else if (tipo.equals("Programmatore")){
+            
+        }else{
+            System.out.println("Opzione non valida!");
+        }
         System.out.println("Non implementato!");
     }
     
