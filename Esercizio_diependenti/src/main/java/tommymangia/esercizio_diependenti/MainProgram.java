@@ -13,11 +13,13 @@ import java.time.LocalDate;
  */
 public class MainProgram {
 
+    private static ArrayList<Dipendente> dipendenti = new ArrayList<>();
+    
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
     
-    public int menu(){
+    public static int menu(){
         int scelta;
         Scanner in = new Scanner(System.in);
         
