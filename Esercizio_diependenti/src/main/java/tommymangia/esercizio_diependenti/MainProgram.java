@@ -86,7 +86,7 @@ public class MainProgram {
         }else{
             System.out.println("Opzione non valida!");
         }
-        System.out.println("Non implementato!");
+        System.out.println("Dipendente aggiunto!");
     }
     
     private static void assegnaManager(){
