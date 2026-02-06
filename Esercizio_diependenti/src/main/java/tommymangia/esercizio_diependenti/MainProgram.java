@@ -90,6 +90,31 @@ public class MainProgram {
     }
     
     private static void assegnaManager(){
+        Scanner in = new Scanner(System.in);
+        String codiceProgrammatore, codiceManager;
+        int i = 0;
+        
+        System.out.print("Codice manager: ");
+        codiceManager = in.nextLine();
+        
+        while (i < dipendenti.size()){
+            if (dipendenti.get(i).getCodice().equals(codiceManager)){
+                Manager m = (Manager) dipendenti.get(i);
+            }
+            i++;
+        }
+        
+        i = 0;
+        System.out.print("Codice programmatore: ");
+        codiceProgrammatore = in.nextLine();
+        
+        while (i < dipendenti.size()){
+            if (dipendenti.get(i).getCodice().equals(codiceProgrammatore)){
+                Programmatore p = (Programmatore) dipendenti.get(i);
+            }
+            i++;
+        }
+        
         System.out.println("Non implementato!");
     }
     
