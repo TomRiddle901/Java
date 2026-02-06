@@ -13,6 +13,8 @@ import java.util.ArrayList;
  */
 public class Programmatore extends Dipendente{
     private ArrayList<String> linguaggi;
+    private static double percentuale = 0.01;
+    
     public Programmatore(String codice, String nome, String cognome, LocalDate dataAssunzione, double stipendioBase){
         super(codice, nome, cognome, dataAssunzione, stipendioBase);
         linguaggi = new ArrayList<>();
@@ -30,10 +32,14 @@ public class Programmatore extends Dipendente{
         }
         
         incrementoStipendio = anniAnzianita / 5;
-        percentualeAumento = stipendioBase * 0.01 * incrementoStipendio;
+        percentualeAumento = stipendioBase * percentuale * incrementoStipendio;
         
         stipendio = stipendioBase + percentualeAumento;
         
         return stipendio;
+    }
+    
+    public void setPercentuale(double nuovaPercentuale){
+        percentuale = nuovaPercentuale;
     }
 }
