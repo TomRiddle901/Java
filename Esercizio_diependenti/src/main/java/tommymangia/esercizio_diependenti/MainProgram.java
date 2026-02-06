@@ -139,9 +139,14 @@ public class MainProgram {
             }
         }
         
-        System.out.println("Stipendio attuale di " + dip.getNome() + " " + dip.getCognome());
-        System.out.println("Codice: " + dip.getCodice() + "\nData assunzione: " + dip.getDataAssunzione());
-        System.out.println("Stipendio base: " + dip.getStipendioBase());
-        System.out.println("Stipendio attuale: " + dip.calcolaStipendio());
+        if (dip != null){
+            System.out.println("Stipendio attuale di " + dip.getNome() + " " + dip.getCognome());
+            System.out.println("Codice: " + dip.getCodice() + "\nData assunzione: " + dip.getDataAssunzione());
+            System.out.println("Stipendio base: " + dip.getStipendioBase());
+            System.out.println("Stipendio attuale: " + dip.calcolaStipendio());
+        }else{
+            System.out.println("Dipendente non trovato!");
+        }
+        
     }
 }
