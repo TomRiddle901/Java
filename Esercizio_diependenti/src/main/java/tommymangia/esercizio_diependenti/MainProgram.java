@@ -7,6 +7,7 @@ package tommymangia.esercizio_diependenti;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.time.LocalDate;
+
 /**
  *
  * @author Tommaso
@@ -122,7 +123,36 @@ public class MainProgram {
     }
     
     private static void modificaPercentualiContributo(){
-        System.out.println("Non implementato!");
+        Scanner in = new Scanner(System.in);
+        Programmatore prog = null;
+        Manager man = null;
+        String codiceProgrammatore, codiceManager;
+        
+        System.out.print("Codice programmatore (vuoto se non si vuole modificare): ");
+        codiceProgrammatore = in.nextLine();
+        System.out.print("Codice manager (vuoto se non si vuole modificare): ");
+        codiceManager = in.nextLine();
+        
+        for (int i = 0; i < dipendenti.size(); i++){
+            if (dipendenti.get(i).getCodice().equals(codiceManager)){
+                man = (Manager) dipendenti.get(i);
+            } else if (dipendenti.get(i).getCodice().equals(codiceProgrammatore)){
+                prog = (Programmatore) dipendenti.get(i);
+            }
+        }
+        
+        if (man != null){
+            System.out.print("Percentuale maggioramento (es: 2): ");
+            man.setPercentuale(in.nextDouble() / 100);
+            
+            System.out.print("Contributo (es: 15): ");
+            man.setContributo(in.nextInt());
+        } else if (prog != null){
+            System.out.println("Percentuale maggioramento (es: 2): ");
+            prog.setPercentuale(in.nextDouble() / 100);
+        } else{
+            System.out.println("Nessun dipendente trovato!");
+        }
     }
     
     private static void calcolaStipendio(){
