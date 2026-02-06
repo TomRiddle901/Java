@@ -59,4 +59,20 @@ public class MainProgram {
         
         return scelta;
     }
+    
+    private static void aggiungiDipendente(){
+        System.out.println("Non implementato!");
+    }
+    
+    private static void assegnaManager(){
+        System.out.println("Non implementato!");
+    }
+    
+    private static void modificaPercentualiContributo(){
+        System.out.println("Non implementato!");
+    }
+    
+    private static void calcolaStipendio(){
+        System.out.println("Non implementato!");
+    }
 }
