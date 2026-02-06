@@ -80,9 +80,9 @@ public class MainProgram {
         tipo = in.nextLine();
         
         if (tipo.equals("Manager")){
-            
+            dipendenti.add(new Manager(codice, nome, cognome, dataAssunzione, stipendioBase));
         }else if (tipo.equals("Programmatore")){
-            
+            dipendenti.add(new Programmatore(codice, nome, cognome, dataAssunzione, stipendioBase));
         }else{
             System.out.println("Opzione non valida!");
         }
