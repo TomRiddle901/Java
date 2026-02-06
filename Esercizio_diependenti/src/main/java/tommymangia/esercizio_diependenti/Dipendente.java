@@ -28,4 +28,8 @@ public abstract class Dipendente {
     }
     
     public abstract double calcolaStipendio();
+    
+    public String getCodice(){
+        return codice;
+    }
 }
