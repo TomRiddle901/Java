@@ -25,7 +25,8 @@ public class Manager extends Dipendente{
         LocalDate annoAttuale = LocalDate.now();
         int anniAnzianita = annoAttuale.getYear() - dataAssunzione.getYear();
         int numeroProgrammatori = sviluppatore.size();
-        double stipendio, incrementoStipendio, percentualeAumento, bonusProgrammatori;
+        double stipendio, percentualeAumento, bonusProgrammatori;
+        int incrementoStipendio;
         
         if (annoAttuale.getDayOfYear() < dataAssunzione.getDayOfYear()){
             anniAnzianita--;

@@ -21,9 +21,10 @@ public class Programmatore extends Dipendente{
     
     @Override
     public double calcolaStipendio(){
-        double stipendio, incrementoStipendio, percentualeAumento;
+        double stipendio, percentualeAumento;
         LocalDate annoAttuale = LocalDate.now();
         int anniAnzianita = annoAttuale.getYear() - dataAssunzione.getYear();
+        int incrementoStipendio;
         
         if (annoAttuale.getDayOfYear() < dataAssunzione.getDayOfYear()){
             anniAnzianita--;
