@@ -147,6 +147,5 @@ public class MainProgram {
         }else{
             System.out.println("Dipendente non trovato!");
         }
-        
     }
 }
