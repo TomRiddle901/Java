@@ -76,7 +76,7 @@ public class MainProgram {
         dataAssunzione = LocalDate.parse(in.nextLine());
         System.out.print("Stipendio iniziale: ");
         stipendioBase = in.nextDouble();
-        System.out.print("Dipendente o programmatore: ");
+        System.out.print("Manager o programmatore: ");
         tipo = in.nextLine();
         System.out.println("Non implementato!");
     }
