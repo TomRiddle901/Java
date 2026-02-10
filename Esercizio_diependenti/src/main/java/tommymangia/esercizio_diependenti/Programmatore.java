@@ -42,4 +42,8 @@ public class Programmatore extends Dipendente{
     public void setPercentuale(double nuovaPercentuale){
         percentuale = nuovaPercentuale;
     }
+    
+    public void aggiungiLinguaggio(String linguaggio){
+        linguaggi.add(linguaggio);
+    }
 }
