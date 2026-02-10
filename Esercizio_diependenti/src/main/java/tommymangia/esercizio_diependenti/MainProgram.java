@@ -65,6 +65,7 @@ public class MainProgram {
         String codice, nome, cognome, tipo;
         LocalDate dataAssunzione;
         double stipendioBase;
+        Programmatore prog = null;
         Scanner in = new Scanner(System.in);
         
         System.out.print("Codice: ");
@@ -85,6 +86,18 @@ public class MainProgram {
             dipendenti.add(new Manager(codice, nome, cognome, dataAssunzione, stipendioBase));
         }else if (tipo.equals("Programmatore")){
             dipendenti.add(new Programmatore(codice, nome, cognome, dataAssunzione, stipendioBase));
+            
+            for (int i = 0; i < dipendenti.size(); i++){
+                if (dipendenti.get(i).getCodice().equals(codice)){
+                    prog = (Programmatore) dipendenti.get(i);
+                }
+            }
+            
+            do{
+                System.out.print("Linguagio di programmazione: ");
+                prog.aggiungiLinguaggio(in.nextLine());
+                System.out.print("Vuoi inserire un altro linguaggio di programmazione? (Si/No): ");
+            }while (in.nextLine().equals("Si"));
         }else{
             System.out.println("Opzione non valida!");
         }
