@@ -161,11 +161,15 @@ public class MainProgram {
             
             System.out.print("Contributo (es: 15): ");
             man.setContributo(in.nextInt());
-        } else if (prog != null){
+        } else{
+            System.out.println("Manager non trovato!");
+        }
+        
+        if (prog != null){
             System.out.println("Percentuale maggioramento (es: 2): ");
             prog.setPercentuale(in.nextDouble() / 100);
         } else{
-            System.out.println("Nessun dipendente trovato!");
+            System.out.println("Programmatore non trovato!");
         }
     }
     
