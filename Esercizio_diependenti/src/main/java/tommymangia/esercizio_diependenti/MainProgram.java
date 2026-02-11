@@ -62,7 +62,7 @@ public class MainProgram {
     }
     
     private static void aggiungiDipendente(){
-        String codice, nome, cognome, tipo;
+        String codice, nome, cognome, tipo, linguaggio;
         LocalDate dataAssunzione;
         double stipendioBase;
         Programmatore prog = null;
@@ -85,17 +85,18 @@ public class MainProgram {
         if (tipo.equals("Manager")){
             dipendenti.add(new Manager(codice, nome, cognome, dataAssunzione, stipendioBase));
         }else if (tipo.equals("Programmatore")){
-            dipendenti.add(new Programmatore(codice, nome, cognome, dataAssunzione, stipendioBase));
-            
-            for (int i = 0; i < dipendenti.size(); i++){
-                if (dipendenti.get(i).getCodice().equals(codice)){
-                    prog = (Programmatore) dipendenti.get(i);
-                }
-            }
+            prog = new Programmatore(codice, nome, cognome, dataAssunzione, stipendioBase);
+            dipendenti.add(prog);
             
             do{
+                prog.stampaListaLinguaggi();
                 System.out.print("Linguagio di programmazione: ");
-                prog.aggiungiLinguaggio(in.nextLine());
+                linguaggio = in.nextLine();
+                if (prog.esisteLinguaggio(linguaggio)){
+                    prog.aggiungiLinguaggio(linguaggio);
+                }else{
+                    System.out.println("Linguaggio non trovato!");
+                }
                 System.out.print("Vuoi inserire un altro linguaggio di programmazione? (Si/No): ");
             }while (in.nextLine().equals("Si"));
         }else{
