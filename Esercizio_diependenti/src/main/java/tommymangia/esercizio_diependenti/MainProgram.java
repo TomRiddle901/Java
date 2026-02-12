@@ -35,6 +35,9 @@ public class MainProgram {
                 case 4:
                     calcolaStipendio();
                     break;
+                case 5:
+                    aggiornaListaLinguaggi();
+                    break;
                 case 0:
                     System.out.println("Uscita dal programma in corso...");
                 default:
@@ -53,6 +56,7 @@ public class MainProgram {
         System.out.println("2) Assegna un manager ad un programmatore");
         System.out.println("3) Modifica percentuali ed il contributo");
         System.out.println("4) Calcola stipendio di un dipendente");
+        System.out.println("5) Aggiorna lista linguaggi programmazione");
         System.out.println("0) Esci");
         System.out.print("Scelta: ");
         
@@ -102,6 +106,7 @@ public class MainProgram {
         }else{
             System.out.println("Opzione non valida!");
         }
+        
         System.out.println("Dipendente aggiunto!");
     }
     
@@ -196,5 +201,15 @@ public class MainProgram {
         }else{
             System.out.println("Dipendente non trovato!");
         }
+    }
+    
+    private static void aggiornaListaLinguaggi(){
+        Scanner in = new Scanner(System.in);
+        String linguaggio;
+        Programmatore prog = null;
+        System.out.print("Linguaggio da aggiungere: ");
+        linguaggio = in.nextLine();
+        
+        Programmatore.aggiornaLinguaggi(linguaggio);
     }
 }

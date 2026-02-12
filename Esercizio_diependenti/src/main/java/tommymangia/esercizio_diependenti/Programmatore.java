@@ -6,6 +6,7 @@ package tommymangia.esercizio_diependenti;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  *
@@ -14,7 +15,8 @@ import java.util.ArrayList;
 public class Programmatore extends Dipendente{
     private ArrayList<String> linguaggi;
     private static double percentuale = 0.01;
-    private static final String[] listaLinguaggi = {"Java", "Python", "JavaScript", "C", "C++", "Ruby", "Rust", "Visual Basic", "C#", "PHP"};
+    // private static final String[] listaLinguaggi = {"Java", "Python", "JavaScript", "C", "C++", "Ruby", "Rust", "Visual Basic", "C#", "PHP"};
+    private static ArrayList<String> listaLinguaggi = new ArrayList<>(Arrays.asList("Java", "Python", "JavaScript", "C", "C++", "Ruby", "Rust", "Visual Basic", "C#", "PHP"));
     
     public Programmatore(String codice, String nome, String cognome, LocalDate dataAssunzione, double stipendioBase){
         super(codice, nome, cognome, dataAssunzione, stipendioBase);
@@ -49,18 +51,22 @@ public class Programmatore extends Dipendente{
     }
     
     public void stampaListaLinguaggi(){
-        for (int i = 0; i < listaLinguaggi.length; i++){
-            System.out.println("- " + listaLinguaggi[i]);
+        for (int i = 0; i < listaLinguaggi.size(); i++){
+            System.out.println("- " + listaLinguaggi.get(i));
         }
     }
     
     public boolean esisteLinguaggio(String linguaggio){        
-        for (int i = 0; i < listaLinguaggi.length; i++){
-            if (linguaggio.equals(listaLinguaggi[i])){
+        for (int i = 0; i < listaLinguaggi.size(); i++){
+            if (linguaggio.equals(listaLinguaggi.get(i))){
                 return true;
             }
         }
         
         return false;
+    }
+    
+    public static void aggiornaLinguaggi(String nuovoLinguaggio){
+        listaLinguaggi.add(nuovoLinguaggio);
     }
 }
