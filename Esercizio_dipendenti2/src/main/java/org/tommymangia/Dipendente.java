@@ -12,4 +12,10 @@ public abstract class Dipendente {
         this.cognome = cognome;
         this.stipendioBase = stipendioBase;
     }
+
+    public abstract double calcolaStipendio();
+
+    public void aggiornaStipendioBase(double nuovoStipendio){
+        stipendioBase = stipendioBase;
+    }
 }
