@@ -25,6 +25,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Test_Intellij" target="25" />
+      <module name="untitled" target="25" />
     </bytecodeTargetLevel>
   </component>
 </project>

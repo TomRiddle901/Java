@@ -40,6 +40,7 @@ public class MainProgram {
                     break;
                 case 0:
                     System.out.println("Uscita dal programma in corso...");
+                    break;
                 default:
                     System.out.println("Scelta non valida!");
             }
