@@ -1,4 +1,12 @@
 package org.tommymangia;
 
-public class Tecnici {
+import java.time.LocalTime;
+
+public class Tecnici extends Dipendente{
+    private static double importoStraordinari = 10;
+    private LocalTime oreStaordinari;
+
+    public Tecnici(String matricola, String nome, String cognome, double stipendioBase){
+        super(matricola, nome, cognome, stipendioBase);
+    }
 }
