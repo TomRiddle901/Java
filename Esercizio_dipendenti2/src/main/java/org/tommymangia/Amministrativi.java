@@ -7,4 +7,12 @@ public class Amministrativi extends Dipendente{
         super(matricola, nome, cognome, stipendioBase);
         this.bonusMensile = bonusMensile;
     }
+
+    public double calcolaStipendio(){
+        return stipendioBase + bonusMensile;
+    }
+
+    public void aggiornaBonusMensile(double nuovoBonus){
+        bonusMensile = nuovoBonus;
+    }
 }
