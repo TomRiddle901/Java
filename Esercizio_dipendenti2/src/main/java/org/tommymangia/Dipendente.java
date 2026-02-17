@@ -1,6 +1,6 @@
 package org.tommymangia;
 
-public class Dipendente {
+public abstract class Dipendente {
     protected String matricola;
     protected String nome;
     protected String cognome;
@@ -11,5 +11,11 @@ public class Dipendente {
         this.cognome = cognome;
         this.matricola = matricola;
         this.stipendioBase = stipendioBase;
+    }
+
+    public abstract double calcolaStipendio();
+
+    public void aggiornaStipendioBase(double nuovoStipendio){
+        stipendioBase = nuovoStipendio;
     }
 }
