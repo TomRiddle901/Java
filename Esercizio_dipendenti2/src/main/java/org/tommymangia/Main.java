@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Main {
 
-    private static ArrayList<Dipendente> listaDipendenti;
+    private static ArrayList<Dipendente> listaDipendenti = new ArrayList<>();
 
     public static void main(String[] args){
         Amministrativi amm = new Amministrativi("amm1", "Ammi", "Strativi", 2000, 10);
