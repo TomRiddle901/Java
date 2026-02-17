@@ -147,7 +147,7 @@ public class MainProgram {
         Programmatore prog = null;
         Manager man = null;
         String codiceProgrammatore, codiceManager;
-        
+
         System.out.print("Codice programmatore (vuoto se non si vuole modificare): ");
         codiceProgrammatore = in.nextLine();
         System.out.print("Codice manager (vuoto se non si vuole modificare): ");
@@ -206,10 +206,9 @@ public class MainProgram {
     private static void aggiornaListaLinguaggi(){
         Scanner in = new Scanner(System.in);
         String linguaggio;
-        Programmatore prog = null;
         System.out.print("Linguaggio da aggiungere: ");
         linguaggio = in.nextLine();
-        
+
         Programmatore.aggiornaLinguaggi(linguaggio);
     }
 }
