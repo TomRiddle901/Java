@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="KotlinNotebookOptionsProvider">
+    <option name="jdkName" value="25" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Esercizio_recupero_1/pom.xml" />
+        <option value="$PROJECT_DIR$/Esercizio_recupero_2/pom.xml" />
+        <option value="$PROJECT_DIR$/Esercizio_diependenti/pom.xml" />
+        <option value="$PROJECT_DIR$/Punto_cerchio_cilindro/pom.xml" />
+        <option value="$PROJECT_DIR$/Applicazione_Biblioteca/pom.xml" />
+        <option value="$PROJECT_DIR$/Poligono_con_classe_Punto/pom.xml" />
+        <option value="$PROJECT_DIR$/Progettazione_classe_punto/pom.xml" />
+        <option value="$PROJECT_DIR$/Triangolo_con_classe_punto/pom.xml" />
+        <option value="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/pom.xml" />
+        <option value="$PROJECT_DIR$/Esercizio_classe_calciatore/pom.xml" />
+        <option value="$PROJECT_DIR$/Esercizio_recupero_ricettario/pom.xml" />
+        <option value="$PROJECT_DIR$/Esercizio_diependenti/Test_Intellij/pom.xml" />
+        <option value="$PROJECT_DIR$/Esercizio_due_classi_collegate/pom.xml" />
+        <option value="$PROJECT_DIR$/Classe_singola_con_array_paralleli/pom.xml" />
+        <option value="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/pom.xml" />
+        <option value="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Esercizio_diependenti/Test_Intellij/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <selected-state>
+          <State>
+            <id>User defined</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="25" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

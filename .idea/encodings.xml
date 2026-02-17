@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Applicazione_Biblioteca/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Classe_singola_con_array_paralleli/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Classe_singola_con_array_paralleli/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_classe_calciatore/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_classe_calciatore/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_diependenti/Test_Intellij/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_diependenti/Test_Intellij/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_diependenti/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_diependenti/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_due_classi_collegate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_due_classi_collegate/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_recupero_1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_recupero_1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_recupero_2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_recupero_2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_recupero_ricettario/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Esercizio_recupero_ricettario/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Poligono_con_classe_Punto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Poligono_con_classe_Punto/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Progettazione_classe_punto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Progettazione_classe_punto/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Punto_cerchio_cilindro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Punto_cerchio_cilindro/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Triangolo_con_classe_punto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Triangolo_con_classe_punto/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
