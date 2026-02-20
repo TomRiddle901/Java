@@ -9,4 +9,8 @@ public class Moto extends Veicolo{
     public double calcolaConsumo(double km){
         return 0;
     }
+
+    public double getConsumoCentoChilometri() {
+        return consumoCentoChilometri;
+    }
 }
