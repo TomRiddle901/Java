@@ -124,7 +124,7 @@ public class MainProgram {
 
         for (int i = 0; i < listaVeicoli.size(); i++){
             if (listaVeicoli.get(i).getMarca().equals(marcaDaCercare)){
-                if (listaVeicoli.get(i).getModello().equals(marcaDaCercare)){
+                if (listaVeicoli.get(i).getModello().equals(modelloDaCercare)){
                     veic = listaVeicoli.get(i);
                 }
             }
