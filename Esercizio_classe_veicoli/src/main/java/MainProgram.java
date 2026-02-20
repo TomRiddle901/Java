@@ -59,6 +59,7 @@ public class MainProgram {
 
         if (scelta.equals("A") || scelta.equals("a")){
             System.out.print("Numero posti: ");
+            in.nextLine();
             numeroPosti = in.nextInt();
             System.out.print("Tipo di carburante: ");
             tipoCarburante = in.nextLine();
