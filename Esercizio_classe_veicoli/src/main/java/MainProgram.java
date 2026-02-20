@@ -46,12 +46,38 @@ public class MainProgram {
 
     private static void aggiungiVeicolo(){
         Scanner in = new Scanner(System.in);
-        Macchina mac = null;
-        Moto mot = null;
-        String marca, modello, tipoCarburante;
+        String marca, modello, tipoCarburante, scelta;
         int numeroPosti;
         double consumoCentoChilometri;
 
-        System.out.println();
+        System.out.print("Marca: ");
+        marca = in.nextLine();
+        System.out.print("Modello: ");
+        modello = in.nextLine();
+        System.out.print("Auto (A) o Moto (M): ");
+        scelta = in.nextLine();
+
+        if (scelta.equals("A") || scelta.equals("a")){
+            System.out.print("Numero posti: ");
+            numeroPosti = in.nextInt();
+            System.out.print("Tipo di carburante: ");
+            tipoCarburante = in.nextLine();
+            System.out.print("Consumo per cento chilometri: ");
+            consumoCentoChilometri = in.nextDouble();
+
+            listaVeicoli.add(new Macchina(marca, modello, numeroPosti, tipoCarburante, consumoCentoChilometri));
+
+            System.out.println("Automobile aggiunta con successo!");
+        }else if (scelta.equals("M") || scelta.equals("m")){
+            System.out.print("Consumo per cento chilometri: ");
+            consumoCentoChilometri = in.nextDouble();
+
+            listaVeicoli.add(new Moto(marca, modello, consumoCentoChilometri));
+
+            System.out.println("Moto aggiunta con successo!");
+        }else{
+            System.out.println("Impossibile aggiungere veicolo!");
+            System.out.println("Scelta non valida o errore sconosciuto");
+        }
     }
 }
