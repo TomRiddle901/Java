@@ -43,4 +43,12 @@ public class MainProgram {
 
         return scelta;
     }
+
+    private static void aggiungiVeicolo(){
+        Scanner in = new Scanner(System.in);
+        Macchina mac = null;
+        Moto mot = null;
+
+
+    }
 }
