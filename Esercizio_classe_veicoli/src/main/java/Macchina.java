@@ -9,4 +9,8 @@ public class Macchina extends Veicolo{
         this.tipoCarburante = tipoCarburante;
         this.consumoCentoChilometri = consumoCentoChilometri;
     }
+
+    public double calcolaConsumo(double km){
+        return 0;
+    }
 }
