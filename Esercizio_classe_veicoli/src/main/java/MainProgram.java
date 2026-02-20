@@ -112,6 +112,28 @@ public class MainProgram {
     }
 
     public static void infoVeicolo(){
+        Scanner in = new Scanner(System.in);
+        String marcaDaCercare, modelloDaCercare;
+        Veicolo veic = null;
 
+        System.out.println("Info del veicolo");
+        System.out.print("Marca: ");
+        marcaDaCercare = in.nextLine();
+        System.out.print("Modello: ");
+        modelloDaCercare = in.nextLine();
+
+        for (int i = 0; i < listaVeicoli.size(); i++){
+            if (listaVeicoli.get(i).getMarca().equals(marcaDaCercare)){
+                if (listaVeicoli.get(i).getModello().equals(marcaDaCercare)){
+                    veic = listaVeicoli.get(i);
+                }
+            }
+        }
+
+        if (veic != null){
+            System.out.println(veic.info());
+        }else{
+            System.out.println("Veicolo inesistente!");
+        }
     }
 }
