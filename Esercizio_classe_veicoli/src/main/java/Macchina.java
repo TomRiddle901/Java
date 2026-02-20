@@ -11,7 +11,11 @@ public class Macchina extends Veicolo{
     }
 
     public double calcolaConsumo(double km){
-        return 0;
+        double consumo;
+
+        consumo = km / consumoCentoChilometri;
+
+        return consumo;
     }
 
     public int getNumeroPosti() {
