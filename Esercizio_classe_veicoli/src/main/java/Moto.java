@@ -5,4 +5,8 @@ public class Moto extends Veicolo{
         super(marca, modello);
         this.consumoCentoChilometri = consumoCentoChilometri;
     }
+
+    public double calcolaConsumo(double km){
+        return 0;
+    }
 }
