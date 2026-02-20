@@ -11,11 +11,16 @@ public class MainProgram {
 
     private static int menu(){
         int scelta;
+        Scanner in = new Scanner(System.in);
 
         System.out.println("Menù");
         System.out.println("1) Aggiungi un veicolo");
         System.out.println("2) Calcola consumo per 100Km");
         System.out.println("3) Stampa informazioni veicolo");
         System.out.println("0) Esci");
+        System.out.print("Scelta: ");
+        scelta = in.nextInt();
+
+        return scelta;
     }
 }
