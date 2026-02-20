@@ -97,10 +97,8 @@ public class MainProgram {
         chilometri = in.nextDouble();
 
         for (int i = 0; i < listaVeicoli.size(); i++){
-            if (listaVeicoli.get(i).getMarca().equals(marcaDaCercare)){
-                if (listaVeicoli.get(i).getModello().equals(modelloDaCercare)){
-                    veic = listaVeicoli.get(i);
-                }
+            if (listaVeicoli.get(i).getMarca().equals(marcaDaCercare) && listaVeicoli.get(i).getModello().equals(modelloDaCercare)){
+                veic = listaVeicoli.get(i);
             }
         }
 
@@ -123,10 +121,8 @@ public class MainProgram {
         modelloDaCercare = in.nextLine();
 
         for (int i = 0; i < listaVeicoli.size(); i++){
-            if (listaVeicoli.get(i).getMarca().equals(marcaDaCercare)){
-                if (listaVeicoli.get(i).getModello().equals(modelloDaCercare)){
-                    veic = listaVeicoli.get(i);
-                }
+            if (listaVeicoli.get(i).getMarca().equals(marcaDaCercare) && listaVeicoli.get(i).getModello().equals(modelloDaCercare)){
+                veic = listaVeicoli.get(i);
             }
         }
 
