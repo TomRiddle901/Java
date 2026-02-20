@@ -18,15 +18,8 @@ public class Macchina extends Veicolo{
         return consumo;
     }
 
-    public int getNumeroPosti() {
-        return numeroPosti;
-    }
-
-    public String getTipoCarburante() {
-        return tipoCarburante;
-    }
-
-    public double getConsumoCentoChilometri() {
-        return consumoCentoChilometri;
+    @Override
+    public String info(){
+        return "Numero posti: " + numeroPosti + "Tipo di carburante: " + tipoCarburante + "Consumo per cento chilometri: " + consumoCentoChilometri + " L";
     }
 }

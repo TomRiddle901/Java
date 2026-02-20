@@ -14,7 +14,8 @@ public class Moto extends Veicolo{
         return consumo;
     }
 
-    public double getConsumoCentoChilometri() {
-        return consumoCentoChilometri;
+    @Override
+    public String info(){
+        return "Consumo per cento chilometri: " + consumoCentoChilometri + " L";
     }
 }

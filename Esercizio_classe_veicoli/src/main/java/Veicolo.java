@@ -10,6 +10,6 @@ public abstract class Veicolo {
     protected abstract double calcolaConsumo(double km);
 
     public String info(){
-        return "";
+        return "Marca: " + marca + "Modello: " + modello + "\n";
     }
 }
