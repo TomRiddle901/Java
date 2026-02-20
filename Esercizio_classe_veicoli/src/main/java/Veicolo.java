@@ -12,4 +12,12 @@ public abstract class Veicolo {
     public String info(){
         return "Marca: " + marca + "Modello: " + modello + "\n";
     }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getModello() {
+        return modello;
+    }
 }
