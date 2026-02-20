@@ -48,7 +48,10 @@ public class MainProgram {
         Scanner in = new Scanner(System.in);
         Macchina mac = null;
         Moto mot = null;
+        String marca, modello, tipoCarburante;
+        int numeroPosti;
+        double consumoCentoChilometri;
 
-
+        System.out.println();
     }
 }
