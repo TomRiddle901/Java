@@ -80,4 +80,12 @@ public class MainProgram {
             System.out.println("Scelta non valida o errore sconosciuto");
         }
     }
+
+    public static void calcolaConsumoCentoChilometri(){
+
+    }
+
+    public static void infoVeicolo(){
+
+    }
 }
