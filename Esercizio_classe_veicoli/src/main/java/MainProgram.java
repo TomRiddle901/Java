@@ -82,7 +82,32 @@ public class MainProgram {
     }
 
     public static void calcolaConsumoCentoChilometri(){
+        Scanner in =  new Scanner(System.in);
+        String marcaDaCercare, modelloDaCercare;
+        double chilometri;
+        Veicolo veic = null;
 
+        System.out.println("Calcolo del consumo");
+        System.out.print("Marca: ");
+        marcaDaCercare = in.nextLine();
+        System.out.print("Modello: ");
+        modelloDaCercare = in.nextLine();
+        System.out.print("Chilometri: ");
+        chilometri = in.nextDouble();
+
+        for (int i = 0; i < listaVeicoli.size(); i++){
+            if (listaVeicoli.get(i).getMarca().equals(marcaDaCercare)){
+                if (listaVeicoli.get(i).getModello().equals(modelloDaCercare)){
+                    veic = listaVeicoli.get(i);
+                }
+            }
+        }
+
+        if (veic != null){
+            System.out.println("Litri consumati per " + chilometri + "km: " + veic.calcolaConsumo(chilometri) + "L");
+        }else{
+            System.out.println("Veicolo non trovato!");
+        }
     }
 
     public static void infoVeicolo(){
