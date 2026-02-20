@@ -20,6 +20,6 @@ public class Macchina extends Veicolo{
 
     @Override
     public String info(){
-        return "Numero posti: " + numeroPosti + "Tipo di carburante: " + tipoCarburante + "Consumo per cento chilometri: " + consumoCentoChilometri + " L";
+        return "Marca: " + marca + "Modello: " + modello + "Numero posti: " + numeroPosti + "Tipo di carburante: " + tipoCarburante + "Consumo per cento chilometri: " + consumoCentoChilometri + " L";
     }
 }

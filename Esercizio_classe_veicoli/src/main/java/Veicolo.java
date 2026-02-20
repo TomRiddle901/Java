@@ -9,9 +9,7 @@ public abstract class Veicolo {
 
     protected abstract double calcolaConsumo(double km);
 
-    public String info(){
-        return "Marca: " + marca + "Modello: " + modello + "\n";
-    }
+    public abstract String info();
 
     public String getMarca() {
         return marca;

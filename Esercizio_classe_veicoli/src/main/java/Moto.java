@@ -16,6 +16,6 @@ public class Moto extends Veicolo{
 
     @Override
     public String info(){
-        return "Consumo per cento chilometri: " + consumoCentoChilometri + " L";
+        return "Marca: " + marca + "Modello: " + modello + "Consumo per cento chilometri: " + consumoCentoChilometri + " L";
     }
 }
