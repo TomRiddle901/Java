@@ -27,14 +27,19 @@ public class Garage {
         }
     }
 
-    public void rimuoviMacchina(String targa, int posto, LocalTime uscita){
+    public void rimuoviMacchina(String targa, int posto, LocalTime uscita, LocalDate data){
+        double tariffaDaPagare;
         if (posti[posto] != null){
-            System.out.println("Costo parcheggio: " + posti[posto].calcolaTariffaOraria(uscita));
+            tariffaDaPagare = posti[posto].calcolaTariffaOraria(uscita);
+            System.out.println("Costo parcheggio: " + tariffaDaPagare);
+            aggiungiGuadagnoGiornata(tariffaDaPagare, data);
             posti[posto] = null;
         }else{
             for(int i = 0; i < 100; i++){
                 if (posti[i].ottieniTarga().equals(targa)){
-                    System.out.println("Costo parcheggio: " + posti[i].calcolaTariffaOraria(uscita));
+                    tariffaDaPagare = posti[i].calcolaTariffaOraria(uscita);
+                    System.out.println("Costo parcheggio: " + tariffaDaPagare);
+                    aggiungiGuadagnoGiornata(tariffaDaPagare, data);
                     posti[i] = null;
                 }
             }
