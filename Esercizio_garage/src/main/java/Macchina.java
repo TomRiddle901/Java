@@ -4,4 +4,8 @@ public class Macchina extends Veicolo{
     public Macchina(String targa){
         super(targa);
     }
+
+    public static double getTariffaOraria(){
+        return tariffaOraria;
+    }
 }
