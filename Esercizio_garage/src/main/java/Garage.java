@@ -26,4 +26,18 @@ public class Garage {
             }
         }
     }
+
+    public void rimuoviMacchina(String targa, int posto, LocalTime uscita){
+        if (posti[posto] != null){
+            System.out.println("Costo parcheggio: " + posti[posto].calcolaTariffaOraria(uscita));
+            posti[posto] = null;
+        }else{
+            for(int i = 0; i < 100; i++){
+                if (posti[i].ottieniTarga().equals(targa)){
+                    System.out.println("Costo parcheggio: " + posti[i].calcolaTariffaOraria(uscita));
+                    posti[i] = null;
+                }
+            }
+        }
+    }
 }
