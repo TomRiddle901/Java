@@ -13,6 +13,10 @@ public class Giornata {
         return dataGiornata;
     }
 
+    public double getImportoTotale(){
+        return importoTotale;
+    }
+
     public void setImportoTotale(double importo){
         importoTotale += importo;
     }
