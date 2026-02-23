@@ -12,4 +12,8 @@ public class Giornata {
     public LocalDate getDataGiornata(){
         return dataGiornata;
     }
+
+    public void setImportoTotale(double importo){
+        importoTotale += importo;
+    }
 }
