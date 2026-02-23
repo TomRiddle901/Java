@@ -8,4 +8,8 @@ public class Giornata {
         this.dataGiornata = dataGiornata;
         this.importoTotale = importoTotale;
     }
+
+    public LocalDate getDataGiornata(){
+        return dataGiornata;
+    }
 }
