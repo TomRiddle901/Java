@@ -6,4 +6,8 @@ public abstract class Veicolo {
     }
 
     public abstract double getTariffaOraria();
+
+    public String getTarga(){
+        return targa;
+    }
 }
