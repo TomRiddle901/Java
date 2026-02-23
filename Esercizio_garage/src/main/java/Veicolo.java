@@ -1,7 +1,7 @@
 public abstract class Veicolo {
     protected String targa;
 
-    public Veicolo(String targa){
+    protected Veicolo(String targa){
         this.targa = targa;
     }
 
