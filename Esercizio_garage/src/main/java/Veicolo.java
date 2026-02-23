@@ -3,7 +3,9 @@ public abstract class Veicolo {
 
     public Veicolo(String targa){
         this.targa = targa;
-    };
+    }
+
+    public abstract double getTariffaOraria();
 
     public String getTarga(){
         return targa;
