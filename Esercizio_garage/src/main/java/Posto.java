@@ -13,20 +13,26 @@ public class Posto {
     }
 
     public void inserisciVeicolo(String targa, String tipo) {
-        if (tipo.equals("A") || tipo.equals("a")) {
-            veicolo = new Macchina(targa);
-        } else if (tipo.equals("M") || tipo.equals("m")) {
-            veicolo = new Motocicletta(targa);
-        } else if (tipo.equals("F") || tipo.equals("f")) {
-            veicolo = new Furgone(targa);
-        } else {
-            System.out.println("Veicolo inesistente!");
+        if (riservato){
+            if (tipo.equals("A") || tipo.equals("a")) {
+                veicolo = new Macchina(targa);
+            } else if (tipo.equals("M") || tipo.equals("m")) {
+                veicolo = new Motocicletta(targa);
+            } else if (tipo.equals("F") || tipo.equals("f")) {
+                veicolo = new Furgone(targa);
+            } else {
+                System.out.println("Veicolo inesistente!");
+            }
         }
     }
 
     public double calcolaTariffaOraria(LocalTime fineSosta) {
         double tariffaTotale = 0;
         Duration oreSosta = null;
+
+        if (riservato){
+            return 0;
+        }
 
         oreSosta = Duration.between(inizioSosta, fineSosta);
 
