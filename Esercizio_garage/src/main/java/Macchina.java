@@ -5,7 +5,7 @@ public class Macchina extends Veicolo{
         super(targa);
     }
 
-    public double getTariffaOraria(){
+    public static double tariffaOraria(){
         return tariffaOraria;
     }
 }
