@@ -34,4 +34,8 @@ public class Posto {
 
         return tariffaTotale;
     }
+
+    public String ottieniTarga(){
+        return veicolo.getTarga();
+    }
 }
