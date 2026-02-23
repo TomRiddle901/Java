@@ -1,2 +1,7 @@
-public class Motocicletta {
+public class Motocicletta extends Veicolo{
+    protected static double tariffaOraria = 1;
+
+    public Motocicletta(String targa){
+        super(targa);
+    }
 }
