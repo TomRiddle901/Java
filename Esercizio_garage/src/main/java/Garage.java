@@ -46,6 +46,19 @@ public class Garage {
         }
     }
 
+    public double getGuadagnoGiornata(LocalDate dataGiornata){
+        double importo = 0;
+        for (int i = 0; i < listaGiornate.size(); i++){
+            if (listaGiornate.get(i).getDataGiornata().equals(dataGiornata)){
+                importo = listaGiornate.get(i).getImportoTotale();
+            }else{
+                importo = -1;
+            }
+        }
+
+        return importo;
+    }
+
     private void aggiungiGuadagnoGiornata(double guadagnoPosto, LocalDate dataGuadagno){
         for (int i = 0; i < listaGiornate.size(); i++){
             if (listaGiornate.get(i).getDataGiornata().equals(dataGuadagno)){
