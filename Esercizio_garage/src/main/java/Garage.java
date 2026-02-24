@@ -12,7 +12,7 @@ public class Garage {
     }
 
     public void inserisciMacchina(String targa, String tipoDiVeicolo, String tipoDiVeicoloRiservato, int posto, boolean riservato, LocalDateTime ingresso){
-        if (posto != -1 && posti[posto] != null){
+        if (posto != -1 && posti[posto] == null){
             posti[posto] = new Posto(riservato, ingresso);
             posti[posto].inserisciVeicolo(targa, tipoDiVeicolo, tipoDiVeicoloRiservato);
         } else{
