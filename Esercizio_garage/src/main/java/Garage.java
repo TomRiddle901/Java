@@ -1,6 +1,5 @@
 import java.util.ArrayList;
-import java.time.LocalTime;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Garage {
     private Posto[] posti;
@@ -11,7 +10,7 @@ public class Garage {
         this.listaGiornate = new ArrayList<>();
     }
 
-    public void inserisciMacchina(String targa, String tipoDiVeicolo, String tipoDiVeicoloRiservato, int posto, boolean riservato, LocalTime ingresso){
+    public void inserisciMacchina(String targa, String tipoDiVeicolo, String tipoDiVeicoloRiservato, int posto, boolean riservato, LocalDateTime ingresso){
         if (posto != -1 && posti[posto] != null){
             posti[posto] = new Posto(riservato, ingresso);
             posti[posto].inserisciVeicolo(targa, tipoDiVeicolo, tipoDiVeicoloRiservato);
@@ -27,7 +26,7 @@ public class Garage {
         }
     }
 
-    public void rimuoviMacchina(String targa, int posto, LocalTime uscita, LocalDate data){
+    public void rimuoviMacchina(String targa, int posto, LocalDateTime uscita, LocalDateTime data){
         double tariffaDaPagare;
         if (posti[posto] != null){
             tariffaDaPagare = posti[posto].calcolaTariffaOraria(uscita);
@@ -46,7 +45,7 @@ public class Garage {
         }
     }
 
-    public double getGuadagnoGiornata(LocalDate dataGiornata){
+    public double getGuadagnoGiornata(LocalDateTime dataGiornata){
         double importo = 0;
         for (int i = 0; i < listaGiornate.size(); i++){
             if (listaGiornate.get(i).getDataGiornata().equals(dataGiornata)){
@@ -70,7 +69,7 @@ public class Garage {
         return postiLiberi;
     }
 
-    private void aggiungiGuadagnoGiornata(double guadagnoPosto, LocalDate dataGuadagno){
+    private void aggiungiGuadagnoGiornata(double guadagnoPosto, LocalDateTime dataGuadagno){
         for (int i = 0; i < listaGiornate.size(); i++){
             if (listaGiornate.get(i).getDataGiornata().equals(dataGuadagno)){
                 listaGiornate.get(i).setImportoTotale(guadagnoPosto);
