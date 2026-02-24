@@ -12,25 +12,26 @@ public class Garage {
     }
 
     public void inserisciMacchina(String targa, String tipoDiVeicolo, String tipoDiVeicoloRiservato, int posto, boolean riservato, LocalDateTime ingresso){
+        int i = 0;
         if (posto != -1 && posti[posto] == null){
             posti[posto] = new Posto(riservato, ingresso);
             posti[posto].inserisciVeicolo(targa, tipoDiVeicolo, tipoDiVeicoloRiservato);
         } else if (posto != -1 && posti[posto] != null){
             System.out.println("Il posto selezionato è già occupato.");
             System.out.println("Verrai asseganto ad un altro posto automaticamente!");
-            for (int i = 0; i < 100; i++){
-                if (posti[i] == null){
-                    posti[i] = new Posto(riservato, ingresso);
-                    posti[i].inserisciVeicolo(targa, tipoDiVeicolo, tipoDiVeicoloRiservato);
-                }
+            while (i < posti.length && posti[i] != null){
+                i++;
             }
+
+            posti[i] = new Posto(riservato, ingresso);
+            posti[i].inserisciVeicolo(targa, tipoDiVeicolo, tipoDiVeicoloRiservato);
         }else if (posto == -1){
-            for (int i = 0; i < 100; i++){
-                if (posti[i] == null){
-                    posti[i] = new Posto(riservato, ingresso);
-                    posti[i].inserisciVeicolo(targa, tipoDiVeicolo, tipoDiVeicoloRiservato);
-                }
+            while (i < posti.length && posti[i] != null){
+                i++;
             }
+
+            posti[i] = new Posto(riservato, ingresso);
+            posti[i].inserisciVeicolo(targa, tipoDiVeicolo, tipoDiVeicoloRiservato);
         }
     }
 
