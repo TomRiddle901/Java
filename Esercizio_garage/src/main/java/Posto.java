@@ -37,8 +37,8 @@ public class Posto {
     }
 
     public double calcolaTariffaOraria(LocalDateTime fineSosta) {
-        double tariffaTotale = 0;
-        Duration oreSosta = null;
+        double tariffaTotale;
+        Duration oreSosta;
 
         if (riservato){
             return 0;
