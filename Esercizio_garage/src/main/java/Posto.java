@@ -12,14 +12,24 @@ public class Posto {
         this.veicolo = null;
     }
 
-    public void inserisciVeicolo(String targa, String tipo) {
+    public void inserisciVeicolo(String targa, String tipo, String tipoVeicoloRiservato) {
         if (riservato){
             if (tipo.equals("A") || tipo.equals("a")) {
-                veicolo = new Macchina(targa);
+                veicolo = new Macchina(targa, tipoVeicoloRiservato);
             } else if (tipo.equals("M") || tipo.equals("m")) {
-                veicolo = new Motocicletta(targa);
+                veicolo = new Motocicletta(targa, tipoVeicoloRiservato);
             } else if (tipo.equals("F") || tipo.equals("f")) {
-                veicolo = new Furgone(targa);
+                veicolo = new Furgone(targa, tipoVeicoloRiservato);
+            } else {
+                System.out.println("Veicolo inesistente!");
+            }
+        }else{
+            if (tipo.equals("A") || tipo.equals("a")) {
+                veicolo = new Macchina(targa, null);
+            } else if (tipo.equals("M") || tipo.equals("m")) {
+                veicolo = new Motocicletta(targa, null);
+            } else if (tipo.equals("F") || tipo.equals("f")) {
+                veicolo = new Furgone(targa, null);
             } else {
                 System.out.println("Veicolo inesistente!");
             }
