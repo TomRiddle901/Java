@@ -37,19 +37,21 @@ public class Garage {
 
     public void rimuoviMacchina(String targa, int posto, LocalDateTime uscita){
         double tariffaDaPagare;
+        int i = 0;
         if (posto != -1 && posti[posto] != null){
             tariffaDaPagare = posti[posto].calcolaTariffaOraria(uscita);
             System.out.println("Costo parcheggio: " + tariffaDaPagare);
             aggiungiGuadagnoGiornata(tariffaDaPagare, uscita.toLocalDate());
             posti[posto] = null;
         }else{
-            for(int i = 0; i < 100; i++){
+            while (i < posti.length && posti[i] != null){
                 if (posti[i].ottieniTarga().equals(targa)){
                     tariffaDaPagare = posti[i].calcolaTariffaOraria(uscita);
                     System.out.println("Costo parcheggio: " + tariffaDaPagare);
                     aggiungiGuadagnoGiornata(tariffaDaPagare, uscita.toLocalDate());
                     posti[i] = null;
                 }
+                i++;
             }
         }
     }
