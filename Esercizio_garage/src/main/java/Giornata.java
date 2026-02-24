@@ -1,15 +1,15 @@
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Giornata {
-    private LocalDate dataGiornata;
+    private LocalDateTime dataGiornata;
     private double importoTotale;
 
-    public Giornata(LocalDate dataGiornata, double importoTotale){
+    public Giornata(LocalDateTime dataGiornata, double importoTotale){
         this.dataGiornata = dataGiornata;
         this.importoTotale = importoTotale;
     }
 
-    public LocalDate getDataGiornata(){
+    public LocalDateTime getDataGiornata(){
         return dataGiornata;
     }
 
