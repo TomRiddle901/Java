@@ -55,7 +55,7 @@ public class MainProgram {
         targa = in.nextLine();
         System.out.print("Tipo di veicolo (A: Auto, M: Motocicletta, F: Furgone): ");
         tipoDiVeicolo = in.nextLine();
-        System.out.print("Posto riservato? (Si/No)");
+        System.out.print("Posto riservato? (Si/No): ");
         isRiservato = in.nextLine();
 
         if (isRiservato.equals("Si") || isRiservato.equals("si")){
