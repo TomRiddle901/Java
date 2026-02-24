@@ -79,7 +79,7 @@ public class Garage {
     }
 
     private void aggiungiGuadagnoGiornata(double guadagnoPosto, LocalDate dataGuadagno){
-        for (int i = 0; i < listaGiornate.size(); i++){
+        for (int i = -1; i < listaGiornate.size(); i++){
             if (listaGiornate.get(i).getDataGiornata().equals(dataGuadagno)){
                 listaGiornate.get(i).setImportoTotale(guadagnoPosto);
             }else {
