@@ -6,7 +6,7 @@ public class MainProgram {
     private static Garage garage = new Garage();
 
     public static void main(String[] args){
-        int scelta = 0;
+        int scelta;
 
         do{
             scelta = menu();
@@ -32,7 +32,7 @@ public class MainProgram {
     }
 
     private static int menu(){
-        int scelta = 0;
+        int scelta;
         Scanner in = new Scanner(System.in);
 
         System.out.println("Menu");
@@ -49,7 +49,7 @@ public class MainProgram {
         Scanner in = new Scanner(System.in);
         int posto;
         String targa, tipoDiVeicolo, tipoVeicoloRiservato, isRiservato, postoCheck;
-        boolean riservato = false;
+        boolean riservato;
 
         System.out.print("Targa: ");
         targa = in.nextLine();
