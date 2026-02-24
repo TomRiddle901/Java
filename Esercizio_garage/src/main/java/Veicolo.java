@@ -1,7 +1,8 @@
 public abstract class Veicolo {
     protected String targa;
+    protected String veicoloRiservato;
 
-    protected Veicolo(String targa){
+    protected Veicolo(String targa, String veicoloRiservato){
         this.targa = targa;
     }
 
