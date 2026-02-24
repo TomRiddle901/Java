@@ -80,13 +80,17 @@ public class Garage {
         return postiLiberi;
     }
 
-    private void aggiungiGuadagnoGiornata(double guadagnoPosto, LocalDate dataGuadagno){
-        for (int i = -1; i < listaGiornate.size(); i++){
-            if (listaGiornate.get(i).getDataGiornata().equals(dataGuadagno)){
+    private void aggiungiGuadagnoGiornata(double guadagnoPosto, LocalDate dataGuadagno) {
+        boolean trovata = false;
+        for (int i = 0; i < listaGiornate.size(); i++) {
+            if (!trovata && listaGiornate.get(i).getDataGiornata().equals(dataGuadagno)) {
                 listaGiornate.get(i).setImportoTotale(guadagnoPosto);
-            }else {
-                listaGiornate.add(new Giornata(dataGuadagno, guadagnoPosto));
+                trovata = true;
             }
+        }
+
+        if (!trovata) {
+            listaGiornate.add(new Giornata(dataGuadagno, guadagnoPosto));
         }
     }
 }
