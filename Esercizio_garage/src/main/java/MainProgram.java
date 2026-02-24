@@ -6,7 +6,29 @@ public class MainProgram {
     private static Garage garage = new Garage();
 
     public static void main(String[] args){
+        int scelta = 0;
 
+        do{
+            scelta = menu();
+
+            switch (scelta){
+                case 1:
+                    ingresso();
+                    break;
+                case 2:
+                    uscita();
+                    break;
+                case 3:
+                    infoGiornata();
+                    break;
+                case 0:
+                    System.out.println("Uscita dal programma in corso...");
+                    break;
+                default:
+                    System.out.println("Opzione non valida!");
+                    break;
+            }
+        }while (scelta != 0);
     }
 
     private static int menu(){
