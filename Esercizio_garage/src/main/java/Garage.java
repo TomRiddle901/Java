@@ -19,7 +19,7 @@ public class Garage {
             System.out.println("Il posto selezionato è già occupato.");
             System.out.println("Verrai asseganto ad un altro posto automaticamente!");
             for (int i = 0; i < 100; i++){
-                if (posti[i] != null){
+                if (posti[i] == null){
                     posti[i] = new Posto(riservato, ingresso);
                     posti[i].inserisciVeicolo(targa, tipoDiVeicolo, tipoDiVeicoloRiservato);
                 }
