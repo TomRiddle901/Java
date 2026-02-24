@@ -88,7 +88,21 @@ public class MainProgram {
     }
 
     private static void uscita(){
+        Scanner in = new Scanner(System.in);
+        int posto = -1;
+        String targa = "", checkPosto;
 
+        System.out.println("Posto (vuoto se si vuole usare la targa del veicolo): ");
+        checkPosto = in.nextLine();
+
+        if (checkPosto.equals("")){
+            System.out.println("Targa: ");
+            targa = in.nextLine();
+        }else{
+            posto = Integer.parseInt(checkPosto);
+        }
+
+        garage.rimuoviMacchina(targa, posto, LocalDateTime.now());
     }
 
     private static void infoGiornata(){
