@@ -83,7 +83,7 @@ public class MainProgram {
                 posto = Integer.parseInt(postoCheck);
             }
         }catch (NumberFormatException ex){
-            System.err.println("Inserimento non valido!");
+            System.err.println("Inserimento non valido: " + ex.getMessage());
             posto = -1;
         }
 
@@ -97,11 +97,11 @@ public class MainProgram {
         int posto = -1;
         String targa = "", checkPosto;
 
-        System.out.println("Posto (vuoto se si vuole usare la targa del veicolo): ");
+        System.out.print("Posto (vuoto se si vuole usare la targa del veicolo): ");
         checkPosto = in.nextLine();
 
         if (checkPosto.isEmpty()){
-            System.out.println("Targa: ");
+            System.out.print("Targa: ");
             targa = in.nextLine();
         }else{
             posto = Integer.parseInt(checkPosto);
