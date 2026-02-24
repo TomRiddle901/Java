@@ -4,6 +4,7 @@ public abstract class Veicolo {
 
     protected Veicolo(String targa, String veicoloRiservato){
         this.targa = targa;
+        this.veicoloRiservato = veicoloRiservato;
     }
 
     public abstract double getTariffaOraria();
