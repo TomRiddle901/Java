@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class MainProgram {
 
@@ -113,10 +114,10 @@ public class MainProgram {
 
     private static void infoGiornata(){
         Scanner in = new Scanner(System.in);
-        LocalDateTime dataDaCercare;
+        LocalDate dataDaCercare;
 
         System.out.print("Inserisci data (AAAA-MM-GG): ");
-        dataDaCercare = LocalDateTime.parse(in.nextLine());
+        dataDaCercare = LocalDate.parse(in.nextLine());
 
         System.out.println("Guadagno del giorno " + dataDaCercare + ": €" + garage.getGuadagnoGiornata(dataDaCercare));
     }

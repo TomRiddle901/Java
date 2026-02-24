@@ -56,10 +56,10 @@ public class Garage {
         }
     }
 
-    public double getGuadagnoGiornata(LocalDateTime dataGiornata){
+    public double getGuadagnoGiornata(LocalDate dataGiornata){
         double importo = 0;
         for (int i = 0; i < listaGiornate.size(); i++){
-            if (listaGiornate.get(i).getDataGiornata().equals(dataGiornata.toLocalDate())){
+            if (listaGiornate.get(i).getDataGiornata().equals(dataGiornata)){
                 importo = listaGiornate.get(i).getImportoTotale();
             }else{
                 importo = -1;
