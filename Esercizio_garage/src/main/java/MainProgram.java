@@ -75,7 +75,7 @@ public class MainProgram {
         System.out.print("Scegli un posto libero (vuoto per selezione automatica): ");
         postoCheck = in.nextLine();
 
-        if (postoCheck.equals("")){
+        if (postoCheck.isEmpty()){
             System.out.println("Assegnazione automatica selezionata!");
             posto = -1;
         }else{
@@ -95,7 +95,7 @@ public class MainProgram {
         System.out.println("Posto (vuoto se si vuole usare la targa del veicolo): ");
         checkPosto = in.nextLine();
 
-        if (checkPosto.equals("")){
+        if (checkPosto.isEmpty()){
             System.out.println("Targa: ");
             targa = in.nextLine();
         }else{
