@@ -60,7 +60,7 @@ public class Garage {
     }
 
     public String getPostiLiberi(){
-        String postiLiberi = null;
+        String postiLiberi = "";
         for (int i = 0; i < posti.length; i++){
             if (posti[i] == null){
                 postiLiberi += i + ", ";
