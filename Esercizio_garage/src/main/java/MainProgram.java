@@ -22,4 +22,16 @@ public class MainProgram {
 
         return scelta;
     }
+
+    private static void ingresso(){
+
+    }
+
+    private static void uscita(){
+
+    }
+
+    private static void infoGiornata(){
+
+    }
 }
