@@ -1,12 +1,12 @@
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 import java.time.Duration;
 
 public class Posto {
     private boolean riservato = false;
-    private LocalTime inizioSosta;
+    private LocalDateTime inizioSosta;
     private Veicolo veicolo;
 
-    public Posto(boolean riservato, LocalTime inizioSosta) {
+    public Posto(boolean riservato, LocalDateTime inizioSosta) {
         this.riservato = riservato;
         this.inizioSosta = inizioSosta;
         this.veicolo = null;
@@ -36,7 +36,7 @@ public class Posto {
         }
     }
 
-    public double calcolaTariffaOraria(LocalTime fineSosta) {
+    public double calcolaTariffaOraria(LocalDateTime fineSosta) {
         double tariffaTotale = 0;
         Duration oreSosta = null;
 
@@ -48,7 +48,11 @@ public class Posto {
 
         tariffaTotale = veicolo.getTariffaOraria() * oreSosta.toHours();
 
-        return tariffaTotale;
+        if (tariffaTotale == 0){
+            return veicolo.getTariffaOraria();
+        }else{
+            return tariffaTotale;
+        }
     }
 
     public String ottieniTarga(){
