@@ -12,7 +12,7 @@ public class Garage {
     }
 
     public void inserisciMacchina(String targa, String tipoDiVeicolo, String tipoDiVeicoloRiservato, int posto, boolean riservato, LocalTime ingresso){
-        if (posti[posto] != null){
+        if (posto != -1 && posti[posto] != null){
             posti[posto] = new Posto(riservato, ingresso);
             posti[posto].inserisciVeicolo(targa, tipoDiVeicolo, tipoDiVeicoloRiservato);
         } else{
@@ -57,6 +57,17 @@ public class Garage {
         }
 
         return importo;
+    }
+
+    public String getPostiLiberi(){
+        String postiLiberi = null;
+        for (int i = 0; i < posti.length; i++){
+            if (posti[i] == null){
+                postiLiberi += i + ", ";
+            }
+        }
+
+        return postiLiberi;
     }
 
     private void aggiungiGuadagnoGiornata(double guadagnoPosto, LocalDate dataGuadagno){
