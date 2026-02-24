@@ -84,6 +84,7 @@ public class MainProgram {
             }
         }catch (NumberFormatException ex){
             System.err.println("Inserimento non valido: " + ex.getMessage());
+            System.err.println("Il posto è stato assegnato automaticamente");
             posto = -1;
         }
 
