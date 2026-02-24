@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Garage {
     private Posto[] posti;
@@ -26,19 +27,19 @@ public class Garage {
         }
     }
 
-    public void rimuoviMacchina(String targa, int posto, LocalDateTime uscita, LocalDateTime data){
+    public void rimuoviMacchina(String targa, int posto, LocalDateTime uscita){
         double tariffaDaPagare;
-        if (posti[posto] != null){
+        if (posto != -1 && posti[posto] != null){
             tariffaDaPagare = posti[posto].calcolaTariffaOraria(uscita);
             System.out.println("Costo parcheggio: " + tariffaDaPagare);
-            aggiungiGuadagnoGiornata(tariffaDaPagare, data);
+            aggiungiGuadagnoGiornata(tariffaDaPagare, uscita.toLocalDate());
             posti[posto] = null;
         }else{
             for(int i = 0; i < 100; i++){
                 if (posti[i].ottieniTarga().equals(targa)){
                     tariffaDaPagare = posti[i].calcolaTariffaOraria(uscita);
                     System.out.println("Costo parcheggio: " + tariffaDaPagare);
-                    aggiungiGuadagnoGiornata(tariffaDaPagare, data);
+                    aggiungiGuadagnoGiornata(tariffaDaPagare, uscita.toLocalDate());
                     posti[i] = null;
                 }
             }
@@ -69,7 +70,7 @@ public class Garage {
         return postiLiberi;
     }
 
-    private void aggiungiGuadagnoGiornata(double guadagnoPosto, LocalDateTime dataGuadagno){
+    private void aggiungiGuadagnoGiornata(double guadagnoPosto, LocalDate dataGuadagno){
         for (int i = 0; i < listaGiornate.size(); i++){
             if (listaGiornate.get(i).getDataGiornata().equals(dataGuadagno)){
                 listaGiornate.get(i).setImportoTotale(guadagnoPosto);
