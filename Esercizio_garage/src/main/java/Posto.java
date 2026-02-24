@@ -14,7 +14,19 @@ public class Posto {
 
     public void inserisciVeicolo(String targa, String tipo, String tipoVeicoloRiservato) {
         if (riservato){
-            if (tipo.equals("A") || tipo.equals("a")) {
+            switch (tipo){
+                case "A", "a":
+                    veicolo = new Macchina(targa, tipoVeicoloRiservato);
+                    break;
+                case "M", "m":
+                    veicolo = new Motocicletta(targa, tipoVeicoloRiservato);
+                    break;
+                case "F", "f":
+                    veicolo = new Furgone(targa, tipoVeicoloRiservato);
+                default:
+                    System.out.println("Veicolo inesistente!");
+            }
+            /*if (tipo.equals("A") || tipo.equals("a")) {
                 veicolo = new Macchina(targa, tipoVeicoloRiservato);
             } else if (tipo.equals("M") || tipo.equals("m")) {
                 veicolo = new Motocicletta(targa, tipoVeicoloRiservato);
@@ -22,9 +34,22 @@ public class Posto {
                 veicolo = new Furgone(targa, tipoVeicoloRiservato);
             } else {
                 System.out.println("Veicolo inesistente!");
-            }
+            }*/
         }else{
-            if (tipo.equals("A") || tipo.equals("a")) {
+            switch (tipo){
+                case "A", "a":
+                    veicolo = new Macchina(targa, null);
+                    break;
+                case "M", "m":
+                    veicolo = new Motocicletta(targa, null);
+                    break;
+                case "F", "f":
+                    veicolo = new Furgone(targa, null);
+                    break;
+                default:
+                    System.out.println("Veicolo inesistente!");
+            }
+            /*if (tipo.equals("A") || tipo.equals("a")) {
                 veicolo = new Macchina(targa, null);
             } else if (tipo.equals("M") || tipo.equals("m")) {
                 veicolo = new Motocicletta(targa, null);
@@ -32,7 +57,7 @@ public class Posto {
                 veicolo = new Furgone(targa, null);
             } else {
                 System.out.println("Veicolo inesistente!");
-            }
+            }*/
         }
     }
 
