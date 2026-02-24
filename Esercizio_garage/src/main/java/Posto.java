@@ -2,7 +2,7 @@ import java.time.LocalDateTime;
 import java.time.Duration;
 
 public class Posto {
-    private boolean riservato = false;
+    private boolean riservato;
     private LocalDateTime inizioSosta;
     private Veicolo veicolo;
 
