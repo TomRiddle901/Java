@@ -106,6 +106,12 @@ public class MainProgram {
     }
 
     private static void infoGiornata(){
+        Scanner in = new Scanner(System.in);
+        LocalDateTime dataDaCercare;
 
+        System.out.print("Inserisci data (AAAA-MM-GG): ");
+        dataDaCercare = LocalDateTime.parse(in.nextLine());
+
+        System.out.println("Guadagno del giorno " + dataDaCercare + ": €" + garage.getGuadagnoGiornata(dataDaCercare));
     }
 }
