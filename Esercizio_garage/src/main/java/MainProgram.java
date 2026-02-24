@@ -75,11 +75,16 @@ public class MainProgram {
         System.out.print("Scegli un posto libero (vuoto per selezione automatica): ");
         postoCheck = in.nextLine();
 
-        if (postoCheck.isEmpty()){
-            System.out.println("Assegnazione automatica selezionata!");
+        try{
+            if (postoCheck.isEmpty()){
+                System.out.println("Assegnazione automatica selezionata!");
+                posto = -1;
+            }else{
+                posto = Integer.parseInt(postoCheck);
+            }
+        }catch (NumberFormatException ex){
+            System.err.println("Inserimento non valido!");
             posto = -1;
-        }else{
-            posto = Integer.parseInt(postoCheck);
         }
 
         garage.inserisciMacchina(targa, tipoDiVeicolo, tipoVeicoloRiservato, posto, riservato, LocalDateTime.now());
