@@ -27,26 +27,5 @@
         <module name="Esercizio_due_classi_collegate" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Applicazione_Biblioteca" target="25" />
-      <module name="Classe_singola_con_array_paralleli" target="25" />
-      <module name="Classe_stream" target="25" />
-      <module name="Es2_Progettazione_Classe_singola_con_attributo_vettore" target="25" />
-      <module name="Esercizio_classe_calciatore" target="25" />
-      <module name="Esercizio_classe_veicoli" target="25" />
-      <module name="Esercizio_diependenti" target="25" />
-      <module name="Esercizio_dipendenti2" target="25" />
-      <module name="Esercizio_due_classi_collegate" target="25" />
-      <module name="Esercizio_garage" target="25" />
-      <module name="Esercizio_recupero_1" target="25" />
-      <module name="Esercizio_recupero_2" target="25" />
-      <module name="Esercizio_recupero_ricettario" target="25" />
-      <module name="Esercizio_Squadra_Pallavolo" target="25" />
-      <module name="Poligono_con_classe_Punto" target="25" />
-      <module name="Progettazione_classe_punto" target="23" />
-      <module name="Progettazione_Di_Una_Classe_Conto_Corrente" target="23" />
-      <module name="Punto_cerchio_cilindro" target="25" />
-      <module name="Triangolo_con_classe_punto" target="25" />
-    </bytecodeTargetLevel>
   </component>
 </project>

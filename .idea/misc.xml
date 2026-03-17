@@ -26,11 +26,13 @@
         <option value="$PROJECT_DIR$/Esercizio_classe_veicoli/pom.xml" />
         <option value="$PROJECT_DIR$/Esercizio_garage/pom.xml" />
         <option value="$PROJECT_DIR$/Classe_stream/pom.xml" />
+        <option value="$PROJECT_DIR$/Test/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Esercizio_diependenti/Test_Intellij/pom.xml" />
+        <option value="$PROJECT_DIR$/Test/pom.xml" />
         <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>
     </option>
