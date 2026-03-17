@@ -15,4 +15,16 @@ public class Punto {
     public String toString(){
         return nome + "(" + x + ";" + y + ")";
     }
+
+    public double getX(){
+        return x;
+    }
+
+    public double getY(){
+        return y;
+    }
+
+    public String getNome(){
+        return nome;
+    }
 }
