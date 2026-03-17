@@ -44,15 +44,6 @@ public class MainProgram {
                     break;
             }
         }while (scelta != 0);
-//        try{
-//            FileWriter f = new FileWriter("out.txt");
-//            BufferedWriter bf = new BufferedWriter(f);
-//            bf.write(p.toString());
-//            bf.close();
-//        }catch (IOException ex){
-//            System.err.println("Errore input/output: " + ex.getMessage());
-//        }
-//
       }
 
     private static int menu(){
