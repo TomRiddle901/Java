@@ -6,7 +6,7 @@ import java.io.IOException;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class MainProgram {
     public static void main(){
         Punto p = new Punto(3.78, 8.67, "A");
         try{
