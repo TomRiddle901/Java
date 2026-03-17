@@ -13,6 +13,6 @@ public class Punto {
 
     @Override
     public String toString(){
-        return "X: " + x + " Y: " + y + " Nome: " + nome;
+        return nome + "(" + x + ";" + y + ")";
     }
 }
