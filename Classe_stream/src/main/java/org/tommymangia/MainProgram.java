@@ -90,4 +90,10 @@ public class MainProgram {
         }
 
     }
+
+    private static void visualizzaPunti(){
+        for (int i = 0; i < punti.size(); i++){
+            System.out.println(punti.get(i).toString());
+        }
+    }
 }
