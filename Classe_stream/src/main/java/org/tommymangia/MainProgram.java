@@ -13,7 +13,7 @@ public class MainProgram {
 
     public static ArrayList<Punto> punti = new ArrayList();
 
-    public static void main(){
+    public static void main(String[] args){
         int scelta;
 
         do{
@@ -78,7 +78,7 @@ public class MainProgram {
             System.out.print("Nome: ");
             nome = in.nextLine();
             punti.add(new Punto(x, y, nome));
-        }catch (NumberFormatException | InputMismatchException ex){
+        }catch (InputMismatchException ex){
             System.err.println("Errore: " + ex.getMessage());
             System.err.println("Input non valido");
         }
