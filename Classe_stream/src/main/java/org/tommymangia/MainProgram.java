@@ -13,11 +13,35 @@ public class MainProgram {
     ArrayList punti = new ArrayList();
 
     public static void main(){
-//        Punto p1 = new Punto(3.78, 8.67, "A");
-//        Punto p2 = new Punto(3.21, 67, "B");
-//        Punto p3 = new Punto(312, 57, "C");
-//        Punto p4 = new Punto(809, 2319, "D");
-//        Punto p5 = new Punto(83092, 34780, "E");
+        int scelta;
+
+        do{
+            scelta = menu();
+
+            switch (scelta){
+                case 1:
+                    aggiungiPunto();
+                    break;
+                case 2:
+                    visualizzaPunti();
+                    break;
+                case 3:
+                    eliminaPunti();
+                case 4:
+                    esportaPunti();
+                    break;
+                case 5:
+                    // importaPunti();
+                    System.out.println("Non implementato!");
+                    break;
+                case 0:
+                    System.out.println("Uscita dal programma in corso...");
+                    break;
+                default:
+                    System.out.println("Scelta non valida");
+                    break;
+            }
+        }while (scelta != 0);
 //        try{
 //            FileWriter f = new FileWriter("out.txt");
 //            BufferedWriter bf = new BufferedWriter(f);
