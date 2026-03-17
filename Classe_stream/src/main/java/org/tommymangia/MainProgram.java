@@ -10,7 +10,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class MainProgram {
 
-    ArrayList punti = new ArrayList();
+    public static ArrayList<Punto> punti = new ArrayList();
 
     public static void main(){
         int scelta;
@@ -68,5 +68,26 @@ public class MainProgram {
         scelta = in.nextInt();
 
         return scelta;
+    }
+
+    private static void aggiungiPunto(){
+        Scanner in = new Scanner(System.in);
+        double x, y;
+        String nome;
+
+        try{
+            System.out.print("X: ");
+            x = in.nextDouble();
+            System.out.print("Y: ");
+            y = in.nextDouble();
+            in.nextLine();
+            System.out.print("Nome: ");
+            nome = in.nextLine();
+            punti.add(new Punto(x, y, nome));
+        }catch (NumberFormatException ex){
+            System.err.println("Errore: " + ex.getMessage());
+            System.err.println("Input non valido");
+        }
+
     }
 }
