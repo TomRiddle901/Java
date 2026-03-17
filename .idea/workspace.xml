@@ -1,5 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Removed useless comment">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "TomRiddle901"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://TomRiddle901@github.com/TomRiddle901/Java",
+    "accountId": "b1769922-1b39-4ebb-801b-1d38e487bf2b"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="3B57mmAeEM0lWjabsmzEtUgvAEK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "javascript.preferred.runtime.type.id": "node",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "kotlinNotebook",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -10,5 +68,161 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="" />
+      <created>1773767249665</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773767249665</updated>
+      <workItem from="1773767255798" duration="493000" />
+    </task>
+    <task id="LOCAL-00001" summary="Ide changes">
+      <option name="closed" value="true" />
+      <created>1773767398761</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773767398761</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Removed useless comment">
+      <option name="closed" value="true" />
+      <created>1773767525073</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773767525074</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ide changes" />
+    <MESSAGE value="Removed useless comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed useless comment" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main/java}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main/java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main/java/com}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main/java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main/java/com}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main/java/com/tommymangia}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main/java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main/java/com}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main/java/com/tommymangia}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/src/test}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target/maven-status}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target/maven-status}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target/maven-status/maven-compiler-plugin}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target/maven-status}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target/maven-status/maven-compiler-plugin}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target/maven-status/maven-compiler-plugin/compile}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target/maven-status}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target/maven-status/maven-compiler-plugin}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target/maven-status/maven-compiler-plugin/compile}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file:///home/tommaso/Documenti/Scuola/Informatica/Java/Applicazione_Biblioteca/target/maven-status/maven-compiler-plugin/compile/default-compile}" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
 </project>
