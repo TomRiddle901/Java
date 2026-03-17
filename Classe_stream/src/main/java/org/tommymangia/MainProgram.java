@@ -26,7 +26,9 @@ public class MainProgram {
                     visualizzaPunti();
                     break;
                 case 3:
-                    eliminaPunti();
+                    punti.clear();
+                    System.out.println("Punti rimossi con successo!");
+                    break;
                 case 4:
                     esportaPunti();
                     break;
