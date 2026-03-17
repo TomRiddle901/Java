@@ -16,15 +16,7 @@ public class Punto {
         return nome + "(" + x + ";" + y + ")";
     }
 
-    public double getX(){
-        return x;
-    }
-
-    public double getY(){
-        return y;
-    }
-
-    public String getNome(){
-        return nome;
+    public String toCSV(){
+        return nome + ";" + x + ";" + y;
     }
 }
