@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -77,7 +78,7 @@ public class MainProgram {
             System.out.print("Nome: ");
             nome = in.nextLine();
             punti.add(new Punto(x, y, nome));
-        }catch (NumberFormatException ex){
+        }catch (NumberFormatException | InputMismatchException ex){
             System.err.println("Errore: " + ex.getMessage());
             System.err.println("Input non valido");
         }
