@@ -51,17 +51,23 @@ public class MainProgram {
         int scelta;
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Menu");
-        System.out.println("1) Aggiungi un punto");
-        System.out.println("2) Visualizza i punti");
-        System.out.println("3) Elimina tutti i punti");
-        System.out.println("4) Esporta su file");
-        System.out.println("5) Importa da file");
-        System.out.println("0) Esci");
-        System.out.print("Scelta: ");
-        scelta = in.nextInt();
+        try{
+            System.out.println("Menu");
+            System.out.println("1) Aggiungi un punto");
+            System.out.println("2) Visualizza i punti");
+            System.out.println("3) Elimina tutti i punti");
+            System.out.println("4) Esporta su file");
+            System.out.println("5) Importa da file");
+            System.out.println("0) Esci");
+            System.out.print("Scelta: ");
+            scelta = in.nextInt();
 
-        return scelta;
+            return scelta;
+        }catch (InputMismatchException ex){
+            System.err.println("Errore: " + ex.getMessage());
+            System.err.println("Input non valido");
+            return -1;
+        }
     }
 
     private static void aggiungiPunto(){
