@@ -98,4 +98,18 @@ public class MainProgram {
             System.out.println(punti.get(i).toString());
         }
     }
+
+    private static void esportaPunti(){
+        try {
+            FileWriter file = new FileWriter("punti.txt");
+            BufferedWriter buffer = new BufferedWriter(file);
+            for (int i = 0; i < punti.size(); i++) {
+                buffer.write(punti.get(i).toCSV());
+                buffer.newLine();
+            }
+            buffer.close();
+        }catch (IOException ex){
+            System.err.println("Errore di input/output: " + ex.getMessage());
+        }
+    }
 }
