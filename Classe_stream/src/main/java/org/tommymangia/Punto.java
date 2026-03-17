@@ -10,4 +10,9 @@ public class Punto {
         this.y = y;
         this.nome = nome;
     }
+
+    @Override
+    public String toString(){
+        return "X: " + x + " Y: " + y + " Nome: " + nome;
+    }
 }
