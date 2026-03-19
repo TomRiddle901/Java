@@ -114,6 +114,21 @@ public class MainProgram {
     }
 
     private static void importaPunti(){
+        try{
+            FileReader file = new FileReader("punti.txt");
+            BufferedReader bufferRead = new BufferedReader(file);
+            String rigaFile;
 
+            while((rigaFile = bufferRead.readLine()) != null) {
+                String[] sezioni = rigaFile.split(",");
+                String nome = sezioni[0];
+                double x = Double.parseDouble(sezioni[1]);
+                double y = Double.parseDouble(sezioni[2]);
+
+                punti.add(new Punto(x, y, nome));
+            }
+        }catch (IOException ex){
+            System.err.println("Errore input/output: " + ex.getMessage());
+        }
     }
 }

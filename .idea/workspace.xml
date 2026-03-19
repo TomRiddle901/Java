@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Added params for CSV file">
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Reset of function `importaPunti()`. Everything vas wrong">
       <change beforePath="$PROJECT_DIR$/Classe_stream/src/main/java/org/tommymangia/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_stream/src/main/java/org/tommymangia/MainProgram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +87,7 @@
       <workItem from="1773768151837" duration="301000" />
       <workItem from="1773769425967" duration="619000" />
       <workItem from="1773828063823" duration="315000" />
-      <workItem from="1773921549431" duration="957000" />
+      <workItem from="1773921549431" duration="1277000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -177,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773922408750</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Reset of function `importaPunti()`. Everything vas wrong">
+      <option name="closed" value="true" />
+      <created>1773922699084</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1773922699084</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +201,8 @@
     <MESSAGE value="Initialized array `punti`: solved error `NullPointerException`" />
     <MESSAGE value="Removed file punti.txt (is only for testing, not importanto to commit)" />
     <MESSAGE value="Added params for CSV file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added params for CSV file" />
+    <MESSAGE value="Reset of function `importaPunti()`. Everything vas wrong" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reset of function `importaPunti()`. Everything vas wrong" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
