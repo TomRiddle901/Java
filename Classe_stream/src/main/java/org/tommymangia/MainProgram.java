@@ -1,6 +1,8 @@
 package org.tommymangia;
 
 import java.io.BufferedWriter;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -32,7 +34,7 @@ public class MainProgram {
                     esportaPunti();
                     break;
                 case 5:
-                    // importaPunti();
+                    importaPunti();
                     System.out.println("Non implementato!");
                     break;
                 case 0:
@@ -108,4 +110,6 @@ public class MainProgram {
             System.err.println("Errore di input/output: " + ex.getMessage());
         }
     }
+
+
 }
