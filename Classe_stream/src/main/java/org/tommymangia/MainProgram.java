@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class MainProgram {
 
-    public static ArrayList<Punto> punti;
+    public static ArrayList<Punto> punti = new ArrayList<>();
 
     public static void main(String[] args){
         int scelta;
