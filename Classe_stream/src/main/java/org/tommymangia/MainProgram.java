@@ -111,5 +111,11 @@ public class MainProgram {
         }
     }
 
-
+    private static void importaPunti(){
+        try{
+            BufferedReader fileBuffer = new BufferedReader(new FileReader("punti.txt"));
+        }catch (IOException ex){
+            System.err.println("Errore: " + ex.getMessage());
+        }
+    }
 }
