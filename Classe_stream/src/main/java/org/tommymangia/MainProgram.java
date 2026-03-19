@@ -121,7 +121,9 @@ public class MainProgram {
             BufferedReader bufferRead = new BufferedReader(file);
             String rigaFile;
 
-            while((rigaFile = bufferRead.readLine()) != null) {
+            rigaFile = bufferRead.readLine(); //Prima riga dei parametri CSV (nome, x, y) saltata
+            while(rigaFile != null) {
+                rigaFile = bufferRead.readLine();
                 String[] sezioni = rigaFile.split(",");
                 String nome = sezioni[0];
                 double x = Double.parseDouble(sezioni[1]);
