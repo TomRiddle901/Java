@@ -101,6 +101,8 @@ public class MainProgram {
         try {
             FileWriter file = new FileWriter("punti.txt");
             BufferedWriter buffer = new BufferedWriter(file);
+            buffer.write("Nome;X;Y");
+            buffer.newLine();
             for (int i = 0; i < punti.size(); i++) {
                 buffer.write(punti.get(i).toCSV());
                 buffer.newLine();
