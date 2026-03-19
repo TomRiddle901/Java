@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Initialized method for import points form an existing `punti.txt` file">
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Added params for CSV file">
       <change beforePath="$PROJECT_DIR$/Classe_stream/src/main/java/org/tommymangia/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_stream/src/main/java/org/tommymangia/MainProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classe_stream/target/classes/org/tommymangia/MainProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_stream/target/classes/org/tommymangia/MainProgram.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,7 @@
       <workItem from="1773768151837" duration="301000" />
       <workItem from="1773769425967" duration="619000" />
       <workItem from="1773828063823" duration="315000" />
-      <workItem from="1773921549431" duration="646000" />
+      <workItem from="1773921549431" duration="957000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -146,7 +145,39 @@
       <option name="project" value="LOCAL" />
       <updated>1773922085167</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Initialized array `punti`: solved error `NullPointerException`">
+      <option name="closed" value="true" />
+      <created>1773922277642</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1773922277642</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Initialized array `punti`: solved error `NullPointerException`">
+      <option name="closed" value="true" />
+      <created>1773922284325</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1773922284325</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Removed file punti.txt (is only for testing, not importanto to commit)">
+      <option name="closed" value="true" />
+      <created>1773922326000</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1773922326000</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added params for CSV file">
+      <option name="closed" value="true" />
+      <created>1773922408750</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1773922408750</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +190,10 @@
     <MESSAGE value="Removed raw use of parameterized class `ArrayList`" />
     <MESSAGE value="Imported `FileReader` and `BufferedReader`" />
     <MESSAGE value="Initialized method for import points form an existing `punti.txt` file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialized method for import points form an existing `punti.txt` file" />
+    <MESSAGE value="Initialized array `punti`: solved error `NullPointerException`" />
+    <MESSAGE value="Removed file punti.txt (is only for testing, not importanto to commit)" />
+    <MESSAGE value="Added params for CSV file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added params for CSV file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
