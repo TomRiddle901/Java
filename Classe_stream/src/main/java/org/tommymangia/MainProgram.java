@@ -37,7 +37,6 @@ public class MainProgram {
                     break;
                 case 5:
                     importaPunti();
-                    System.out.println("Non implementato!");
                     break;
                 case 0:
                     System.out.println("Uscita dal programma in corso...");
