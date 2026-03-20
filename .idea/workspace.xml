@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Solved `Cannot invoke &quot;String.split(String)&quot; because &quot;rigaFile&quot; is null` error: method `readLine()` called inside `while` condition" />
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Removed 'Not implemented' console print" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +93,7 @@
       <workItem from="1773828063823" duration="315000" />
       <workItem from="1773921549431" duration="2195000" />
       <workItem from="1774003243372" duration="2000" />
-      <workItem from="1774015105265" duration="655000" />
+      <workItem from="1774015105265" duration="1030000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -231,7 +231,23 @@
       <option name="project" value="LOCAL" />
       <updated>1774015738475</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Removed 'Not implemented' console print">
+      <option name="closed" value="true" />
+      <created>1774015866065</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1774015866065</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Removed 'Not implemented' console print">
+      <option name="closed" value="true" />
+      <created>1774015907571</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1774015907571</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,14 +269,15 @@
     <MESSAGE value="Skipped first line of CVS file (params line)" />
     <MESSAGE value="Solved `Index 1 out of bounds for lenght 1` error: the separato is ';' not ','" />
     <MESSAGE value="Solved `Cannot invoke &quot;String.split(String)&quot; because &quot;rigaFile&quot; is null` error: method `readLine()` called inside `while` condition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved `Cannot invoke &quot;String.split(String)&quot; because &quot;rigaFile&quot; is null` error: method `readLine()` called inside `while` condition" />
+    <MESSAGE value="Removed 'Not implemented' console print" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed 'Not implemented' console print" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Classe_stream/src/main/java/org/tommymangia/MainProgram.java</url>
-          <line>117</line>
+          <line>116</line>
           <properties class="org.tommymangia.MainProgram" method="importaPunti">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
