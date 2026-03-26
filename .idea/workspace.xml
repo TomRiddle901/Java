@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="New Project">
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Updated ide to new version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Form/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Form/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Form/src/main/java/org/tommymangia/MainForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Form/src/main/java/org/tommymangia/MainForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Form/src/main/java/org/tommymangia/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Form/src/main/java/org/tommymangia/MainForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,7 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,7 +59,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "319",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "310",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "javascript.preferred.runtime.type.id": "node",
@@ -73,6 +74,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.tommymangia" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/java-25-amazon-corretto" />
@@ -118,7 +124,8 @@
       <workItem from="1774526247144" duration="729000" />
       <workItem from="1774528243494" duration="87000" />
       <workItem from="1774528365949" duration="70000" />
-      <workItem from="1774539779135" duration="318000" />
+      <workItem from="1774539779135" duration="360000" />
+      <workItem from="1774541446419" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -288,7 +295,23 @@
       <option name="project" value="LOCAL" />
       <updated>1774526490075</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Updated ide to new version">
+      <option name="closed" value="true" />
+      <created>1774540121402</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1774540121403</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Updated ide to new version">
+      <option name="closed" value="true" />
+      <created>1774540126962</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1774540126962</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +336,8 @@
     <MESSAGE value="Removed 'Not implemented' console print" />
     <MESSAGE value="Removed target directory from commits" />
     <MESSAGE value="New Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Project" />
+    <MESSAGE value="Updated ide to new version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated ide to new version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
