@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Removed 'Not implemented' console print" />
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +93,7 @@
       <workItem from="1773828063823" duration="315000" />
       <workItem from="1773921549431" duration="2195000" />
       <workItem from="1774003243372" duration="2000" />
-      <workItem from="1774015105265" duration="1030000" />
+      <workItem from="1774015105265" duration="1735000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -247,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774015907571</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Removed target directory from commits">
+      <option name="closed" value="true" />
+      <created>1774016172341</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1774016172341</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +278,8 @@
     <MESSAGE value="Solved `Index 1 out of bounds for lenght 1` error: the separato is ';' not ','" />
     <MESSAGE value="Solved `Cannot invoke &quot;String.split(String)&quot; because &quot;rigaFile&quot; is null` error: method `readLine()` called inside `while` condition" />
     <MESSAGE value="Removed 'Not implemented' console print" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed 'Not implemented' console print" />
+    <MESSAGE value="Removed target directory from commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed target directory from commits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
