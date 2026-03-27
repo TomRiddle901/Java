@@ -134,7 +134,7 @@ public class mainForm extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(() -> new mainForm().setVisible(true));
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify           Added label, textbox, comboBox and button for add a `docente`//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem menuBarEditorClassi;
     private javax.swing.JMenuItem menuBarEditorDocenti;
