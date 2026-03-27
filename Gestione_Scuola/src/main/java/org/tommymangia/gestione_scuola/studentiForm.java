@@ -185,7 +185,7 @@ public class studentiForm extends javax.swing.JFrame {
     }//GEN-LAST:event_txtMatricolaActionPerformed
 
     private void btnGoBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGoBackMousePressed
-        System.exit(0);
+        this.setVisible(false);
     }//GEN-LAST:event_btnGoBackMousePressed
 
     /**
