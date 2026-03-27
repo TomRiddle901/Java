@@ -8,14 +8,14 @@ package org.tommymangia.gestione_scuola;
  *
  * @author tommaso
  */
-public class mainForm extends javax.swing.JFrame {
+public class studentiForm extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(mainForm.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(studentiForm.class.getName());
 
     /**
-     * Creates new form mainForm
+     * Creates new form studentiForm
      */
-    public mainForm() {
+    public studentiForm() {
         initComponents();
     }
 
@@ -28,44 +28,7 @@ public class mainForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuBar1 = new javax.swing.JMenuBar();
-        menuBarFileMenu = new javax.swing.JMenu();
-        menuFileExit = new javax.swing.JMenuItem();
-        menuBarEditorMenu = new javax.swing.JMenu();
-        menuBarEditorClassi = new javax.swing.JMenuItem();
-        menuBarEditorDocenti = new javax.swing.JMenuItem();
-        menuBarEditorStudenti = new javax.swing.JMenuItem();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Gestione Scuola");
-
-        menuBarFileMenu.setText("File");
-
-        menuFileExit.setText("Esci");
-        menuFileExit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                menuFileExitMousePressed(evt);
-            }
-        });
-        menuFileExit.addActionListener(this::menuFileExitActionPerformed);
-        menuBarFileMenu.add(menuFileExit);
-
-        jMenuBar1.add(menuBarFileMenu);
-
-        menuBarEditorMenu.setText("Editor");
-
-        menuBarEditorClassi.setLabel("Classi");
-        menuBarEditorMenu.add(menuBarEditorClassi);
-
-        menuBarEditorDocenti.setLabel("Docenti");
-        menuBarEditorMenu.add(menuBarEditorDocenti);
-
-        menuBarEditorStudenti.setLabel("Studenti");
-        menuBarEditorMenu.add(menuBarEditorStudenti);
-
-        jMenuBar1.add(menuBarEditorMenu);
-
-        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,19 +38,11 @@ public class mainForm extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 275, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void menuFileExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuFileExitActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuFileExitActionPerformed
-
-    private void menuFileExitMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuFileExitMousePressed
-        System.exit(0);
-    }//GEN-LAST:event_menuFileExitMousePressed
 
     /**
      * @param args the command line arguments
@@ -111,16 +66,9 @@ public class mainForm extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new mainForm().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new studentiForm().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem menuBarEditorClassi;
-    private javax.swing.JMenuItem menuBarEditorDocenti;
-    private javax.swing.JMenu menuBarEditorMenu;
-    private javax.swing.JMenuItem menuBarEditorStudenti;
-    private javax.swing.JMenu menuBarFileMenu;
-    private javax.swing.JMenuItem menuFileExit;
     // End of variables declaration//GEN-END:variables
 }
