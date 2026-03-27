@@ -63,6 +63,11 @@ public class mainForm extends javax.swing.JFrame {
         menuBarEditorMenu.add(menuBarEditorClassi);
 
         menuBarEditorDocenti.setLabel("Docenti");
+        menuBarEditorDocenti.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                menuBarEditorDocentiMousePressed(evt);
+            }
+        });
         menuBarEditorMenu.add(menuBarEditorDocenti);
 
         menuBarEditorStudenti.setLabel("Studenti");
@@ -98,6 +103,11 @@ public class mainForm extends javax.swing.JFrame {
         classiForm formClassi = new classiForm();
         formClassi.setVisible(true);
     }//GEN-LAST:event_menuBarEditorClassiMousePressed
+
+    private void menuBarEditorDocentiMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuBarEditorDocentiMousePressed
+        docentiForm formDocenti = new docentiForm();
+        formDocenti.setVisible(true);
+    }//GEN-LAST:event_menuBarEditorDocentiMousePressed
 
     /**
      * @param args the command line arguments

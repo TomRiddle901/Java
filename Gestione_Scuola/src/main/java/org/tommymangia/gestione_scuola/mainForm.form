@@ -37,6 +37,9 @@
               <Properties>
                 <Property name="label" type="java.lang.String" value="Docenti"/>
               </Properties>
+              <Events>
+                <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuBarEditorDocentiMousePressed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="menuBarEditorStudenti">
               <Properties>
