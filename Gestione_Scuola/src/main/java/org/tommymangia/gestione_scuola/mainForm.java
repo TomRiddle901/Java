@@ -86,7 +86,7 @@ public class mainForm extends javax.swing.JFrame {
     }//GEN-LAST:event_menuFileExitActionPerformed
 
     private void menuFileExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuFileExitMouseClicked
-        // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_menuFileExitMouseClicked
 
     /**
