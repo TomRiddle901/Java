@@ -55,6 +55,11 @@ public class mainForm extends javax.swing.JFrame {
         menuBarEditorMenu.setText("Editor");
 
         menuBarEditorClassi.setLabel("Classi");
+        menuBarEditorClassi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                menuBarEditorClassiMousePressed(evt);
+            }
+        });
         menuBarEditorMenu.add(menuBarEditorClassi);
 
         menuBarEditorDocenti.setLabel("Docenti");
@@ -88,6 +93,11 @@ public class mainForm extends javax.swing.JFrame {
     private void menuFileExitMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuFileExitMousePressed
         System.exit(0);
     }//GEN-LAST:event_menuFileExitMousePressed
+
+    private void menuBarEditorClassiMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuBarEditorClassiMousePressed
+        classiForm formClassi = new classiForm();
+        formClassi.setVisible(true);
+    }//GEN-LAST:event_menuBarEditorClassiMousePressed
 
     /**
      * @param args the command line arguments
