@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Updated ide to new version">
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Cahnged from NetBeans to IntelliJ. Created a small interface with title and button">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Form/src/main/java/org/tommymangia/MainForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Form/src/main/java/org/tommymangia/MainForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Form/src/main/java/org/tommymangia/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Form/src/main/java/org/tommymangia/MainForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Form/src/main/java/org/tommymangia/MainForm.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Form/src/main/java/org/tommymangia/MainForm.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +72,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/tommaso/Documenti/Scuola/Informatica/Java/Test_Form/src/main/java/org/tommymangia/Main.java",
+    "onboarding.tips.debug.path": "/home/tommaso/Documenti/Scuola/Informatica/Java/asdfghjk/src/main/java/org/tommymangia/Main.java",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -125,7 +128,8 @@
       <workItem from="1774528243494" duration="87000" />
       <workItem from="1774528365949" duration="70000" />
       <workItem from="1774539779135" duration="360000" />
-      <workItem from="1774541446419" duration="682000" />
+      <workItem from="1774541446419" duration="1543000" />
+      <workItem from="1774543232310" duration="219000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -311,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774540126962</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Cahnged from NetBeans to IntelliJ. Created a small interface with title and button">
+      <option name="closed" value="true" />
+      <created>1774542424748</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1774542424748</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +349,8 @@
     <MESSAGE value="Removed target directory from commits" />
     <MESSAGE value="New Project" />
     <MESSAGE value="Updated ide to new version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated ide to new version" />
+    <MESSAGE value="Cahnged from NetBeans to IntelliJ. Created a small interface with title and button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cahnged from NetBeans to IntelliJ. Created a small interface with title and button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

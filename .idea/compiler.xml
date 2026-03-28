@@ -28,5 +28,8 @@
         <module name="Esercizio_due_classi_collegate" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="asdfghjk" target="25" />
+    </bytecodeTargetLevel>
   </component>
 </project>
