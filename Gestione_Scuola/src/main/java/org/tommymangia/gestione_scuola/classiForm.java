@@ -152,7 +152,7 @@ public class classiForm extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbAnnoActionPerformed
 
     private void inserisciBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inserisciBtnMousePressed
-        if (!cmbAnno.getSelectedItem().toString().equals("Seleziona Anno")){
+        if (!cmbAnno.getSelectedItem().toString().equals("Seleziona Anno") || !cmbDipartimento.getSelectedItem().toString().equals("Seleziona Dipartimento") || !cmbSezione.getSelectedItem().toString().equals("Seleziona Sezione")){
             ClassiScuola classiScuola = new ClassiScuola(Integer.parseInt(cmbAnno.getSelectedItem().toString()), cmbSezione.getSelectedItem().toString(), cmbDipartimento.getSelectedItem().toString());
             
         }else{

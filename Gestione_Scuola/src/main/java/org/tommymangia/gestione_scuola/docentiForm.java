@@ -54,7 +54,8 @@ public class docentiForm extends javax.swing.JFrame {
         txtCognome.setText("Scrivi il cognome qui");
         txtCognome.addActionListener(this::txtCognomeActionPerformed);
 
-        cmbMaterie.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Meccanica", "Grafica", "Informatica", "Chimica", "Energia" }));
+        cmbMaterie.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleziona Materia", "Meccanica", "Grafica", "Informatica", "Chimica", "Energia" }));
+        cmbMaterie.addActionListener(this::cmbMaterieActionPerformed);
 
         btnAddDocente.setText("Inserisci docente");
 
@@ -138,6 +139,10 @@ public class docentiForm extends javax.swing.JFrame {
     private void btnGoBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGoBackMousePressed
         this.setVisible(false);
     }//GEN-LAST:event_btnGoBackMousePressed
+
+    private void cmbMaterieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMaterieActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbMaterieActionPerformed
 
     /**
      * @param args the command line arguments
