@@ -115,10 +115,10 @@ public class classiForm extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbAnnoActionPerformed
 
     private void inserisciBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inserisciBtnMousePressed
-        if (!cmbAnno.getSelectedItem().toString().equals("")){
+        if (!cmbAnno.getSelectedItem().toString().equals("Seleziona Anno")){
             
         }else{
-            
+            JOptionPane.showMessageDialog(rootPane, "Errore, inserisci i parametri validi", "Errore", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_inserisciBtnMousePressed
 
