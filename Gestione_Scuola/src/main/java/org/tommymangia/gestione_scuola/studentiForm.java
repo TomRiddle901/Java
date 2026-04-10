@@ -73,13 +73,14 @@ public class studentiForm extends javax.swing.JFrame {
 
         txtCognome.setText("Inserisci il cognome");
 
-        cmbSezioneClasse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D", "E", "F" }));
+        cmbSezioneClasse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleziona Classe", "A", "B", "C", "D", "E", "F" }));
         cmbSezioneClasse.addActionListener(this::cmbSezioneClasseActionPerformed);
 
         txtMatricola.setText("Inserisci matricola");
         txtMatricola.addActionListener(this::txtMatricolaActionPerformed);
 
-        cmbAnnoClasse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5" }));
+        cmbAnnoClasse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleziona Anno", "1", "2", "3", "4", "5" }));
+        cmbAnnoClasse.addActionListener(this::cmbAnnoClasseActionPerformed);
 
         btnAddStudente.setText("Inserisci studente");
         btnAddStudente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -142,7 +143,7 @@ public class studentiForm extends javax.swing.JFrame {
                                     .addComponent(cmbSezioneClasse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addComponent(btnAddStudente)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,6 +197,10 @@ public class studentiForm extends javax.swing.JFrame {
     private void btnAddStudenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddStudenteMousePressed
 
     }//GEN-LAST:event_btnAddStudenteMousePressed
+
+    private void cmbAnnoClasseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAnnoClasseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbAnnoClasseActionPerformed
 
     /**
      * @param args the command line arguments
