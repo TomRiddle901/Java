@@ -4,6 +4,8 @@
  */
 package org.tommymangia.gestione_scuola;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author tommaso
@@ -151,9 +153,9 @@ public class docentiForm extends javax.swing.JFrame {
 
     private void btnAddDocenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddDocenteMousePressed
         if (!txtNome.getText().equals("") && !txtCognome.getText().equals("") && !cmbMaterie.getSelectedItem().toString().equals("Seleziona Materia")){
-            
+            Docenti docenti = new Docenti(txtNome.getText(), txtCognome.getText(), cmbMaterie.getSelectedItem().toString());
         }else{
-            
+            JOptionPane.showMessageDialog(rootPane, "Inserisci dati vaili", "Errore", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnAddDocenteMousePressed
 
