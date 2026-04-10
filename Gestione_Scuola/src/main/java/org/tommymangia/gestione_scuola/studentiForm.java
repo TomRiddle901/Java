@@ -195,7 +195,10 @@ public class studentiForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGoBackMousePressed
 
     private void btnAddStudenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddStudenteMousePressed
-        if (!txtNome.getText().equals("")){
+        if (!txtNome.getText().equals("Inserisci il nome") && !txtCognome.getText().equals("Inserisci cognome") && !txtMatricola.getText().equals("Inserisci matricola") &&
+                !cmbAnnoClasse.getSelectedItem().toString().equals("Seleziona Anno") && !cmbSezioneClasse.getSelectedItem().toString().equals("Seleziona Classe")){
+            Studenti studenti = new Studenti(txtNome.getText(), txtCognome.getText(), Integer.parseInt(cmbAnnoClasse.getSelectedItem().toString()), cmbSezioneClasse.getSelectedItem().toString(), txtMatricola.getText());
+        }else{
             
         }
     }//GEN-LAST:event_btnAddStudenteMousePressed
