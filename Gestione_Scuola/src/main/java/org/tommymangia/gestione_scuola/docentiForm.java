@@ -156,7 +156,7 @@ public class docentiForm extends javax.swing.JFrame {
         if (!txtNome.getText().equals("Scrivi il nome qui") && !txtCognome.getText().equals("Scrivi il cognome qui") && !cmbMaterie.getSelectedItem().toString().equals("Seleziona Materia")){
             Docenti docenti = new Docenti(txtNome.getText(), txtCognome.getText(), cmbMaterie.getSelectedItem().toString());
         }else{
-            JOptionPane.showMessageDialog(rootPane, "Inserisci dati vaili", "Errore", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane, "Inserisci dati validi", "Errore", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnAddDocenteMousePressed
 
