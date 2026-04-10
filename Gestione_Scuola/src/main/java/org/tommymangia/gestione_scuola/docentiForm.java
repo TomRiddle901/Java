@@ -58,6 +58,11 @@ public class docentiForm extends javax.swing.JFrame {
         cmbMaterie.addActionListener(this::cmbMaterieActionPerformed);
 
         btnAddDocente.setText("Inserisci docente");
+        btnAddDocente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnAddDocenteMousePressed(evt);
+            }
+        });
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -143,6 +148,14 @@ public class docentiForm extends javax.swing.JFrame {
     private void cmbMaterieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMaterieActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbMaterieActionPerformed
+
+    private void btnAddDocenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddDocenteMousePressed
+        if (!txtNome.getText().equals("") && !txtCognome.getText().equals("") && !cmbMaterie.getSelectedItem().toString().equals("Seleziona Materia")){
+            
+        }else{
+            
+        }
+    }//GEN-LAST:event_btnAddDocenteMousePressed
 
     /**
      * @param args the command line arguments
