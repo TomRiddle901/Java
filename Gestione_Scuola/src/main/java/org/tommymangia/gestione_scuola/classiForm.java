@@ -116,7 +116,7 @@ public class classiForm extends javax.swing.JFrame {
 
     private void inserisciBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inserisciBtnMousePressed
         if (!cmbAnno.getSelectedItem().toString().equals("Seleziona Anno")){
-            
+            ClassiScuola classiScuola = new ClassiScuola(Integer.parseInt(cmbAnno.getSelectedItem().toString()), cmbSezione.getSelectedItem().toString(), cmbDipartimento.getSelectedItem().toString());
         }else{
             JOptionPane.showMessageDialog(rootPane, "Errore, inserisci i parametri validi", "Errore", JOptionPane.ERROR_MESSAGE);
         }
