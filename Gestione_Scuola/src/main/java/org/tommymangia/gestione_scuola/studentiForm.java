@@ -82,6 +82,11 @@ public class studentiForm extends javax.swing.JFrame {
         cmbAnnoClasse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5" }));
 
         btnAddStudente.setText("Inserisci studente");
+        btnAddStudente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnAddStudenteMousePressed(evt);
+            }
+        });
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -187,6 +192,10 @@ public class studentiForm extends javax.swing.JFrame {
     private void btnGoBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGoBackMousePressed
         this.setVisible(false);
     }//GEN-LAST:event_btnGoBackMousePressed
+
+    private void btnAddStudenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddStudenteMousePressed
+
+    }//GEN-LAST:event_btnAddStudenteMousePressed
 
     /**
      * @param args the command line arguments

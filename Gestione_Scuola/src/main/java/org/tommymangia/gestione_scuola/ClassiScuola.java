@@ -18,6 +18,6 @@ public class ClassiScuola {
         this.corso = corso;
         this.dipartimento = dipartimento;
     }
-    
+
     
 }

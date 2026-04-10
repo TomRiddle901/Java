@@ -198,6 +198,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Inserisci studente"/>
       </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAddStudenteMousePressed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
       <AuxValues>
