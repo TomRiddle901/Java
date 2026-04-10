@@ -51,6 +51,7 @@ public class docentiForm extends javax.swing.JFrame {
         lblMaterie.setText("Materie");
 
         txtNome.setText("Scrivi il nome qui");
+        txtNome.setToolTipText("Scrivi il nome qui");
         txtNome.addActionListener(this::txtNomeActionPerformed);
 
         txtCognome.setText("Scrivi il cognome qui");
@@ -152,7 +153,7 @@ public class docentiForm extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbMaterieActionPerformed
 
     private void btnAddDocenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddDocenteMousePressed
-        if (!txtNome.getText().equals("") && !txtCognome.getText().equals("") && !cmbMaterie.getSelectedItem().toString().equals("Seleziona Materia")){
+        if (!txtNome.getText().equals("Scrivi il nome qui") && !txtCognome.getText().equals("Scrivi il cognome qui") && !cmbMaterie.getSelectedItem().toString().equals("Seleziona Materia")){
             Docenti docenti = new Docenti(txtNome.getText(), txtCognome.getText(), cmbMaterie.getSelectedItem().toString());
         }else{
             JOptionPane.showMessageDialog(rootPane, "Inserisci dati vaili", "Errore", JOptionPane.ERROR_MESSAGE);

@@ -195,7 +195,9 @@ public class studentiForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGoBackMousePressed
 
     private void btnAddStudenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddStudenteMousePressed
-
+        if (!txtNome.getText().equals("")){
+            
+        }
     }//GEN-LAST:event_btnAddStudenteMousePressed
 
     private void cmbAnnoClasseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAnnoClasseActionPerformed
