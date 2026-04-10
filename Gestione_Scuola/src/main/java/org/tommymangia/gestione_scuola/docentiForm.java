@@ -51,7 +51,7 @@ public class docentiForm extends javax.swing.JFrame {
         lblMaterie.setText("Materie");
 
         txtNome.setText("Scrivi il nome qui");
-        txtNome.setToolTipText("Scrivi il nome qui");
+        txtNome.setToolTipText("");
         txtNome.addActionListener(this::txtNomeActionPerformed);
 
         txtCognome.setText("Scrivi il cognome qui");
