@@ -4,6 +4,8 @@
  */
 package org.tommymangia.gestione_scuola;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author tommaso
@@ -199,7 +201,7 @@ public class studentiForm extends javax.swing.JFrame {
                 !cmbAnnoClasse.getSelectedItem().toString().equals("Seleziona Anno") && !cmbSezioneClasse.getSelectedItem().toString().equals("Seleziona Classe")){
             Studenti studenti = new Studenti(txtNome.getText(), txtCognome.getText(), Integer.parseInt(cmbAnnoClasse.getSelectedItem().toString()), cmbSezioneClasse.getSelectedItem().toString(), txtMatricola.getText());
         }else{
-            
+            JOptionPane.showMessageDialog(rootPane, "Inserisci dati validi", "Errore", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnAddStudenteMousePressed
 
