@@ -71,6 +71,11 @@ public class mainForm extends javax.swing.JFrame {
         menuBarEditorMenu.add(menuBarEditorDocenti);
 
         menuBarEditorStudenti.setLabel("Studenti");
+        menuBarEditorStudenti.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                menuBarEditorStudentiMousePressed(evt);
+            }
+        });
         menuBarEditorMenu.add(menuBarEditorStudenti);
 
         jMenuBar1.add(menuBarEditorMenu);
@@ -109,6 +114,11 @@ public class mainForm extends javax.swing.JFrame {
         formDocenti.setVisible(true);
     }//GEN-LAST:event_menuBarEditorDocentiMousePressed
 
+    private void menuBarEditorStudentiMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuBarEditorStudentiMousePressed
+        studentiForm frmStudenti = new studentiForm();
+        frmStudenti.setVisible(true);
+    }//GEN-LAST:event_menuBarEditorStudentiMousePressed
+
     /**
      * @param args the command line arguments
      */
@@ -134,7 +144,7 @@ public class mainForm extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(() -> new mainForm().setVisible(true));
     }
 
-    // Variables declaration - do not modify           Added label, textbox, comboBox and button for add a `docente`//GEN-BEGIN:variables
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem menuBarEditorClassi;
     private javax.swing.JMenuItem menuBarEditorDocenti;

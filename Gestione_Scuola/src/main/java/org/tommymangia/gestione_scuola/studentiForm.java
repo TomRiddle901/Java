@@ -61,6 +61,11 @@ public class studentiForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Form Studenti");
+        addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                formMousePressed(evt);
+            }
+        });
 
         lblNome.setText("Nome");
 
@@ -196,18 +201,22 @@ public class studentiForm extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnGoBackMousePressed
 
-    private void btnAddStudenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddStudenteMousePressed
-        if (!txtNome.getText().equals("Inserisci il nome") && !txtCognome.getText().equals("Inserisci cognome") && !txtMatricola.getText().equals("Inserisci matricola") &&
-                !cmbAnnoClasse.getSelectedItem().toString().equals("Seleziona Anno") && !cmbSezioneClasse.getSelectedItem().toString().equals("Seleziona Classe")){
-            Studenti studenti = new Studenti(txtNome.getText(), txtCognome.getText(), Integer.parseInt(cmbAnnoClasse.getSelectedItem().toString()), cmbSezioneClasse.getSelectedItem().toString(), txtMatricola.getText());
-        }else{
-            JOptionPane.showMessageDialog(rootPane, "Inserisci dati validi", "Errore", JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_btnAddStudenteMousePressed
-
     private void cmbAnnoClasseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAnnoClasseActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbAnnoClasseActionPerformed
+
+    private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_formMousePressed
+
+    private void btnAddStudenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddStudenteMousePressed
+        if (!txtNome.getText().equals("Inserisci il nome") && !txtCognome.getText().equals("Inserisci il cognome") && !txtMatricola.getText().equals("Inserisci matricola")
+                && !cmbAnnoClasse.getSelectedItem().toString().equals("Seleziona Anno") && !cmbSezioneClasse.getSelectedItem().toString().equals("Seleziona Classe")){
+            Studenti studenti = new Studenti(txtNome.getText(), txtCognome.getText(), Integer.parseInt(cmbAnnoClasse.getSelectedItem().toString()), cmbSezioneClasse.getSelectedItem().toString(), txtMatricola.getText());
+        }else{
+            JOptionPane.showMessageDialog(rootPane, "Inserisci parametri validi", "Errore", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_btnAddStudenteMousePressed
 
     /**
      * @param args the command line arguments
