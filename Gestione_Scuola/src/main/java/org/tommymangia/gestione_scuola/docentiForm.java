@@ -146,6 +146,7 @@ public class docentiForm extends javax.swing.JFrame {
 
     private void btnGoBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGoBackMousePressed
         this.setVisible(false);
+        resetCampi();
     }//GEN-LAST:event_btnGoBackMousePressed
 
     private void cmbMaterieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMaterieActionPerformed
