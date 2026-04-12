@@ -40,6 +40,7 @@ public class classiForm extends javax.swing.JFrame {
         inserisciBtn = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         classiTable = new javax.swing.JTable();
+        btnGoBack = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Form Studenti");
@@ -95,6 +96,13 @@ public class classiForm extends javax.swing.JFrame {
             classiTable.getColumnModel().getColumn(2).setResizable(false);
         }
 
+        btnGoBack.setText("Torna indietro");
+        btnGoBack.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnGoBackMousePressed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -123,6 +131,10 @@ public class classiForm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(inserisciBtn)))
                         .addContainerGap())))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnGoBack)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -140,8 +152,11 @@ public class classiForm extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(cmbDipartimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnGoBack)
+                .addContainerGap())
         );
 
         pack();
@@ -161,6 +176,11 @@ public class classiForm extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Errore, inserisci i parametri validi", "Errore", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_inserisciBtnMousePressed
+
+    private void btnGoBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGoBackMousePressed
+        this.setVisible(false);
+        resetCampi();
+    }//GEN-LAST:event_btnGoBackMousePressed
 
     // Funzione per resettare i campi
     private void resetCampi(){
@@ -195,6 +215,7 @@ public class classiForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnGoBack;
     private javax.swing.JTable classiTable;
     private javax.swing.JComboBox<String> cmbAnno;
     private javax.swing.JComboBox<String> cmbDipartimento;
