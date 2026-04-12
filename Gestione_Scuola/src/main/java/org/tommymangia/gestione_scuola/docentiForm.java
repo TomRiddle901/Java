@@ -155,11 +155,21 @@ public class docentiForm extends javax.swing.JFrame {
     private void btnAddDocenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddDocenteMousePressed
         if (!txtNome.getText().equals("Scrivi il nome qui") && !txtCognome.getText().equals("Scrivi il cognome qui") && !cmbMaterie.getSelectedItem().toString().equals("Seleziona Materia")){
             Docenti docenti = new Docenti(txtNome.getText(), txtCognome.getText(), cmbMaterie.getSelectedItem().toString());
+            
+            // Reset campi
+            resetCampi();
         }else{
             JOptionPane.showMessageDialog(rootPane, "Inserisci dati validi", "Errore", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnAddDocenteMousePressed
 
+    // Funzione per resettare i campi
+    private void resetCampi(){
+        txtNome.setText("Scrivi il nome qui");
+        txtCognome.setText("Scrivi il cognome qui");
+        cmbMaterie.setSelectedIndex(0);
+    }
+    
     /**
      * @param args the command line arguments
      */
