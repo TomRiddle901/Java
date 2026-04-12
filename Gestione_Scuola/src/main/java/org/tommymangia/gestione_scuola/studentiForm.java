@@ -221,6 +221,15 @@ public class studentiForm extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnAddStudenteMousePressed
 
+    // Funzione per resettare i campi ai valori di default
+    private void resetCampi(){
+        txtNome.setText("Inserisci il nome");
+            txtCognome.setText("Inserisci il cognome");
+            txtMatricola.setText("Inserisci matricola");
+            cmbAnnoClasse.setSelectedIndex(0);
+            cmbSezioneClasse.setSelectedIndex(0);
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -246,15 +255,6 @@ public class studentiForm extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(() -> new studentiForm().setVisible(true));
     }
 
-    // Funzione per resettare i campi ai valori di default
-    private void resetCampi(){
-        txtNome.setText("Inserisci il nome");
-            txtCognome.setText("Inserisci il cognome");
-            txtMatricola.setText("Inserisci matricola");
-            cmbAnnoClasse.setSelectedIndex(0);
-            cmbSezioneClasse.setSelectedIndex(0);
-    }
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddStudente;
     private javax.swing.JButton btnGoBack;
