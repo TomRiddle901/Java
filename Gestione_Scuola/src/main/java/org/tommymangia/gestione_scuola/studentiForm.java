@@ -213,6 +213,13 @@ public class studentiForm extends javax.swing.JFrame {
         if (!txtNome.getText().equals("Inserisci il nome") && !txtCognome.getText().equals("Inserisci il cognome") && !txtMatricola.getText().equals("Inserisci matricola")
                 && !cmbAnnoClasse.getSelectedItem().toString().equals("Seleziona Anno") && !cmbSezioneClasse.getSelectedItem().toString().equals("Seleziona Classe")){
             Studenti studenti = new Studenti(txtNome.getText(), txtCognome.getText(), Integer.parseInt(cmbAnnoClasse.getSelectedItem().toString()), cmbSezioneClasse.getSelectedItem().toString(), txtMatricola.getText());
+            
+            // Reset campi
+            txtNome.setText("Inserisci il nome");
+            txtCognome.setText("Inserisci il cognome");
+            txtMatricola.setText("Inserisci matricola");
+            cmbAnnoClasse.setSelectedIndex(0);
+            cmbSezioneClasse.setSelectedIndex(0);
         }else{
             JOptionPane.showMessageDialog(rootPane, "Inserisci parametri validi", "Errore", JOptionPane.ERROR_MESSAGE);
         }
