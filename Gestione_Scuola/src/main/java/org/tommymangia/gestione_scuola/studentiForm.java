@@ -76,18 +76,14 @@ public class studentiForm extends javax.swing.JFrame {
         lblMatricola.setText("Matricola");
 
         txtNome.setText("Inserisci il nome");
-        txtNome.addActionListener(this::txtNomeActionPerformed);
 
         txtCognome.setText("Inserisci il cognome");
 
         cmbSezioneClasse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleziona Classe", "A", "B", "C", "D", "E", "F" }));
-        cmbSezioneClasse.addActionListener(this::cmbSezioneClasseActionPerformed);
 
         txtMatricola.setText("Inserisci matricola");
-        txtMatricola.addActionListener(this::txtMatricolaActionPerformed);
 
         cmbAnnoClasse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleziona Anno", "1", "2", "3", "4", "5" }));
-        cmbAnnoClasse.addActionListener(this::cmbAnnoClasseActionPerformed);
 
         btnAddStudente.setText("Inserisci studente");
         btnAddStudente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -185,26 +181,10 @@ public class studentiForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomeActionPerformed
-
-    private void cmbSezioneClasseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbSezioneClasseActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbSezioneClasseActionPerformed
-
-    private void txtMatricolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMatricolaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtMatricolaActionPerformed
-
     private void btnGoBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGoBackMousePressed
         this.setVisible(false);
         resetCampi();
     }//GEN-LAST:event_btnGoBackMousePressed
-
-    private void cmbAnnoClasseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAnnoClasseActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbAnnoClasseActionPerformed
 
     private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
         // TODO add your handling code here:

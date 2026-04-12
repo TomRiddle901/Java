@@ -52,7 +52,6 @@ public class classiForm extends javax.swing.JFrame {
         jLabel3.setText("Dipartimento");
 
         cmbAnno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleziona Anno", "1", "2", "3", "4", "5" }));
-        cmbAnno.addActionListener(this::cmbAnnoActionPerformed);
 
         cmbSezione.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleziona Sezione", "A", "B", "C", "D", "E", "F" }));
 
@@ -161,10 +160,6 @@ public class classiForm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void cmbAnnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAnnoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbAnnoActionPerformed
 
     private void inserisciBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inserisciBtnMousePressed
         if (!cmbAnno.getSelectedItem().toString().equals("Seleziona Anno") && !cmbDipartimento.getSelectedItem().toString().equals("Seleziona Dipartimento") && !cmbSezione.getSelectedItem().toString().equals("Seleziona Sezione")){

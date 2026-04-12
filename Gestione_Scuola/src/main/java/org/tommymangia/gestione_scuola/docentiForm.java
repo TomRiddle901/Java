@@ -52,13 +52,10 @@ public class docentiForm extends javax.swing.JFrame {
 
         txtNome.setText("Scrivi il nome qui");
         txtNome.setToolTipText("");
-        txtNome.addActionListener(this::txtNomeActionPerformed);
 
         txtCognome.setText("Scrivi il cognome qui");
-        txtCognome.addActionListener(this::txtCognomeActionPerformed);
 
         cmbMaterie.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleziona Materia", "Meccanica", "Grafica", "Informatica", "Chimica", "Energia" }));
-        cmbMaterie.addActionListener(this::cmbMaterieActionPerformed);
 
         btnAddDocente.setText("Inserisci docente");
         btnAddDocente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -136,22 +133,10 @@ public class docentiForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtCognomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCognomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCognomeActionPerformed
-
-    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomeActionPerformed
-
     private void btnGoBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGoBackMousePressed
         this.setVisible(false);
         resetCampi();
     }//GEN-LAST:event_btnGoBackMousePressed
-
-    private void cmbMaterieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMaterieActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbMaterieActionPerformed
 
     private void btnAddDocenteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddDocenteMousePressed
         if (!txtNome.getText().equals("Scrivi il nome qui") && !txtCognome.getText().equals("Scrivi il cognome qui") && !cmbMaterie.getSelectedItem().toString().equals("Seleziona Materia")){
