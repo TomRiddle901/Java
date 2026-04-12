@@ -155,11 +155,20 @@ public class classiForm extends javax.swing.JFrame {
         if (!cmbAnno.getSelectedItem().toString().equals("Seleziona Anno") && !cmbDipartimento.getSelectedItem().toString().equals("Seleziona Dipartimento") && !cmbSezione.getSelectedItem().toString().equals("Seleziona Sezione")){
             ClassiScuola classiScuola = new ClassiScuola(Integer.parseInt(cmbAnno.getSelectedItem().toString()), cmbSezione.getSelectedItem().toString(), cmbDipartimento.getSelectedItem().toString());
             
+            // Reset campi
+            resetCampi();
         }else{
             JOptionPane.showMessageDialog(rootPane, "Errore, inserisci i parametri validi", "Errore", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_inserisciBtnMousePressed
 
+    // Funzione per resettare i campi
+    private void resetCampi(){
+        cmbAnno.setSelectedIndex(0);
+        cmbDipartimento.setSelectedIndex(0);
+        cmbSezione.setSelectedIndex(0);
+    }
+    
     /**
      * @param args the command line arguments
      */
