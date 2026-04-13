@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Implemented method for saving `Punto` data using serialization">
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Solved `while` error (i put it in the wrong place bruh :\)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.MainProgram.executor": "Debug",
+    "Application.MainProgram.executor": "Run",
+    "Application.Unnamed.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
@@ -78,7 +78,20 @@
       <recent name="org.tommymangia" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainProgram">
+    <configuration name="MainProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.tommymangia.MainProgram" />
+      <module name="Serializzazione_su_file" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tommymangia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/java-25-amazon-corretto" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -97,6 +110,11 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainProgram" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -126,7 +144,7 @@
       <workItem from="1774539779135" duration="360000" />
       <workItem from="1774541446419" duration="1543000" />
       <workItem from="1774543232310" duration="219000" />
-      <workItem from="1776090713420" duration="3497000" />
+      <workItem from="1776090713420" duration="3921000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -360,16 +378,45 @@
       <option name="project" value="LOCAL" />
       <updated>1776092811530</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Implemented import from `datiPunto.dat`">
+      <option name="closed" value="true" />
+      <created>1776094254138</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1776094254138</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Solved missing `public` keyword on `main()` method">
+      <option name="closed" value="true" />
+      <created>1776094389244</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1776094389245</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Solved missing `static` keyword in `importaPunti()` method">
+      <option name="closed" value="true" />
+      <created>1776094454928</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1776094454928</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Solved `while` error (i put it in the wrong place bruh :\)">
+      <option name="closed" value="true" />
+      <created>1776094493320</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1776094493320</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ide changes" />
-    <MESSAGE value="Removed useless comment" />
-    <MESSAGE value="Ide things" />
     <MESSAGE value="Removed raw use of parameterized class `ArrayList`" />
     <MESSAGE value="Imported `FileReader` and `BufferedReader`" />
     <MESSAGE value="Initialized method for import points form an existing `punti.txt` file" />
@@ -391,7 +438,11 @@
     <MESSAGE value="Created class `Punto.java`" />
     <MESSAGE value="Copied code from `Classe_stream` except of `importa/esportaPunti` function (using serializable saving data type)" />
     <MESSAGE value="Implemented method for saving `Punto` data using serialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented method for saving `Punto` data using serialization" />
+    <MESSAGE value="Implemented import from `datiPunto.dat`" />
+    <MESSAGE value="Solved missing `public` keyword on `main()` method" />
+    <MESSAGE value="Solved missing `static` keyword in `importaPunti()` method" />
+    <MESSAGE value="Solved `while` error (i put it in the wrong place bruh :\)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved `while` error (i put it in the wrong place bruh :\)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

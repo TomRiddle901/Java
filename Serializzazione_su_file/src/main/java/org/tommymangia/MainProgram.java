@@ -36,6 +36,9 @@ public class MainProgram {
                 case 5:
                     importaPunti();
                     break;
+                case 0:
+                    System.out.println("Usita dal programma in corso...");
+                    break;
                 default:
                     System.out.println("Scelta non valida!");
                     break;
