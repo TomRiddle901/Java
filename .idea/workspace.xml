@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Copied code from `Classe_stream` except of `importa/esportaPunti` function (using serializable saving data type)">
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Implemented method for saving `Punto` data using serialization">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +126,7 @@
       <workItem from="1774539779135" duration="360000" />
       <workItem from="1774541446419" duration="1543000" />
       <workItem from="1774543232310" duration="219000" />
-      <workItem from="1776090713420" duration="1752000" />
+      <workItem from="1776090713420" duration="3497000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -351,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776092232593</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Implemented method for saving `Punto` data using serialization">
+      <option name="closed" value="true" />
+      <created>1776092811530</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1776092811530</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +390,8 @@
     <MESSAGE value="New project based on `Classe_stream` project (changed export/inport of file using the serialization)" />
     <MESSAGE value="Created class `Punto.java`" />
     <MESSAGE value="Copied code from `Classe_stream` except of `importa/esportaPunti` function (using serializable saving data type)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Copied code from `Classe_stream` except of `importa/esportaPunti` function (using serializable saving data type)" />
+    <MESSAGE value="Implemented method for saving `Punto` data using serialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented method for saving `Punto` data using serialization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

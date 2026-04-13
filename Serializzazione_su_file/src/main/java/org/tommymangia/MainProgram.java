@@ -124,4 +124,59 @@ public class MainProgram {
         System.out.println("Tipo di salvataggio: serializzazione");
         System.out.println("Nome del file: datiPunto.dat");
     }
+
+    private void importaPunti(){
+        ObjectInputStream input = null;
+        Scanner in = new Scanner(System.in);
+        String scelta = null;
+
+        try{
+            input = new ObjectInputStream(new FileInputStream("datiPunto.dat"));
+        }catch (FileNotFoundException fileNotFoundEx){
+            System.err.println("Errore: " + fileNotFoundEx.getMessage());
+            System.err.println("File non trovato");
+        }catch (IOException ioEx){
+            System.err.println("Errore: " + ioEx.getMessage());
+            System.err.println("Errore di Input/Output");
+        }
+
+        try{
+            if (!punti.isEmpty()){
+                System.out.print("Vuoi eliminare la lista dei punti temporanea [y/N]? ");
+                scelta = in.nextLine();
+                if (scelta.equals("y") || scelta.equals("Y")){
+                    punti.clear();
+                    System.out.println("Lista dei punti svuotata!");
+                }
+            }
+
+            System.out.println("Carico i punti...");
+
+            while (true){
+                Punto p = (Punto) input.readObject();
+                punti.add(p);
+            }
+        }catch (EOFException eofEx){
+            System.out.println("Importazione avvenuta con successo!");
+
+            try {
+                input.close();
+            } catch (IOException ioEx) {
+                System.err.println("Errore: " + ioEx.getMessage());
+                System.err.println("Errore di Input/Output");
+            }
+        }catch (FileNotFoundException fileNotFoundEx){
+            System.err.println("Errore: " + fileNotFoundEx.getMessage());
+            System.err.println("File non trovato");
+        }catch (IOException ioEx){
+            System.err.println("Errore: " + ioEx.getMessage());
+            System.err.println("Errore di Input/Output");
+        }catch (ClassNotFoundException classNotFoundEx){
+            System.err.println("Errore: " + classNotFoundEx.getMessage());
+            System.err.println("Classe non trovata");
+        }catch (NullPointerException nullPointerEx){
+            System.err.println("Errore: " + nullPointerEx.getMessage());
+            System.err.println("Oggetto non caricato correttamente");
+        }
+    }
 }
