@@ -39,8 +39,8 @@ public class MainProgram {
                 default:
                     System.out.println("Scelta non valida!");
                     break;
-            } while (scelta != 0);
-        }
+            }
+        }while (scelta != 0);
     }
 
     private static int menu(){
