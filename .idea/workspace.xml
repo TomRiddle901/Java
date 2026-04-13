@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Created class `Punto.java`">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Copied code from `Classe_stream` except of `importa/esportaPunti` function (using serializable saving data type)">
       <change beforePath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +125,7 @@
       <workItem from="1774539779135" duration="360000" />
       <workItem from="1774541446419" duration="1543000" />
       <workItem from="1774543232310" duration="219000" />
-      <workItem from="1776090713420" duration="1441000" />
+      <workItem from="1776090713420" duration="1752000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -344,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776091315653</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Copied code from `Classe_stream` except of `importa/esportaPunti` function (using serializable saving data type)">
+      <option name="closed" value="true" />
+      <created>1776092232593</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1776092232593</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +380,8 @@
     <MESSAGE value="Cahnged from NetBeans to IntelliJ. Created a small interface with title and button" />
     <MESSAGE value="New project based on `Classe_stream` project (changed export/inport of file using the serialization)" />
     <MESSAGE value="Created class `Punto.java`" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created class `Punto.java`" />
+    <MESSAGE value="Copied code from `Classe_stream` except of `importa/esportaPunti` function (using serializable saving data type)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Copied code from `Classe_stream` except of `importa/esportaPunti` function (using serializable saving data type)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

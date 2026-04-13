@@ -92,4 +92,36 @@ public class MainProgram {
             System.out.println("Nome: " + punti.get(i).toString());
         }
     }
+
+    private static void esportaPunti(){
+        ObjectOutputStream output = null;
+
+        try{
+            output = new ObjectOutputStream(new FileOutputStream("datiPunto.dat"));
+        }catch (FileNotFoundException fileNotFoundEx){
+            System.err.println("Errore: " + fileNotFoundEx.getMessage());
+            System.err.println("File non trovato");
+        }catch (IOException ioEx){
+            System.err.println("Errore: " + ioEx.getMessage());
+            System.err.println("Errore di Input/Output");
+        }
+
+        try{
+            for (int i = 0; i < punti.size(); i++){
+                output.writeObject(punti.get(i));
+            }
+
+            output.close();
+        }catch (IOException ioEx){
+            System.err.println("Errore: " + ioEx.getMessage());
+            System.err.println("Errore di Input/Output");
+        }catch (NullPointerException nullPointerEx){
+            System.err.println("Errore: " + nullPointerEx.getMessage());
+            System.err.println("Oggetto non caricato correttamente");
+        }
+
+        System.out.println("Salvataggio completato!");
+        System.out.println("Tipo di salvataggio: serializzazione");
+        System.out.println("Nome del file: datiPunto.dat");
+    }
 }
