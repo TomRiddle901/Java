@@ -125,7 +125,7 @@ public class MainProgram {
         System.out.println("Nome del file: datiPunto.dat");
     }
 
-    private void importaPunti(){
+    private static void importaPunti(){
         ObjectInputStream input = null;
         Scanner in = new Scanner(System.in);
         String scelta = null;
