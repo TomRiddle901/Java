@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Cahnged from NetBeans to IntelliJ. Created a small interface with title and button">
-      <change afterPath="$PROJECT_DIR$/Serializzazione_su_file/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/Punto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Created class `Punto.java`">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +126,7 @@
       <workItem from="1774539779135" duration="360000" />
       <workItem from="1774541446419" duration="1543000" />
       <workItem from="1774543232310" duration="219000" />
-      <workItem from="1776090713420" duration="183000" />
+      <workItem from="1776090713420" duration="1441000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -323,7 +320,31 @@
       <option name="project" value="LOCAL" />
       <updated>1774542424748</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="New project based on `Classe_stream` project (changed export/inport of file using the serialization)">
+      <option name="closed" value="true" />
+      <created>1776090945046</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1776090945048</updated>
+    </task>
+    <task id="LOCAL-00026" summary="New project based on `Classe_stream` project (changed export/inport of file using the serialization)">
+      <option name="closed" value="true" />
+      <created>1776090951642</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1776090951642</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Created class `Punto.java`">
+      <option name="closed" value="true" />
+      <created>1776091315653</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1776091315653</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +371,9 @@
     <MESSAGE value="New Project" />
     <MESSAGE value="Updated ide to new version" />
     <MESSAGE value="Cahnged from NetBeans to IntelliJ. Created a small interface with title and button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cahnged from NetBeans to IntelliJ. Created a small interface with title and button" />
+    <MESSAGE value="New project based on `Classe_stream` project (changed export/inport of file using the serialization)" />
+    <MESSAGE value="Created class `Punto.java`" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created class `Punto.java`" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
