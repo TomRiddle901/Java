@@ -11,6 +11,7 @@
         <module name="Esercizio_Squadra_Pallavolo" />
         <module name="Progettazione_classe_punto" />
         <module name="Es2_Progettazione_Classe_singola_con_attributo_vettore" />
+        <module name="Serializzazione_su_file" />
         <module name="Esercizio_garage" />
         <module name="Classe_stream" />
         <module name="Esercizio_classe_veicoli" />
