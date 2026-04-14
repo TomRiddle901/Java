@@ -15,6 +15,7 @@
         <module name="Esercizio_garage" />
         <module name="Classe_stream" />
         <module name="Esercizio_classe_veicoli" />
+        <module name="Esercizio_serializzazione_fakezone" />
         <module name="Esercizio_diependenti" />
         <module name="Esercizio_dipendenti2" />
         <module name="Esercizio_recupero_1" />
