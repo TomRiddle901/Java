@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Solved `while` error (i put it in the wrong place bruh :\)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +142,7 @@
       <workItem from="1774539779135" duration="360000" />
       <workItem from="1774541446419" duration="1543000" />
       <workItem from="1774543232310" duration="219000" />
-      <workItem from="1776090713420" duration="3921000" />
+      <workItem from="1776090713420" duration="4218000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -410,16 +408,37 @@
       <option name="project" value="LOCAL" />
       <updated>1776094493320</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added missing `case 0` on `switch` for exit the program">
+      <option name="closed" value="true" />
+      <created>1776094769304</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1776094769304</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Tested program">
+      <option name="closed" value="true" />
+      <created>1776094810188</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1776094810189</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Updated `.gitignore`">
+      <option name="closed" value="true" />
+      <created>1776094869428</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1776094869429</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed raw use of parameterized class `ArrayList`" />
-    <MESSAGE value="Imported `FileReader` and `BufferedReader`" />
-    <MESSAGE value="Initialized method for import points form an existing `punti.txt` file" />
     <MESSAGE value="Initialized array `punti`: solved error `NullPointerException`" />
     <MESSAGE value="Removed file punti.txt (is only for testing, not importanto to commit)" />
     <MESSAGE value="Added params for CSV file" />
@@ -442,7 +461,10 @@
     <MESSAGE value="Solved missing `public` keyword on `main()` method" />
     <MESSAGE value="Solved missing `static` keyword in `importaPunti()` method" />
     <MESSAGE value="Solved `while` error (i put it in the wrong place bruh :\)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved `while` error (i put it in the wrong place bruh :\)" />
+    <MESSAGE value="Added missing `case 0` on `switch` for exit the program" />
+    <MESSAGE value="Tested program" />
+    <MESSAGE value="Updated `.gitignore`" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated `.gitignore`" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
