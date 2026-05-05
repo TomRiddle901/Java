@@ -36,6 +36,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Esercizio_diependenti/Test_Intellij/pom.xml" />
+        <option value="$PROJECT_DIR$/Esercizio_serializzazione_fakezone/pom.xml" />
         <option value="$PROJECT_DIR$/Test/pom.xml" />
         <option value="$PROJECT_DIR$/asdfghjk/pom.xml" />
         <option value="$PROJECT_DIR$/untitled/pom.xml" />
