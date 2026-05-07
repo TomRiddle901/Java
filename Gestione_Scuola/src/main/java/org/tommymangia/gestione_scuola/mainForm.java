@@ -29,6 +29,7 @@ public class mainForm extends javax.swing.JFrame {
     private void initComponents() {
 
         titleLbl = new javax.swing.JLabel();
+        exitBtn = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuBarFileMenu = new javax.swing.JMenu();
         menuFileExit = new javax.swing.JMenuItem();
@@ -41,6 +42,13 @@ public class mainForm extends javax.swing.JFrame {
         setTitle("Gestione Scuola");
 
         titleLbl.setText("Gestione Scuola");
+
+        exitBtn.setText("Esci");
+        exitBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                exitBtnMousePressed(evt);
+            }
+        });
 
         menuBarFileMenu.setText("File");
 
@@ -93,13 +101,19 @@ public class mainForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(titleLbl)
                 .addContainerGap(287, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(exitBtn)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(titleLbl)
-                .addContainerGap(251, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 221, Short.MAX_VALUE)
+                .addComponent(exitBtn)
+                .addContainerGap())
         );
 
         pack();
@@ -128,6 +142,10 @@ public class mainForm extends javax.swing.JFrame {
         frmStudenti.setVisible(true);
     }//GEN-LAST:event_menuBarEditorStudentiMousePressed
 
+    private void exitBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitBtnMousePressed
+        System.exit(0);
+    }//GEN-LAST:event_exitBtnMousePressed
+
     /**
      * @param args the command line arguments
      */
@@ -154,6 +172,7 @@ public class mainForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton exitBtn;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem menuBarEditorClassi;
     private javax.swing.JMenuItem menuBarEditorDocenti;
