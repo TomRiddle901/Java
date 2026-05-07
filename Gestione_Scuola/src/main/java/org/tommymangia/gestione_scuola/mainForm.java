@@ -28,6 +28,7 @@ public class mainForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        titleLbl = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuBarFileMenu = new javax.swing.JMenu();
         menuFileExit = new javax.swing.JMenuItem();
@@ -38,6 +39,8 @@ public class mainForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Gestione Scuola");
+
+        titleLbl.setText("Gestione Scuola");
 
         menuBarFileMenu.setText("File");
 
@@ -86,11 +89,17 @@ public class mainForm extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(titleLbl)
+                .addContainerGap(287, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 275, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(titleLbl)
+                .addContainerGap(251, Short.MAX_VALUE))
         );
 
         pack();
@@ -130,7 +139,7 @@ public class mainForm extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("GTK+".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -152,5 +161,6 @@ public class mainForm extends javax.swing.JFrame {
     private javax.swing.JMenuItem menuBarEditorStudenti;
     private javax.swing.JMenu menuBarFileMenu;
     private javax.swing.JMenuItem menuFileExit;
+    private javax.swing.JLabel titleLbl;
     // End of variables declaration//GEN-END:variables
 }
