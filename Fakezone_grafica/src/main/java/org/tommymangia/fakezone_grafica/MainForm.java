@@ -28,7 +28,44 @@ public class MainForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar1 = new javax.swing.JMenuBar();
+        fileMenu = new javax.swing.JMenu();
+        fileMenuUscita = new javax.swing.JMenuItem();
+        gestioneMenu = new javax.swing.JMenu();
+        gestioneMenuClienti = new javax.swing.JMenuItem();
+        gestioneMenuProdotti = new javax.swing.JMenuItem();
+        gestioneMenuOrdini = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Fakezone");
+
+        fileMenu.setText("File");
+
+        fileMenuUscita.setText("Uscita");
+        fileMenuUscita.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                fileMenuUscitaMousePressed(evt);
+            }
+        });
+        fileMenuUscita.addActionListener(this::fileMenuUscitaActionPerformed);
+        fileMenu.add(fileMenuUscita);
+
+        jMenuBar1.add(fileMenu);
+
+        gestioneMenu.setText("Gestione");
+
+        gestioneMenuClienti.setText("Clienti");
+        gestioneMenu.add(gestioneMenuClienti);
+
+        gestioneMenuProdotti.setText("Prodotti");
+        gestioneMenu.add(gestioneMenuProdotti);
+
+        gestioneMenuOrdini.setText("Ordini");
+        gestioneMenu.add(gestioneMenuOrdini);
+
+        jMenuBar1.add(gestioneMenu);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -38,11 +75,19 @@ public class MainForm extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 275, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void fileMenuUscitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileMenuUscitaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fileMenuUscitaActionPerformed
+
+    private void fileMenuUscitaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fileMenuUscitaMousePressed
+        System.exit(0);
+    }//GEN-LAST:event_fileMenuUscitaMousePressed
 
     /**
      * @param args the command line arguments
@@ -55,7 +100,7 @@ public class MainForm extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("GTK+".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -70,5 +115,12 @@ public class MainForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenuItem fileMenuUscita;
+    private javax.swing.JMenu gestioneMenu;
+    private javax.swing.JMenuItem gestioneMenuClienti;
+    private javax.swing.JMenuItem gestioneMenuOrdini;
+    private javax.swing.JMenuItem gestioneMenuProdotti;
+    private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
