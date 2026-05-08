@@ -20,4 +20,18 @@ public class Utente {
     private String email;
     private String indirizzo;
     private String numeroTel;
+
+    public Utente(String password, String nome, String cognome, LocalDate dataNascita, char sesso, String codiceFiscale, String email, String indirizzo, String numeroTel) {
+        this.password = password;
+        this.nome = nome;
+        this.cognome = cognome;
+        this.dataNascita = dataNascita;
+        this.sesso = sesso;
+        this.codiceFiscale = codiceFiscale;
+        this.email = email;
+        this.indirizzo = indirizzo;
+        this.numeroTel = numeroTel;
+    }
+    
+    
 }
