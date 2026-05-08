@@ -4,12 +4,20 @@
  */
 package org.tommymangia.fakezone_grafica;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author tommaso
  */
-public class Cliente {
+public class Utente {
+    private String password;
     private String nome;
     private String cognome;
-    
+    private LocalDate dataNascita;
+    private char sesso; 
+    private String codiceFiscale;
+    private String email;
+    private String indirizzo;
+    private String numeroTel;
 }
