@@ -22,4 +22,16 @@ public class Azienda {
     public void addUtente(Utente user){
         utenti.add(user);
     }
+    
+    public int generaCodice(){
+        int c = 0;
+        
+        for (int i = 0; i < utenti.size(); i++){
+            if (utenti.get(i).getCodice() > c){
+                c = utenti.get(i).getCodice();
+            }
+        }
+        
+        return c + 1;
+    }
 }

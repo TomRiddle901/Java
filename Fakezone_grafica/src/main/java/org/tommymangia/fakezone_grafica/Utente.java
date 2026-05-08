@@ -12,6 +12,7 @@ import java.time.LocalDate;
  */
 public class Utente {
     private String password;
+    private int codice;
     private String nome;
     private String cognome;
     private LocalDate dataNascita;
@@ -21,7 +22,7 @@ public class Utente {
     private String indirizzo;
     private String numeroTel;
 
-    public Utente(String password, String nome, String cognome, LocalDate dataNascita, char sesso, String codiceFiscale, String email, String indirizzo, String numeroTel) {
+    public Utente(String password, int codice, String nome, String cognome, LocalDate dataNascita, char sesso, String codiceFiscale, String email, String indirizzo, String numeroTel) {
         this.password = password;
         this.nome = nome;
         this.cognome = cognome;
@@ -69,7 +70,9 @@ public class Utente {
         return indirizzo;
     }
     
-    
+    public int getCodice(){
+        return codice;
+    }
     
     @Override
     public String toString() {

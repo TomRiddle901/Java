@@ -12,11 +12,13 @@ public class MainForm extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MainForm.class.getName());
 
+    private Azienda azienda;
     /**
      * Creates new form MainForm
      */
     public MainForm() {
         initComponents();
+        azienda = new Azienda();
     }
 
     /**

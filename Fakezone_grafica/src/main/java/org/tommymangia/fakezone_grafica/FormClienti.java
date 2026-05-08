@@ -11,7 +11,7 @@ package org.tommymangia.fakezone_grafica;
 public class FormClienti extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FormClienti.class.getName());
-
+    
     /**
      * Creates new form FormClienti
      */
@@ -28,7 +28,6 @@ public class FormClienti extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
         btnNuovo = new javax.swing.JButton();
         btnModifica = new javax.swing.JButton();
         btnRimuovi = new javax.swing.JButton();
@@ -57,6 +56,11 @@ public class FormClienti extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnNuovo.setText("Nuovo Cliente");
+        btnNuovo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnNuovoMousePressed(evt);
+            }
+        });
 
         btnModifica.setText("Modifica cliente");
         btnModifica.setEnabled(false);
@@ -233,6 +237,10 @@ public class FormClienti extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEmailActionPerformed
 
+    private void btnNuovoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNuovoMousePressed
+        
+    }//GEN-LAST:event_btnNuovoMousePressed
+
     /**
      * @param args the command line arguments
      */
@@ -267,7 +275,6 @@ public class FormClienti extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblCodice;
     private javax.swing.JLabel lblCodiceFiscale;
     private javax.swing.JLabel lblCognome;
