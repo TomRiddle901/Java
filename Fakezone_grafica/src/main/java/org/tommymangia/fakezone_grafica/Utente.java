@@ -44,6 +44,32 @@ public class Utente {
     public String getNumeroTel() {
         return numeroTel;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCognome() {
+        return cognome;
+    }
+
+    public LocalDate getDataNascita() {
+        return dataNascita;
+    }
+
+    public char getSesso() {
+        return sesso;
+    }
+
+    public String getIndirizzo() {
+        return indirizzo;
+    }
+    
+    
     
     @Override
     public String toString() {
