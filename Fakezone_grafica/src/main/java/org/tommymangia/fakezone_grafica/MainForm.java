@@ -55,6 +55,11 @@ public class MainForm extends javax.swing.JFrame {
         gestioneMenu.setText("Gestione");
 
         gestioneMenuClienti.setText("Clienti");
+        gestioneMenuClienti.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                gestioneMenuClientiMousePressed(evt);
+            }
+        });
         gestioneMenu.add(gestioneMenuClienti);
 
         gestioneMenuProdotti.setText("Prodotti");
@@ -88,6 +93,11 @@ public class MainForm extends javax.swing.JFrame {
     private void fileMenuUscitaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fileMenuUscitaMousePressed
         System.exit(0);
     }//GEN-LAST:event_fileMenuUscitaMousePressed
+
+    private void gestioneMenuClientiMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gestioneMenuClientiMousePressed
+        FormClienti formClienti = new FormClienti();
+        formClienti.setVisible(true);
+    }//GEN-LAST:event_gestioneMenuClientiMousePressed
 
     /**
      * @param args the command line arguments
