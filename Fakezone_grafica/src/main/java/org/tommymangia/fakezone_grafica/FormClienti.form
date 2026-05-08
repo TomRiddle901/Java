@@ -35,6 +35,7 @@
                   <Component id="btnNuovo" min="-2" max="-2" attributes="0"/>
                   <Component id="btnModifica" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btnRimuovi" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCerca" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="265" max="32767" attributes="0"/>
           </Group>
@@ -49,7 +50,9 @@
               <Component id="btnModifica" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="btnRimuovi" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="210" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnCerca" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="180" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -63,11 +66,18 @@
     <Component class="javax.swing.JButton" name="btnModifica">
       <Properties>
         <Property name="text" type="java.lang.String" value="Modifica cliente"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnRimuovi">
       <Properties>
         <Property name="text" type="java.lang.String" value="Rimuovi cliente"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnCerca">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cerca utente"/>
       </Properties>
     </Component>
   </SubComponents>
