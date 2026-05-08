@@ -18,4 +18,8 @@ public class Azienda {
     public Azienda() {
         utenti = new ArrayList<>();
     }
+    
+    public void addUtente(Utente user){
+        utenti.add(user);
+    }
 }
