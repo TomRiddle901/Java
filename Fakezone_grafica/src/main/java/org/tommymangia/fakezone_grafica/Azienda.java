@@ -4,10 +4,18 @@
  */
 package org.tommymangia.fakezone_grafica;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author tommaso
  */
 public class Azienda {
-    
+    private final String nome = "Fakezone";
+    private final String sitoWeb = "www.fakezone.sola";
+    private ArrayList<Utente> utenti;
+
+    public Azienda() {
+        utenti = new ArrayList<>();
+    }
 }
