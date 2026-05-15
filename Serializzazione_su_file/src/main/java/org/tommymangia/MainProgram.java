@@ -10,7 +10,7 @@ import java.util.InputMismatchException;
 
 public class MainProgram {
 
-    // Arraylist di punti
+    // Arraylist di punt
     public static ArrayList<Punto> punti = new ArrayList<>();
 
     public static void main(String[] args){

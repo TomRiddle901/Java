@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="New project">
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Removed a project (working on other directory">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,14 +67,14 @@
     "git-widget-placeholder": "master",
     "javascript.preferred.runtime.type.id": "node",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/tommaso/Documenti/Scuola/Informatica/Serializzazione-FakeZone",
+    "last_opened_file_path": "/home/tommaso/Documents/Scuola/Informatica/Serializzazione-FakeZone",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/tommaso/Documenti/Scuola/Informatica/Java/Esercizio_serializzazione_fakezone/src/main/java/org/tommymangia/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -149,6 +153,13 @@
       <workItem from="1776168166236" duration="991000" />
       <workItem from="1776169206997" duration="340000" />
       <workItem from="1776790884130" duration="383000" />
+      <workItem from="1777983572886" duration="3506000" />
+      <workItem from="1778151813351" duration="240000" />
+      <workItem from="1778228672634" duration="28000" />
+      <workItem from="1778332738666" duration="2141000" />
+      <workItem from="1778342216883" duration="21000" />
+      <workItem from="1778781487484" duration="69000" />
+      <workItem from="1778781687065" duration="841000" />
     </task>
     <task id="LOCAL-00001" summary="Ide changes">
       <option name="closed" value="true" />
@@ -462,14 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1776168732550</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Removed a project (working on other directory">
+      <option name="closed" value="true" />
+      <created>1777983634963</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1777983634963</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added params for CSV file" />
     <MESSAGE value="Reset of function `importaPunti()`. Everything vas wrong" />
     <MESSAGE value="Readed file `punti.txt`, spitted into an array and loaded point information `(x, y, name)` in the array `punti`" />
     <MESSAGE value="Closed buffer `bufferRead` and fixed imports to be more readable (divided by `io`, `util` and exceptions)" />
@@ -494,7 +512,8 @@
     <MESSAGE value="Updated `.gitignore`" />
     <MESSAGE value="Ide changes" />
     <MESSAGE value="New project" />
-    <option name="LAST_COMMIT_MESSAGE" value="New project" />
+    <MESSAGE value="Removed a project (working on other directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed a project (working on other directory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
