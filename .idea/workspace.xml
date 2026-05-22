@@ -5,16 +5,160 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Removed a project (working on other directory">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Serializzazione_su_file/src/main/java/org/tommymangia/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applicazione_Biblioteca/nbactions-release-profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Applicazione_Biblioteca/nbactions-release-profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applicazione_Biblioteca/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Applicazione_Biblioteca/nbactions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applicazione_Biblioteca/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Applicazione_Biblioteca/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/Autore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/Autore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/Biblioteca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/Prestiti.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/Prestiti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/Socio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applicazione_Biblioteca/src/main/java/com/tommymangia/applicazione_biblioteca/Socio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/nbactions-release-profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/nbactions-release-profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/src/main/java/tommymangia/classe_singola_con_array_paralleli/Libreria.java" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/src/main/java/tommymangia/classe_singola_con_array_paralleli/Libreria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/src/main/java/tommymangia/classe_singola_con_array_paralleli/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/src/main/java/tommymangia/classe_singola_con_array_paralleli/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/target/classes/tommymangia/classe_singola_con_array_paralleli/Libreria.class" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/target/classes/tommymangia/classe_singola_con_array_paralleli/Libreria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/target/classes/tommymangia/classe_singola_con_array_paralleli/MainProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/target/classes/tommymangia/classe_singola_con_array_paralleli/MainProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Classe_singola_con_array_paralleli/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/nbactions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/src/main/java/tommymangia/es2_progettazione_classe_singola_con_attributo_vettore/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/src/main/java/tommymangia/es2_progettazione_classe_singola_con_attributo_vettore/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/src/main/java/tommymangia/es2_progettazione_classe_singola_con_attributo_vettore/Studente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/src/main/java/tommymangia/es2_progettazione_classe_singola_con_attributo_vettore/Studente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/target/classes/tommymangia/es2_progettazione_classe_singola_con_attributo_vettore/MainProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/target/classes/tommymangia/es2_progettazione_classe_singola_con_attributo_vettore/MainProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/target/classes/tommymangia/es2_progettazione_classe_singola_con_attributo_vettore/Studente.class" beforeDir="false" afterPath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/target/classes/tommymangia/es2_progettazione_classe_singola_con_attributo_vettore/Studente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Es2_Progettazione_Classe_singola_con_attributo_vettore/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/nbactions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/src/main/java/tommymangia/esercizio_squadra_pallavolo/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/src/main/java/tommymangia/esercizio_squadra_pallavolo/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/src/main/java/tommymangia/esercizio_squadra_pallavolo/Pallavolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/src/main/java/tommymangia/esercizio_squadra_pallavolo/Pallavolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/target/classes/tommymangia/esercizio_squadra_pallavolo/MainProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/target/classes/tommymangia/esercizio_squadra_pallavolo/MainProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/target/classes/tommymangia/esercizio_squadra_pallavolo/Pallavolo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/target/classes/tommymangia/esercizio_squadra_pallavolo/Pallavolo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_Squadra_Pallavolo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_calciatore/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_calciatore/nbactions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_calciatore/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_calciatore/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_calciatore/src/main/java/tommymangia/esercizio_classe_calciatore/Calciatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_calciatore/src/main/java/tommymangia/esercizio_classe_calciatore/Calciatore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_calciatore/src/main/java/tommymangia/esercizio_classe_calciatore/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_calciatore/src/main/java/tommymangia/esercizio_classe_calciatore/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_veicoli/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_veicoli/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_veicoli/src/main/java/Macchina.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_veicoli/src/main/java/Macchina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_veicoli/src/main/java/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_veicoli/src/main/java/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_veicoli/src/main/java/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_veicoli/src/main/java/Moto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_veicoli/src/main/java/Veicolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_veicoli/src/main/java/Veicolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_veicoli/target/classes/Macchina.class" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_veicoli/target/classes/Macchina.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_veicoli/target/classes/MainProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_veicoli/target/classes/MainProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_veicoli/target/classes/Moto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_veicoli/target/classes/Moto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_classe_veicoli/target/classes/Veicolo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_classe_veicoli/target/classes/Veicolo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_diependenti/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_diependenti/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_diependenti/src/main/java/tommymangia/esercizio_diependenti/Dipendente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_diependenti/src/main/java/tommymangia/esercizio_diependenti/Dipendente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_diependenti/src/main/java/tommymangia/esercizio_diependenti/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_diependenti/src/main/java/tommymangia/esercizio_diependenti/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_diependenti/src/main/java/tommymangia/esercizio_diependenti/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_diependenti/src/main/java/tommymangia/esercizio_diependenti/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_diependenti/src/main/java/tommymangia/esercizio_diependenti/Programmatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_diependenti/src/main/java/tommymangia/esercizio_diependenti/Programmatore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_dipendenti2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_dipendenti2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_dipendenti2/src/main/java/org/tommymangia/Amministrativi.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_dipendenti2/src/main/java/org/tommymangia/Amministrativi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_dipendenti2/src/main/java/org/tommymangia/Dipendente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_dipendenti2/src/main/java/org/tommymangia/Dipendente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_dipendenti2/src/main/java/org/tommymangia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_dipendenti2/src/main/java/org/tommymangia/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_dipendenti2/src/main/java/org/tommymangia/Tecnici.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_dipendenti2/src/main/java/org/tommymangia/Tecnici.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_dipendenti2/target/classes/org/tommymangia/Amministrativi.class" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_dipendenti2/target/classes/org/tommymangia/Amministrativi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_dipendenti2/target/classes/org/tommymangia/Dipendente.class" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_dipendenti2/target/classes/org/tommymangia/Dipendente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_dipendenti2/target/classes/org/tommymangia/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_dipendenti2/target/classes/org/tommymangia/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_dipendenti2/target/classes/org/tommymangia/Tecnici.class" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_dipendenti2/target/classes/org/tommymangia/Tecnici.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_due_classi_collegate/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_due_classi_collegate/nbactions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_due_classi_collegate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_due_classi_collegate/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_due_classi_collegate/src/main/java/tommymangia/esercizio_due_classi_collegate/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_due_classi_collegate/src/main/java/tommymangia/esercizio_due_classi_collegate/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_due_classi_collegate/src/main/java/tommymangia/esercizio_due_classi_collegate/Studente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_due_classi_collegate/src/main/java/tommymangia/esercizio_due_classi_collegate/Studente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_due_classi_collegate/src/main/java/tommymangia/esercizio_due_classi_collegate/Valutazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_due_classi_collegate/src/main/java/tommymangia/esercizio_due_classi_collegate/Valutazione.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_garage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_garage/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Furgone.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Furgone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Garage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Garage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Giornata.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Giornata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Macchina.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Macchina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_garage/src/main/java/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_garage/src/main/java/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Motocicletta.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Motocicletta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Posto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Posto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Veicolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_garage/src/main/java/Veicolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_1/src/main/java/com/tommymangia/esercizio_recupero_1/Esercizio_recupero_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_1/src/main/java/com/tommymangia/esercizio_recupero_1/Esercizio_recupero_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_1/src/main/java/com/tommymangia/esercizio_recupero_1/Sim.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_1/src/main/java/com/tommymangia/esercizio_recupero_1/Sim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_2/hs_err_pid6449.log" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_2/hs_err_pid6449.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_2/nb-configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_2/nb-configuration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_2/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_2/nbactions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_2/src/main/java/com/tommymangia/esercizio_recupero_2/Chiamate.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_2/src/main/java/com/tommymangia/esercizio_recupero_2/Chiamate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_2/src/main/java/com/tommymangia/esercizio_recupero_2/Esercizio_recupero_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_2/src/main/java/com/tommymangia/esercizio_recupero_2/Esercizio_recupero_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_2/src/main/java/com/tommymangia/esercizio_recupero_2/Sim.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_2/src/main/java/com/tommymangia/esercizio_recupero_2/Sim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_ricettario/assets/ciaramicola.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_ricettario/assets/ciaramicola.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_ricettario/assets/ciaramicola2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_ricettario/assets/ciaramicola2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_ricettario/assets/riso_patate_e_cozze.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_ricettario/assets/riso_patate_e_cozze.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_ricettario/assets/riso_patate_e_cozze2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_ricettario/assets/riso_patate_e_cozze2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_ricettario/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_ricettario/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_ricettario/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_ricettario/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_ricettario/src/main/java/com/tommymangia/esercizio_recupero_ricettario/Esercizio_recupero_ricettario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_ricettario/src/main/java/com/tommymangia/esercizio_recupero_ricettario/Esercizio_recupero_ricettario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_ricettario/src/main/java/com/tommymangia/esercizio_recupero_ricettario/Ingrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_ricettario/src/main/java/com/tommymangia/esercizio_recupero_ricettario/Ingrediente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_ricettario/src/main/java/com/tommymangia/esercizio_recupero_ricettario/Ricetta.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_ricettario/src/main/java/com/tommymangia/esercizio_recupero_ricettario/Ricetta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio_recupero_ricettario/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizio_recupero_ricettario/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poligono_con_classe_Punto/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Poligono_con_classe_Punto/nbactions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poligono_con_classe_Punto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Poligono_con_classe_Punto/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poligono_con_classe_Punto/src/main/java/tommymangia/poligono_con_classe_punto/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Poligono_con_classe_Punto/src/main/java/tommymangia/poligono_con_classe_punto/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poligono_con_classe_Punto/src/main/java/tommymangia/poligono_con_classe_punto/Poligono.java" beforeDir="false" afterPath="$PROJECT_DIR$/Poligono_con_classe_Punto/src/main/java/tommymangia/poligono_con_classe_punto/Poligono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poligono_con_classe_Punto/src/main/java/tommymangia/poligono_con_classe_punto/Punto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Poligono_con_classe_Punto/src/main/java/tommymangia/poligono_con_classe_punto/Punto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/nbactions-release-profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/nbactions-release-profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/src/main/java/tommymangia/progettazione_di_una_classe_conto_corrente/ContoCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/src/main/java/tommymangia/progettazione_di_una_classe_conto_corrente/ContoCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/src/main/java/tommymangia/progettazione_di_una_classe_conto_corrente/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/src/main/java/tommymangia/progettazione_di_una_classe_conto_corrente/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/target/classes/tommymangia/progettazione_di_una_classe_conto_corrente/ContoCorrente.class" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/target/classes/tommymangia/progettazione_di_una_classe_conto_corrente/ContoCorrente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/target/classes/tommymangia/progettazione_di_una_classe_conto_corrente/MainProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/target/classes/tommymangia/progettazione_di_una_classe_conto_corrente/MainProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_Di_Una_Classe_Conto_Corrente/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_classe_punto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_classe_punto/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_classe_punto/src/main/java/com/mycompany/progettazione_classe_punto/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_classe_punto/src/main/java/com/mycompany/progettazione_classe_punto/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_classe_punto/src/main/java/com/mycompany/progettazione_classe_punto/Punto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_classe_punto/src/main/java/com/mycompany/progettazione_classe_punto/Punto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_classe_punto/target/classes/com/mycompany/progettazione_classe_punto/Progettazione_classe_punto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_classe_punto/target/classes/com/mycompany/progettazione_classe_punto/Progettazione_classe_punto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_classe_punto/target/classes/com/mycompany/progettazione_classe_punto/Punto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_classe_punto/target/classes/com/mycompany/progettazione_classe_punto/Punto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_classe_punto/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_classe_punto/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Progettazione_classe_punto/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Progettazione_classe_punto/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Punto_cerchio_cilindro/nbactions-release-profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Punto_cerchio_cilindro/nbactions-release-profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Punto_cerchio_cilindro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Punto_cerchio_cilindro/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Punto_cerchio_cilindro/src/main/java/com/tommymangia/punto_cerchio_cilindro/Cerchio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Punto_cerchio_cilindro/src/main/java/com/tommymangia/punto_cerchio_cilindro/Cerchio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Punto_cerchio_cilindro/src/main/java/com/tommymangia/punto_cerchio_cilindro/Cilindro.java" beforeDir="false" afterPath="$PROJECT_DIR$/Punto_cerchio_cilindro/src/main/java/com/tommymangia/punto_cerchio_cilindro/Cilindro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Punto_cerchio_cilindro/src/main/java/com/tommymangia/punto_cerchio_cilindro/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Punto_cerchio_cilindro/src/main/java/com/tommymangia/punto_cerchio_cilindro/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Punto_cerchio_cilindro/src/main/java/com/tommymangia/punto_cerchio_cilindro/Punto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Punto_cerchio_cilindro/src/main/java/com/tommymangia/punto_cerchio_cilindro/Punto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Triangolo_con_classe_punto/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Triangolo_con_classe_punto/nbactions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Triangolo_con_classe_punto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Triangolo_con_classe_punto/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Triangolo_con_classe_punto/src/main/java/tommymangia/triangolo_con_classe_punto/MainProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Triangolo_con_classe_punto/src/main/java/tommymangia/triangolo_con_classe_punto/MainProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Triangolo_con_classe_punto/src/main/java/tommymangia/triangolo_con_classe_punto/Punto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Triangolo_con_classe_punto/src/main/java/tommymangia/triangolo_con_classe_punto/Punto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Triangolo_con_classe_punto/src/main/java/tommymangia/triangolo_con_classe_punto/Triangolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Triangolo_con_classe_punto/src/main/java/tommymangia/triangolo_con_classe_punto/Triangolo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,7 +185,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -62,23 +206,31 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "310",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "javascript.preferred.runtime.type.id": "node",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/tommaso/Documents/Scuola/Informatica/Serializzazione-FakeZone",
+    "last_opened_file_path": "/home/tommaso/Scaricati",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/tommaso/Documenti/Scuola/Informatica/Java/Esercizio_serializzazione_fakezone/src/main/java/org/tommymangia/Main.java",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "onboarding.tips.debug.path": "/home/tommaso/Documenti/Scuola/Informatica/Java/serverMariaDB/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.sync",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.tommymangia" />
     </key>
@@ -124,8 +276,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
       </set>
     </attachedChunks>
   </component>
@@ -531,6 +683,11 @@
           <url>file://$PROJECT_DIR$/Esercizio_serializzazione_fakezone/src/main/java/org/tommymangia/MainProgram.java</url>
           <line>13</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Serializzazione_su_file/serverBackend/src/main/java/org/tommymangia/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -31,6 +31,7 @@
         <option value="$PROJECT_DIR$/asdfghjk/pom.xml" />
         <option value="$PROJECT_DIR$/Serializzazione_su_file/pom.xml" />
         <option value="$PROJECT_DIR$/Esercizio_serializzazione_fakezone/pom.xml" />
+        <option value="$PROJECT_DIR$/serverBackend/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -39,6 +40,7 @@
         <option value="$PROJECT_DIR$/Esercizio_serializzazione_fakezone/pom.xml" />
         <option value="$PROJECT_DIR$/Test/pom.xml" />
         <option value="$PROJECT_DIR$/asdfghjk/pom.xml" />
+        <option value="$PROJECT_DIR$/serverBackend/pom.xml" />
         <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>
     </option>
@@ -54,7 +56,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="25" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" default="true" project-jdk-name="25" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
