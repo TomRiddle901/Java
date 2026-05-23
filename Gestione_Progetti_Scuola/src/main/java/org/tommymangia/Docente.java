@@ -10,4 +10,11 @@ public class Docente extends Dipendente{
         super(nome, cognome, dataNascita, sesso, dataAssunzione, nOre);
         this.materia = materia;
     }
+
+    @Override
+    public float calcolaCosto(){
+        float costo = 0;
+        costo = nOre * costoOrario;
+        return costo;
+    }
 }
