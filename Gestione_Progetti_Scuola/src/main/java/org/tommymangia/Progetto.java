@@ -16,5 +16,33 @@ public class Progetto implements Serializable{
         this.dataInizio = dataInizio;
         this.dataFine = dataFine;
         this.avanzamento = avanzamento;
+        dipendenti = new ArrayList<>();
+    }
+
+    public void aggiungiDipendente(Dipendente dip){
+        int nDocenti = 0;
+        boolean presenzaTecnico = false;
+
+        for (int i = 0; i < dipendenti.size(); i++){
+            if (dipendenti.get(i) instanceof Docente){
+                nDocenti++;
+            }
+
+            if (dipendenti.get(i) instanceof Tecnico){
+                presenzaTecnico = true;
+            }
+        }
+
+        if (dip instanceof Docente && nDocenti >= 5){
+            System.out.println("Numero massimo di docenti raggiunto!");
+            return;
+        }
+
+        if (dip instanceof Tecnico && presenzaTecnico){
+            System.out.println("Tecnico già presente!");
+            return;
+        }
+
+        dipendenti.add(dip);
     }
 }
