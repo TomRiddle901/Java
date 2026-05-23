@@ -18,4 +18,6 @@ public abstract class Dipendente {
         this.dataAssunzione = dataAssunzione;
         this.nOre = nOre;
     }
+
+    public abstract float calcolaCosto();
 }

@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Nuovo progetto">
-      <change afterPath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Dipendente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Docente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Progetto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Scuola.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Tecnico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/MainProgram.java" afterDir="false" />
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Aggiunti attributi per la classe Dipendente e aggiunto costruttore">
+      <change beforePath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Dipendente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Dipendente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -534,15 +529,29 @@
       <option name="project" value="LOCAL" />
       <updated>1779533944851</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Aggiunte classi">
+      <option name="closed" value="true" />
+      <created>1779534294229</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1779534294229</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Aggiunti attributi per la classe Dipendente e aggiunto costruttore">
+      <option name="closed" value="true" />
+      <created>1779534337378</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1779534337378</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Closed buffer `bufferRead` and fixed imports to be more readable (divided by `io`, `util` and exceptions)" />
-    <MESSAGE value="Skipped first line of CVS file (params line)" />
     <MESSAGE value="Solved `Index 1 out of bounds for lenght 1` error: the separato is ';' not ','" />
     <MESSAGE value="Solved `Cannot invoke &quot;String.split(String)&quot; because &quot;rigaFile&quot; is null` error: method `readLine()` called inside `while` condition" />
     <MESSAGE value="Removed 'Not implemented' console print" />
@@ -566,7 +575,9 @@
     <MESSAGE value="Removed a project (working on other directory" />
     <MESSAGE value="I Forgot to push" />
     <MESSAGE value="Nuovo progetto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nuovo progetto" />
+    <MESSAGE value="Aggiunte classi" />
+    <MESSAGE value="Aggiunti attributi per la classe Dipendente e aggiunto costruttore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti attributi per la classe Dipendente e aggiunto costruttore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
