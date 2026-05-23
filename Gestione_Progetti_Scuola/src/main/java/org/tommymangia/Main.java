@@ -1,9 +1,8 @@
-package serverbackend;
+package org.tommymangia;
 
-public class MainProgram {
 
+public class Main {
     public static void main(String[] args) {
         
     }
-    
 }
