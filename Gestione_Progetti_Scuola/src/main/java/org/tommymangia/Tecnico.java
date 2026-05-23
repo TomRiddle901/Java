@@ -14,6 +14,12 @@ public class Tecnico extends Dipendente{
 
     @Override
     public float calcolaCosto(){
+        int anni = Period.between(dataAssunzione, LocalDate.now()).getYears();
 
+        float costo = cstoOrario + anni;
+
+        costo *= nOre;
+
+        return costo;
     }
 }
