@@ -55,4 +55,14 @@ public class Progetto implements Serializable{
 
         return costoTotale;
     }
+
+    public boolean setFine(LocalDate dataFine){
+        if (dataFine.isBefore(dataInizio)){
+            return false;
+        }
+
+        this.dataFine = dataFine;
+
+        return true;
+    }
 }
