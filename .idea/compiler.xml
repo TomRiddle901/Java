@@ -16,7 +16,6 @@
         <module name="Esercizio_garage" />
         <module name="Classe_stream" />
         <module name="Esercizio_classe_veicoli" />
-        <module name="Gestione_Progetti_Scuola" />
         <module name="Esercizio_diependenti" />
         <module name="Esercizio_dipendenti2" />
         <module name="Esercizio_recupero_1" />
@@ -32,6 +31,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Gestione_Progetti_Scuola" target="26" />
       <module name="serverBackend" target="26" />
     </bytecodeTargetLevel>
   </component>
