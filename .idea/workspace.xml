@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Aggiunti attributi e cotruttore" />
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Implementato metodo per aggiungere un docente o un tecnico" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,14 +174,6 @@
       <workItem from="1778342216883" duration="21000" />
       <workItem from="1778781487484" duration="69000" />
       <workItem from="1778781687065" duration="841000" />
-    </task>
-    <task id="LOCAL-00006" summary="Imported `FileReader` and `BufferedReader`">
-      <option name="closed" value="true" />
-      <created>1773921881844</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1773921881844</updated>
     </task>
     <task id="LOCAL-00007" summary="Initialized method for import points form an existing `punti.txt` file">
       <option name="closed" value="true" />
@@ -567,14 +559,21 @@
       <option name="project" value="LOCAL" />
       <updated>1779537721316</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Implementato metodo per aggiungere un docente o un tecnico">
+      <option name="closed" value="true" />
+      <created>1779538344729</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1779538344729</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created class `Punto.java`" />
     <MESSAGE value="Copied code from `Classe_stream` except of `importa/esportaPunti` function (using serializable saving data type)" />
     <MESSAGE value="Implemented method for saving `Punto` data using serialization" />
     <MESSAGE value="Implemented import from `datiPunto.dat`" />
@@ -599,7 +598,8 @@
     <MESSAGE value="Aggiunto metodo per calcolare il costo orario, attributi e construttore" />
     <MESSAGE value="Completato il metodo per calcolare il costo" />
     <MESSAGE value="Aggiunti attributi e cotruttore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti attributi e cotruttore" />
+    <MESSAGE value="Implementato metodo per aggiungere un docente o un tecnico" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementato metodo per aggiungere un docente o un tecnico" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

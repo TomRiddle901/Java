@@ -45,4 +45,14 @@ public class Progetto implements Serializable{
 
         dipendenti.add(dip);
     }
+
+    public float costoTotale(){
+        float costoTotale = 0;
+
+        for (int i = 0; i < dipendenti.size(); i++){
+            costoTotale += dipendenti.get(i).calcolaCosto();
+        }
+
+        return costoTotale;
+    }
 }
