@@ -1,8 +1,9 @@
 package org.tommymangia;
 
 import java.time.LocalDate;
+import java.io.Serializable;
 
-public abstract class Dipendente {
+public abstract class Dipendente implements Serializable{
     protected String nome;
     protected String cognome;
     protected LocalDate dataNascita;
