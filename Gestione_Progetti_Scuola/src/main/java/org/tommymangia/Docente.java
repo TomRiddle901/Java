@@ -17,4 +17,8 @@ public class Docente extends Dipendente{
         costo = nOre * costoOrario;
         return costo;
     }
+
+    public static void setCostoOrario(float costo){
+        costoOrario = costo;
+    }
 }
