@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Aggiunti attributi e costruttore nella classe `Docente`" />
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Aggiunto metodo per calcolare il costo orario">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Tecnico.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,22 +177,6 @@
       <workItem from="1778342216883" duration="21000" />
       <workItem from="1778781487484" duration="69000" />
       <workItem from="1778781687065" duration="841000" />
-    </task>
-    <task id="LOCAL-00001" summary="Ide changes">
-      <option name="closed" value="true" />
-      <created>1773767398761</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1773767398761</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Removed useless comment">
-      <option name="closed" value="true" />
-      <created>1773767525073</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1773767525074</updated>
     </task>
     <task id="LOCAL-00003" summary="Ide things">
       <option name="closed" value="true" />
@@ -567,15 +554,29 @@
       <option name="project" value="LOCAL" />
       <updated>1779534622094</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Aggiunto metodo `calcolaCosto()`">
+      <option name="closed" value="true" />
+      <created>1779534779474</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1779534779475</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Aggiunto metodo per calcolare il costo orario">
+      <option name="closed" value="true" />
+      <created>1779534911297</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1779534911297</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed target directory from commits" />
-    <MESSAGE value="New Project" />
     <MESSAGE value="Updated ide to new version" />
     <MESSAGE value="Cahnged from NetBeans to IntelliJ. Created a small interface with title and button" />
     <MESSAGE value="New project based on `Classe_stream` project (changed export/inport of file using the serialization)" />
@@ -599,7 +600,9 @@
     <MESSAGE value="Aggiunto metodo astratto per calcolare il costo" />
     <MESSAGE value="La classe Dipendente.java puù essere serializzata" />
     <MESSAGE value="Aggiunti attributi e costruttore nella classe `Docente`" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti attributi e costruttore nella classe `Docente`" />
+    <MESSAGE value="Aggiunto metodo `calcolaCosto()`" />
+    <MESSAGE value="Aggiunto metodo per calcolare il costo orario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto metodo per calcolare il costo orario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
