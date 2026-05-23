@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Aggiunto metodo per calcolare il costo orario">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Tecnico.java" afterDir="false" />
+    <list default="true" id="f45746a6-261f-4762-a379-6a8b90fa0884" name="Changes" comment="Completato il metodo per calcolare il costo">
+      <change beforePath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Progetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_Progetti_Scuola/src/main/java/org/tommymangia/Progetto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,22 +176,6 @@
       <workItem from="1778342216883" duration="21000" />
       <workItem from="1778781487484" duration="69000" />
       <workItem from="1778781687065" duration="841000" />
-    </task>
-    <task id="LOCAL-00003" summary="Ide things">
-      <option name="closed" value="true" />
-      <created>1773768173131</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1773768173132</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Ide things">
-      <option name="closed" value="true" />
-      <created>1773768298507</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1773768298507</updated>
     </task>
     <task id="LOCAL-00005" summary="Removed raw use of parameterized class `ArrayList`">
       <option name="closed" value="true" />
@@ -570,15 +553,29 @@
       <option name="project" value="LOCAL" />
       <updated>1779534911297</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Aggiunto metodo per calcolare il costo orario, attributi e construttore">
+      <option name="closed" value="true" />
+      <created>1779537378401</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1779537378403</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Completato il metodo per calcolare il costo">
+      <option name="closed" value="true" />
+      <created>1779537554841</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1779537554841</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated ide to new version" />
-    <MESSAGE value="Cahnged from NetBeans to IntelliJ. Created a small interface with title and button" />
     <MESSAGE value="New project based on `Classe_stream` project (changed export/inport of file using the serialization)" />
     <MESSAGE value="Created class `Punto.java`" />
     <MESSAGE value="Copied code from `Classe_stream` except of `importa/esportaPunti` function (using serializable saving data type)" />
@@ -602,7 +599,9 @@
     <MESSAGE value="Aggiunti attributi e costruttore nella classe `Docente`" />
     <MESSAGE value="Aggiunto metodo `calcolaCosto()`" />
     <MESSAGE value="Aggiunto metodo per calcolare il costo orario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto metodo per calcolare il costo orario" />
+    <MESSAGE value="Aggiunto metodo per calcolare il costo orario, attributi e construttore" />
+    <MESSAGE value="Completato il metodo per calcolare il costo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completato il metodo per calcolare il costo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
